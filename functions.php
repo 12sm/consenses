@@ -10,7 +10,7 @@ function my_success_action($post_id, $form_data)
 if ($form_data['id']==19)  
 {
 	header(‘location:wp-admin.php’);
-wp_create_user( $_POST['post_title'], $_POST['password'], $_POST['email'] );
+wp_create_user( $post_title, $_POST['password'], $_POST['email'] );
 }
 }
 
