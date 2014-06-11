@@ -10,7 +10,7 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 
 //Enable Debug
 define('WP_DEBUG', true);
-
+define('WP_DEBUG_LOG', true);
 /**
  * Configuration values
  */
