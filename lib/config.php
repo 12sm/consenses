@@ -8,6 +8,9 @@ add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails com
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 
+//Enable Debug
+define('WP_DEBUG', true);
+
 /**
  * Configuration values
  */
