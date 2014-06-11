@@ -36,6 +36,20 @@ jQuery(document).ready(function() {
 </script>
 
 <?php
+//Create User On CRED Submission
+// registration function
+add_action('cred_submit_complete', 'my_success_action',10,2);
+function my_success_action($post_id, $form_data)
+{
+// if a specific form
+if ($form_data['id']==206)  
+{
+wp_create_user( $_POST['name'], $_POST['password'], $_POST['email-address'] );
+}
+}
+?>
+
+<?php
 }
 
 /**
