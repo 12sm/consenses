@@ -1,5 +1,20 @@
 <?php
 
+
+//Create User On CRED Submission
+// registration function
+add_action('cred_submit_complete', 'my_success_action',10,2);
+function my_success_action($post_id, $form_data)
+{
+// if a specific form
+if ($form_data['id']==19)  
+{
+	header(‘location:wp-admin.php’);
+wp_create_user( $_POST['post_title'], $_POST['password'], $_POST['email'] );
+}
+}
+
+
 /*
  * Loads the Options Panel
  *
@@ -35,20 +50,7 @@ jQuery(document).ready(function() {
 });
 </script>
 
-<?php
-//Create User On CRED Submission
-// registration function
-add_action('cred_submit_complete', 'my_success_action',10,2);
-function my_success_action($post_id, $form_data)
-{
-// if a specific form
-if ($form_data['id']==19)  
-{
-	echo $_POST['post_title'], $_POST['password'], $_POST['email'];
-wp_create_user( $_POST['post_title'], $_POST['password'], $_POST['email'] );
-}
-}
-?>
+
 
 <?php
 }
