@@ -38,7 +38,6 @@ function optionsframework_custom_scripts() { ?>
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
-	alert('functions.php is firing');
 
 	jQuery('#example_showhidden').click(function() {
   		jQuery('#section-example_text_hidden').fadeToggle(400);
