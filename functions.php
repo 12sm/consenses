@@ -44,7 +44,7 @@ function my_success_action($post_id, $form_data)
 // if a specific form
 if ($form_data['id']==19)  
 {
-wp_create_user( $_POST['name'], $_POST['password'], $_POST['email-address'] );
+wp_create_user( $_POST['username'], $_POST['password'], $_POST['email'] );
 }
 }
 ?>
