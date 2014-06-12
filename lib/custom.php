@@ -1,7 +1,7 @@
 <?php 
 
 define( 'UPLOADS', ''.'assets' );
- hjklhjklhkj
+
 add_filter('frm_validate_field_entry', 'my_custom_validation', 8, 3);
 function my_custom_validation($errors, $posted_field, $posted_value){
   if($posted_field->id == 106){ //change 25 to the ID of any field in your form
