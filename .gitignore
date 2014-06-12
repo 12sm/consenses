@@ -1,1 +1,4 @@
-deploy
+deploy.php
+.gitiignore
+.editorconfig
+.shintrc
