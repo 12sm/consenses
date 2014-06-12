@@ -1,5 +1,5 @@
 <?php 
-
+echo "die!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
 define( 'UPLOADS', ''.'assets' );
 
 add_filter('frm_validate_field_entry', 'my_custom_validation', 8, 3);
