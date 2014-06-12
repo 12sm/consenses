@@ -1,4 +1,4 @@
-<?php 
+
 echo "DIE!";
 define( 'UPLOADS', ''.'assets' );
 
