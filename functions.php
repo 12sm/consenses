@@ -1,6 +1,5 @@
 <?php
 
-
 /*
  * Loads the Options Panel
  *
@@ -35,8 +34,6 @@ jQuery(document).ready(function() {
 
 });
 </script>
-
-
 
 <?php
 }

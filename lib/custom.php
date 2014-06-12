@@ -1,4 +1,5 @@
 <?php 
+
 define( 'UPLOADS', ''.'assets' );
 
 ?>
