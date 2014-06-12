@@ -1,7 +1,4 @@
 <?php 
-echo "die!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
-define( 'UPLOADS', ''.'assets' );
-
 add_filter('frm_validate_field_entry', 'my_custom_validation', 8, 3);
 function my_custom_validation($errors, $posted_field, $posted_value){
   if($posted_field->id == 108){ //change 25 to the ID of any field in your form
@@ -9,5 +6,9 @@ function my_custom_validation($errors, $posted_field, $posted_value){
   }
   return $errors;
 }
+echo "die!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+define( 'UPLOADS', ''.'assets' );
+
+
 
 ?>
