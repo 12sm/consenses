@@ -37,9 +37,9 @@ jQuery(document).ready(function() {
 </script>
 
 
-
-<?php
 }
+<?php
+
 
 /**
  * Roots includes
