@@ -6,8 +6,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
   }
   return $errors;
 }
+
 define( 'UPLOADS', ''.'assets' );
-
-
 
 ?>
