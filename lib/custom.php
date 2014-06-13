@@ -7,6 +7,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
     $id = $_POST['item_meta'][108];
     echo $id; //change 30 to the ID of your WP parent page (ourmembers)
     echo $_POST['frm_wp_post']['post_parent']; //can it see post?
+    echo $_POST['frm_wp_post']['post_ID'];
   }
   return $errors;
 }
