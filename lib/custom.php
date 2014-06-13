@@ -6,6 +6,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
     echo 'it knows the right form';
     $id = $_POST['item_meta'][108];
     echo $id; //change 30 to the ID of your WP parent page (ourmembers)
+    echo $_POST['frm_wp_post']['post_title']; //can it see post?
   }
   return $errors;
 }
