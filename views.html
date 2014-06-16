@@ -1,12 +1,18 @@
-<!-- HOME | WEEKLY-CHALLENGE -->
-<div class="row week-header">
+<!-- HOME | WEEKLY-CHALLENGE | CHAIN-->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="row week-header">
 	<div class="col-sm-8">
 		<h3>Weekly Challenge: "[wpv-post-title]"</h3>
-		<p>DECRIPTION FIELD</p>
+		<p>[types field="description"][/types]</p>
 	</div>
 	<div class="col-sm-2">
-		<div class="chain-btn btn">
-			See the Chain
+		<div class="btn-container">
+          <a href="[wpv-post-url]" class="chain-btn btn">
+              See the Chain
+          </a>
 		</div>
 	</div>
 	<div class="col-sm-2">
@@ -16,20 +22,37 @@
 		</div>
 	</div>
 </div>
+          [wpv-view name="home-weekly-challenge-art" wpvprchildof="[wpv-post-id]"]
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!-------------------------------- /END VIEW -------------------------------->
+
+
+<!-------------------------- HOME | CHALLENEGE | ART ----------------------------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop> 
 <div class="row">
 	<div class="col-sm-12">
-		<img src="CHAIN IMG" class="img-responsive" />
+		<img src="[types field="art-image" size="large" url="true" resize="proportional"][/types]" class="img-responsive" />
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-8">
 		<i class="fa fa-pencil"></i>[tag piece form]
 	</div>
-	<a href="#wordCloud">
-		<div class="col-sm-4">
-			<p>What do others see? View Tags. <i class="fa fa-tags"></i></p>
-		</div>
-	</a>
+	<div class="col-sm-4">
+		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			What do others see? View Tags. <i class="fa fa-tags"></i>
+		</button>
+	</div>
 </div>
 
 <!--tag Cloud-->
@@ -37,14 +60,46 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        <?php
-        $tag_ids = wp_get_post_tags( $post->ID, array( 'fields' => 'ids' ) );
+        <script>
+  var fill = d3.scale.category20();
 
-        ?>
+  d3.layout.cloud().size([300, 300])
+      .words([
+        [wpv-post-taxonomy type="post_tag" separator=", " format="link" show="name" order="asc"]].map(function(d) {
+        return {text: d, size: 10 + Math.random() * 90};
+      }))
+      .padding(5)
+      .rotate(function() { return ~~(Math.random() * 2) * 90; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw)
+      .start();
+
+  function draw(words) {
+    d3.select("body").append("svg")
+        .attr("width", 300)
+        .attr("height", 300)
+      .append("g")
+        .attr("transform", "translate(150,150)")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
+</script>
+        
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -53,3 +108,10 @@
     </div>
   </div>
 </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
