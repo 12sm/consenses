@@ -19,7 +19,7 @@
 	</div>
 </div>
 <div class="row col weekly-challenge">
-	<div class="col-sm-12">
+	<div class="col-sm-10 col-sm-offset-1">
 		<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY-CHALLENGE"]'); ?>
 	</div>
 </div>
