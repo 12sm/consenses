@@ -84,3 +84,8 @@
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
+<Script>
+$('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
