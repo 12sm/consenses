@@ -212,7 +212,14 @@
     </div>
   </div>
 </div>
+
+<!-- -------------- WORD CLOUD SCRIPT ----------------- -->
 <script>
+$('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
+
         $(".word-cloud").each(function(){
             var divs = $(this).find('a');
             for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
@@ -230,3 +237,15 @@
         });
         //add spaces after
         $('.word-cloud > a').after(" ");    
+
+        $('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
+        $(function () {
+  $('.word-cloud > a').tagcloud();
+});
+        </script>
+
+
+<!------------ ART | SINGLE ------------->
