@@ -264,12 +264,19 @@ return weight;
 		    </div>
 		    <div class="col-sm-4 artist-sidebar">
 		    	<div class="row">
+		    		<div class="col-sm-3">
+					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]]
+					</div>
+					<div class="col-sm-9">
 						<div class="artist-meta">
-							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids="[wpv-post-id id='$artist']"]
+							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META"]
 						</div>
 						<div class="art-title">
 							[wpv-post-title]
 						</div>
+                      <div class="medium">
+                        [medium]
+                      </div>
 						<div class="art-description">
 							[types field="description"][/types]
 						</div>
@@ -291,7 +298,6 @@ return weight;
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
-
 
 <!------------- CHAIN SINGLE | ART MODAL | ARTIST META ---------------->
 [wpv-layout-start]
