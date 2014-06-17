@@ -275,7 +275,7 @@ return weight;
 							[wpv-post-title]
 						</div>
                       <div class="medium">
-                        [medium]
+                        [types field="medium"][/types]
                       </div>
 						<div class="art-description">
 							[types field="description"][/types]
@@ -322,3 +322,35 @@ return weight;
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
+
+<!----------- CHAIN | ARCHIVE -------------------->
+<div class="row">
+	<div class="col-sm-4">
+		[wpv-view name="CHAIN ARCHIVE | TOP OF CHAIN" wpvprchildof='[wpv-post-id]'']
+	</div>
+</div>
+
+<!-----------CHAIN ARCHIVE | TOP OF CHAIN---------------------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="img-container">
+		[types field="art-image" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+		<i class="fa fa-pencil float-left"></i> <span class="chain-title">[wpv-post-tile]</span> | Artist Name
+		</div>
+		<div class="row">
+			[wpv-view name="CHAIN ARCHIVE | ART" wpvprchildof='[wpv-post-id id='$chain']']
+		</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+
+<!----------------- ARTIST SINGLE ------------------>
+<div class="row">
+	<div class="col-sm-12"
