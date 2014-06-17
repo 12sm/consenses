@@ -181,7 +181,9 @@
 </div>
 <div class="row">
 	<div class="col-sm-12">
-		[wpv-view name="CHAIN SINGLE | ART"]
+		<div class="chain-art-cont js-masonry">
+			[wpv-view name="CHAIN SINGLE | ART"]
+		</div>
 	</div>
 </div>
 
@@ -203,8 +205,6 @@
 [wpv-post-taxonomy type="post_tag" separator=", " format="link" show="name" order="asc"]
 			</ul>
         </div>
-        
-        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -212,7 +212,14 @@
     </div>
   </div>
 </div>
+
+<!-- -------------- WORD CLOUD SCRIPT ----------------- -->
 <script>
+$('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
+
         $(".word-cloud").each(function(){
             var divs = $(this).find('a');
             for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
@@ -230,3 +237,53 @@
         });
         //add spaces after
         $('.word-cloud > a').after(" ");    
+
+        $('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
+        $(function () {
+  $('.word-cloud > a').tagcloud();
+});
+        </script>
+
+
+<!-- ---------- CHAIN SINGLE | ART ---------- -->
+<button class="img-transparent item" data-toggle="modal" data-target="[wpv-post-id]"><img src="art image piece" /></button>
+
+
+
+
+
+<div class="modal fade" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    <ul class="nav nav-tabs">
+  <li class="active"><a href="#img" data-toggle="tab">Art</a></li>
+  <li><a href="#cloud" data-toggle="tab">Word Cloud</a></li>
+  <li><a href="#form" data-toggle="tab">What Do You See?</a></li>
+	</ul>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col-sm-8">
+      			<div class="tab-content">
+				  <div class="tab-pane active" id="img">...</div>
+				  <div class="tab-pane" id="cloud">...</div>
+				  <div class="tab-pane" id="form">...</div>
+				</div>
+			</div>
+			<div class="col-sm-4 artist-sidebar">
+			ARTIST PROFILE
+			</div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
