@@ -18,14 +18,18 @@
 		</div>
 	</div>
 </div>
-<div class="row col weekly-challenge">
+<div class="row home-bottom">
 	<div class="col-sm-10 col-sm-offset-1">
-		<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
+		<div class="row col weekly-challenge">
+			<div class="col-sm-12">
+				<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
+			</div>
+		</div>
+		<div class="row home-events">
+			<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
+		</div>
+		<div class="row home-news">
+			<?php echo do_shortcode('[wpv-view name="HOME | NEWS"]'); ?>
+		</div>
 	</div>
-</div>
-<div class="row home-events">
-	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
-</div>
-<div class="row home-news">
-	<?php echo do_shortcode('[wpv-view name="HOME | NEWS"]'); ?>
 </div>

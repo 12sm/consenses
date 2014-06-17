@@ -3,7 +3,7 @@
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <div class="row week-header">
+<div class="row week-header">
 	<div class="col-sm-8">
 		<h3>Weekly Challenge: "[wpv-post-title]"</h3>
 		<p>[types field="description"][/types]</p>
@@ -64,15 +64,17 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        <div class="word-cloud">
+        <div>
+          	<ul class="word-cloud">
+          	[wpv-for-each field=""]
 [wpv-post-taxonomy type="post_tag" separator=", " format="link" show="name" order="asc"]
+			</ul>
         </div>
         
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -84,8 +86,147 @@
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
-<Script>
-$('.word-cloud > a').attr('rel', function(){
-var weight = Math.floor((Math.random() * 10) + 1);
-return weight;
-});
+
+<!--------------- END HOME | CHALLENGE | ART -------------------->
+
+<!--------------- HOME | EVENTS ---------------------------------->
+
+    [wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="col-sm-6 events-copy">
+   		[types field="banner-copy"][/types]
+	</div>
+	<div class="col-sm-6">
+		<button class="btn btn-default" href="[types field="button-link" output="raw"][/types]"> [types field="link-title"][/types]</button>
+	</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!--------------------- END HOME| EVENTS ---------------------------------------->
+
+<!--------------------- HOME | NEWS ---------------------------------------------->
+	[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+	
+          <div class="col-sm-12">
+            	<wpv-loop>
+		[wpv-item index=1]
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="img-container">
+					[wpv-post-featured-image size='thumbnail']
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<h4>[wpv-post-title]</h4>
+				<p class="date">[wpv-post-date format='F j, Y']</p>
+				<p>[wpv-post-excerpt length='200']</p>
+			</div>
+		</div>
+        <div class="row">
+		[wpv-item index=other]
+			<div class="col-sm-3">
+				<div class="img-container">
+					[wpv-post-featured-image size='thumbnail']
+				</div>
+				<p class="date">[wpv-post-date format='F j, Y']</p>
+				<h5>[wpv-post-title]</h5>
+			</div>
+		</wpv-loop>
+				</div>
+            	</div>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!------------------------------ CONTENT TEMPLATES -------------------------------------->
+
+<!------------------------------ CHAINS -----------------------------------------------> -->
+<div class="row">
+	<div class="col-sm-12">
+		<h1 class="chain-title">[wpv-post-title]"</h1>
+		<p>[description]</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<h4>What one thing ties these pieces together for you?</h4>
+		<button class="btn btn-view" data-toggle="modal" data-target="#wordCloud"><i class="fa fa-tags"></i> View the Consenses on this Chain</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="vid-container">
+			[video-shit]
+		</div>
+	</div>
+</div>
+<div class="row grey">
+	<div class="col-sm-12">
+		<ul class="word-cloud">
+			[wpv-post-taxonomy type="post_tag" separator=", " format="link" show="name" order="asc"]
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		[wpv-view name="CHAIN SINGLE | ART"]
+	</div>
+</div>
+
+
+
+
+
+<!--tag Cloud-->
+<div class="modal fade" id="wordCloud" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          	<ul class="word-cloud">
+[wpv-post-taxonomy type="post_tag" separator=", " format="link" show="name" order="asc"]
+			</ul>
+        </div>
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+        $(".word-cloud").each(function(){
+            var divs = $(this).find('a');
+            for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
+            //the fisher yates algorithm, from http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
+            var i = divs.length;
+            if ( i == 0 ) return false;
+            while ( --i ) {
+               var j = Math.floor( Math.random() * ( i + 1 ) );
+               var tempi = divs[i];
+               var tempj = divs[j];
+               divs[i] = tempj;
+               divs[j] = tempi;
+             }
+            for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
+        });
+        //add spaces after
+        $('.word-cloud > a').after(" ");    
