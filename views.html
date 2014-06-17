@@ -243,7 +243,7 @@ return weight;
 			      </div>
 			      <div class="modal-body">
 			      	<div class="row">
-			      		<div class="col-sm-8 artist-body">
+			      		<div class="col-sm-8">
 			      			<div class="tab-content">
 							  <div class="tab-pane active" id="img">
 							  	[types field="art-image" size="medium" align="none" resize="proportional"][/types]
@@ -264,24 +264,21 @@ return weight;
 		    </div>
 		    <div class="col-sm-4 artist-sidebar">
 		    	<div class="row">
-		    		<div class="col-sm-3">
-					[ARTIST IMAGE]
-					</div>
-					<div class="col-sm-9">
 						<div class="artist-meta">
-							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META"]
+							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids="[wpv-post-id id='$artist']"]
 						</div>
 						<div class="art-title">
 							[wpv-post-title]
 						</div>
 						<div class="art-description">
-							[wpcf-field description]
+							[types field="description"][/types]
 						</div>
 						<div class="inspiration-piece">
 							[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chain"]"]
 					</div>
 				</div>
 			</div>
+	    </div>
 	    </div>
 	</div>
     
@@ -296,4 +293,28 @@ return weight;
 [wpv-layout-end]
 
 
-<!------------- CHAIN SINGLE | ART MODAL| INSPIRATION PIECE ---------------->
+<!------------- CHAIN SINGLE | ART MODAL | ARTIST META ---------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class=" col-sm-4">
+	[types field="profile-img" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+</div>
+<div class="col-sm-8">
+	<p><span class="red-bold">[wpv-post-title]</span> [occupation]</p>
+	<p>[location]</p>
+	<p>[types field="website" target="_blank"][/types]</p>
+	<ul class="artist-socials">
+		<li class="facebook"><a href="[types field="facebook" output="raw"][/types]" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+		<li class="twitter"><a href="[types field="twitter" output="raw"][/types]" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+		<li class="instagram"><a href="[types field="instagram" output="raw"][/types]" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
