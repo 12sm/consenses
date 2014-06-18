@@ -29,6 +29,7 @@ var msnry = new Masonry( container, {
   itemSelector: '.item',
   columnWidth: 300
 });
+$('.img-container').imgLiquid();
     }
   },
   // Home page
