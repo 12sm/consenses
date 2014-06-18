@@ -152,7 +152,7 @@
 
 <!------------------------------ CONTENT TEMPLATES -------------------------------------->
 
-<!------------------------------ CHAINS -----------------------------------------------> -->
+<!------------------------------ CHAINS ---------------------------------------------- -->
 <div class="row">
 	<div class="col-sm-12">
 		<h1 class="chain-title">"[wpv-post-title]"</h1>
@@ -365,14 +365,14 @@ return weight;
 <!----------------- ARTIST SINGLE ------------------>
 <div class="row">
 	<div class="col-sm-6">
-		<div class="img-container">
+		<div class="img-cont">
 			[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
 		</div>
 		<!--Business Card-->
 		<div class="row">
 			
 			<!--Information Section-->
-			<div class="col-sm-8 col-sm-pull-4">
+			<div class="col-sm-8 col-sm-push-4">
 				<div class="row">
 					<div class="col-sm-8">
 						[wpv-post-title]
@@ -398,8 +398,8 @@ return weight;
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4 col-sm-push-8">
-				[wpv-view name=" ARTIST SINGLE | BUSINESS CARD | ART" wpvrchildof="[wpv-post-id]"]
+			<div class="col-sm-4 col-sm-pull-8">
+				[wpv-view name="ARTIST SINGLE | BUSINESS CARD | ART" wpvrchildof="[wpv-post-id]"]
 			</div>
 		</div>
 		<div class="row">
@@ -415,6 +415,7 @@ return weight;
 <div class="row">
 	[wpv-view name="ARTIST SINGLE | ART" wpvprchildof="[wpv-post-id]"]
 </div>
+[wpv-view name="CHAIN SINGLE | ART MODAL"]
 
 <!-------------- ARTIST SINGLE | ART -------------------->
 [wpv-layout-start]
