@@ -226,7 +226,7 @@ return weight;
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]"><div class="masonry-img item">[types field="art-image" size="thumbnail" align="none" resize="proportional"][/types]</div></a>
+          <div class="masonry-img item"><a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]">[types field="art-image" size="thumbnail" align="none" resize="proportional"][/types]</a></div>
          </wpv-loop>
 
 
@@ -239,8 +239,6 @@ return weight;
           <div class="modal fade" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-    	<div class="row">
-    		<div class="col-sm-8">
 			      <div class="modal-header">
 			    <ul class="nav nav-tabs">
 			  <li class="active"><a href="#img" data-toggle="tab">Art</a></li>
@@ -250,7 +248,6 @@ return weight;
 			      </div>
 			      <div class="modal-body">
 			      	<div class="row">
-			      		<div class="col-sm-8">
 			      			<div class="tab-content">
 							  <div class="tab-pane active" id="img">
 							  	[types field="art-image" size="medium" align="none" resize="proportional"][/types]
@@ -262,14 +259,12 @@ return weight;
 							  [tag this form]
 							  </div>
 							</div>
-						</div>
 					</div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			      </div>
-		    </div>
-		    <div class="col-sm-4 artist-sidebar">
+		    <div class="artist-sidebar">
 		    	<div class="row">
 		    		<div class="col-sm-3">
 					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]]
@@ -297,7 +292,6 @@ return weight;
 	</div>
     
   </div>
-</div>
 		</wpv-loop>
 	<!-- wpv-loop-end -->
 	[/wpv-items-found]
