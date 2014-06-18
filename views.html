@@ -226,11 +226,16 @@ return weight;
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <div class="masonry-img item"><a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]">[types field="art-image" size="thumbnail" align="none" resize="proportional"][/types]</a></div>
+          <div class="masonry-img item"><a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]">	[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+		[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+		[wpv-post-featured-image]
+		[/wpv-if]</a></div>
          </wpv-loop>
 
 
-<!-- ---------------- CHAIN SINGLE| ART MODAL --------------------- -->
+<!-- ---------------- CHAIN SINGLE | ART MODAL --------------------- -->
 
 [wpv-layout-start]
 	[wpv-items-found]
@@ -250,7 +255,12 @@ return weight;
 			      	<div class="row">
 		      			<div class="tab-content col-sm-9">
 						  <div class="tab-pane active" id="img">
-						  	[types field="art-image" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+						  [wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+							[types field="art-image" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+							[/wpv-if]
+							[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+							[video thumbnail]
+							[/wpv-if]
 						  </div>
 						  <div class="tab-pane" id="cloud">
 						  	[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
@@ -407,15 +417,26 @@ return weight;
 </div>
 
 <!-------------- ARTIST SINGLE | ART -------------------->
-<div class="col-md-3 col-sm-6">
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="col-md-3 col-sm-6">
 	<div class="img-container">
 	<a class="modal-link" data-toggle="modal" data-target="#[wpv-post-id]">
 		[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
-		[img]
+		[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
 		[/wpv-if]
 		[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
-		[video thumbnail]
+		[wpv-post-featured-image]
 		[/wpv-if]
 		</a>
 	</div>
 </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
