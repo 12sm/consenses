@@ -248,23 +248,18 @@ return weight;
 			      </div>
 			      <div class="modal-body">
 			      	<div class="row">
-			      			<div class="tab-content">
-							  <div class="tab-pane active" id="img">
-							  	[types field="art-image" size="medium" align="none" resize="proportional"][/types]
-							  </div>
-							  <div class="tab-pane" id="cloud">
-							  	[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
-							  </div>
-							  <div class="tab-pane" id="form">
-							  [tag this form]
-							  </div>
-							</div>
-					</div>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-		    <div class="artist-sidebar">
+		      			<div class="tab-content col-sm-9">
+						  <div class="tab-pane active" id="img">
+						  	[types field="art-image" size="medium" align="none" resize="proportional"][/types]
+						  </div>
+						  <div class="tab-pane" id="cloud">
+						  	[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
+						  </div>
+						  <div class="tab-pane" id="form">
+						  [tag this form]
+						  </div>
+						</div>
+						 <div class="artist-sidebar col-sm-3">
 		    	<div class="row">
 		    		<div class="col-sm-3">
 					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]]
@@ -288,6 +283,11 @@ return weight;
 				</div>
 			</div>
 	    </div>
+					</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
 	    </div>
 	</div>
     
