@@ -250,7 +250,7 @@ return weight;
 			      	<div class="row">
 		      			<div class="tab-content col-sm-9">
 						  <div class="tab-pane active" id="img">
-						  	[types field="art-image" size="medium" align="none" resize="proportional"][/types]
+						  	[types field="art-image" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
 						  </div>
 						  <div class="tab-pane" id="cloud">
 						  	[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
@@ -266,7 +266,7 @@ return weight;
 					</div>
 					<div class="col-sm-9">
 						<div class="artist-meta">
-							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META"]
+							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids="[wpv-post-id id="$artist"]"]
 						</div>
 						<div class="art-title">
 							[wpv-post-title]
@@ -300,7 +300,7 @@ return weight;
 	[/wpv-no-items-found]
 [wpv-layout-end]
 
-<!------------- CHAIN SINGLE | ART MODAL | ARTIST META ---------------->
+<!------------ CHAIN SINGLE | ART MODAL | ARTIST META ---------------->
 [wpv-layout-start]
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
@@ -354,4 +354,68 @@ return weight;
 
 <!----------------- ARTIST SINGLE ------------------>
 <div class="row">
-	<div class="col-sm-12"
+	<div class="col-sm-6">
+		<div class="img-container">
+			[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+		</div>
+		<!--Business Card-->
+		<div class="row">
+			
+			<!--Information Section-->
+			<div class="col-sm-8 col-sm-pull-4">
+				<div class="row">
+					<div class="col-sm-8">
+						[wpv-post-title]
+					</div>
+					<div class="col-sm-4">
+						[wpv-post-taxonomy]
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						[types field="email"][/types] // [types field="website" target="_blank"][/types]
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<ul class="artist-socials">
+							<li><i class="fa fa-twitter"></i> [types field="twitter" target="_blank"][/types]</li>
+							<li><i class="fa fa-facebook"></i> [types field="facebook" target="_blank"][/types]</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<img src="consenses logo">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-push-8">
+				[wpv-view name=" ARTIST SINGLE | BUSINESS CARD | ART" wpvrchildof="[wpv-post-id]"]
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p> I would like this artist's info emailed to me: [form stuff]</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		[types field="bio"][/types]
+	</div>
+</div>
+<div class="row">
+	[wpv-view name="ARTIST SINGLE | ART" wpvprchildof="[wpv-post-id]"]
+</div>
+
+<!-------------- ARTIST SINGLE | ART -------------------->
+<div class="col-md-3 col-sm-6">
+	<div class="img-container">
+	<a class="modal-link" data-toggle="modal" data-target="#[wpv-post-id]">
+		[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+		[img]
+		[/wpv-if]
+		[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+		[video thumbnail]
+		[/wpv-if]
+		</a>
+	</div>
+</div>
