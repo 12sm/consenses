@@ -31,7 +31,7 @@ var msnry = new Masonry( container, {
   gutter: 5
 });
 $('.img-container').imgLiquid();
-$('#img > .entry-content-asset').fitVids();
+$('.img-video-tab > .entry-content-asset').fitVids();
     }
   },
   // Home page
