@@ -31,7 +31,7 @@ var msnry = new Masonry( container, {
   gutter: 5
 });
 $('.img-container').imgLiquid();
-$('.#img').fitVids();
+$('#img').fitVids();
     }
   },
   // Home page
