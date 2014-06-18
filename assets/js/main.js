@@ -27,7 +27,8 @@ var Roots = {
 var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
-  columnWidth: 300
+  columnWidth: '.col-sm-3',
+  gutter: 5
 });
 $('.img-container').imgLiquid();
     }
