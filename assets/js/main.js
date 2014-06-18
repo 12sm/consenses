@@ -24,7 +24,7 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
       var container = document.querySelector('.js-masonry');
-var msnry = new Masonry( $container[0], {
+var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
   columnWidth: 300
