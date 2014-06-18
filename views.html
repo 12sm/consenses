@@ -184,6 +184,7 @@
 		</div>
 	</div>
 </div>
+[wpv-view name="CHAIN SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
 
 <!-- -------------- WORD CLOUD SCRIPT ----------------- -->
 <script>
@@ -226,12 +227,16 @@ return weight;
 	<!-- wpv-loop-start -->
 		<wpv-loop>
           <a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]"><div class="masonry-img item">[types field="art-image" size="thumbnail" align="none" resize="proportional"][/types]</div></a>
+         </wpv-loop>
 
 
+<!-- ---------------- CHAIN SINGLE| ART MODAL --------------------- -->
 
-
-
-<div class="modal fade" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="modal fade" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
     	<div class="row">
