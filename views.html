@@ -178,7 +178,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-sm-12">
+	<div class="col-sm-12 js-masonry">
 		[wpv-view name="CHAIN SINGLE | ART" wpvprchildof="[wpv-post-id]"]
 	</div>
 </div>
@@ -223,7 +223,7 @@ return weight;
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <a class="img-transparent item" data-toggle="modal" data-target="#[wpv-post-id]">[types field="art-image" size="thumbnail" align="none" resize="proportional"][/types]</a>
+          <a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]"><div class="masonry-img item">[types field="art-image" size="thumbnail" align="none" resize="proportional"][/types]</div></a>
 
 
 
