@@ -8,7 +8,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
     $id = $frmdb->get_var( $frmdb->entries, array('id' => $entry_id), 'post_id' ); //gets id of child post
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
     //update_post_meta($id,'_wpcf_belongs_chain_id', $parent);
-    print_r($id);
+    echo "$id is the child";
     echo "$parent this is the parent";  //change 30 to the ID of your WP parent page (ourmembers)
   }
   return $errors;
