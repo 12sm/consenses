@@ -35,7 +35,7 @@ $('.img-video-tab > .entry-content-asset').fitVids();
 
 //Open submit modal on open of page
   if(window.location.hash) {
-    var hash = window.location.hash.substring(1);
+    var hash = window.location.hash.substring(0);
   $(hash).modal('show')
   console.log(hash);
   }
