@@ -6,7 +6,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
   if($posted_field->id == 108){ //change 25 to the ID of any field in your form
     $id = $_POST['frm_wp_post'];
     $parent = $_POST['item_meta'][108];
-    update_post_meta($id,'_wpcf_belongs_chain_id', $parent);
+    //update_post_meta($id,'_wpcf_belongs_chain_id', $parent);
     print_r($id);
     echo "$parent this is the parent";  //change 30 to the ID of your WP parent page (ourmembers)
   }
