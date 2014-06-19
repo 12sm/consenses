@@ -39,6 +39,11 @@ $('.img-video-tab > .entry-content-asset').fitVids();
   $(hash).modal('show')
   console.log(hash);
   }
+
+  //jquery to pull artist id and shit
+  var artID = $('#artist-content').text(); //gets the id
+  $('#field_rk2uay').val(artID); //puts it in the form
+
     }
   },
   // Home page
