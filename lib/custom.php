@@ -2,8 +2,8 @@
 add_action('frm_after_create_entry', 'after_entry_created', 41, 2);
 
 //Create a parent relationship after completion of form
-function frm_after_create_entry($errors, $posted_field, $posted_value){
-  if($posted_field->id == 108){ //change 25 to the ID of any field in your form
+function frm_after_create_entry($entry_id, $form_id){
+  if($form_id == 9){ //select form id
   	global $frmdb;
     $id = $entry_post_id; //gets id of child post (not working)
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
