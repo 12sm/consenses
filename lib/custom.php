@@ -1,8 +1,8 @@
 <?php 
-add_filter('frm_after_create_entry', 'after_entry_created', 41, 2);
+add_filter('frm_after_create_entry', 'create_form_parent', 41, 2);
 
 //Create a parent relationship after completion of form
-function frm_after_create_entry($entry_id, $form_id){
+function create_form_parent($entry_id, $form_id){
   if($form_id == 9){ //select form id
   	global $frmdb;
     $id = $entry_post_id; //gets id of child post (not working)
