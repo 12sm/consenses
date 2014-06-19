@@ -11,7 +11,6 @@ function create_form_parent($entry_id, $form_id){
     echo "$id is the child";
     echo "$parent this is the parent";
   }
-  return $errors;
 }
 
 
