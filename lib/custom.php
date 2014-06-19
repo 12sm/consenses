@@ -4,7 +4,6 @@ add_filter('frm_after_create_entry', 'create_artist_parent', 41, 2);
 //Grab id of 'Artist post'
 function create_artist_parent($entry_id, $form_id){
   if($form_id == 10){
-  	global $artist_id;
   global $frm_entry;
   $entry = $frm_entry->getOne($entry_id);
   $artist_id = $entry->post_id;
