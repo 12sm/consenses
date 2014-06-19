@@ -8,6 +8,7 @@ function create_artist_parent($entry_id, $form_id){
   global $frm_entry;
   $entry = $frm_entry->getOne($entry_id);
   $artist_id = $entry->post_id;
+  echo "$artist_id is the artist id";
 	}
 }
 //Create a parent relationship after completion of form
