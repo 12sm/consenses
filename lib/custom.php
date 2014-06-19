@@ -1,15 +1,27 @@
 <?php 
 add_filter('frm_after_create_entry', 'create_form_parent', 41, 2);
 add_filter('frm_after_create_entry', 'create_artist_parent', 41, 2);
+class Artist
+{
+protected $_artist;
+public function __construct($artist)
+	{
+	$this->_artist;
+	}
+public function display()
+    {
+        echo $this->_artist;
+	}
+
 //Grab id of 'Artist post'
 function create_artist_parent($entry_id, $form_id){
   if($form_id == 10){
   global $frm_entry;
   $entry = $frm_entry->getOne($entry_id);
-  $artist_id = $entry->post_id;
+  $artist_id = new Artist($entry->post_id);
   echo "$artist_id is the artist id";
+		}
 	}
-}
 //Create a parent relationship after completion of form
 function create_form_parent($entry_id, $form_id){
   if($form_id == 9){ //select form id
@@ -30,3 +42,4 @@ function create_form_parent($entry_id, $form_id){
 define( 'UPLOADS', ''.'assets' );
 
 ?>
+
