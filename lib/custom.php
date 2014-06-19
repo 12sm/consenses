@@ -1,5 +1,5 @@
 <?php 
-add_filter('frm_validate_field_entry', 'my_custom_validation', 8, 3);
+add_action('frm_after_create_entry', 'after_entry_created', 41, 2);
 
 //Create a parent relationship after completion of form
 function frm_after_create_entry($errors, $posted_field, $posted_value){
