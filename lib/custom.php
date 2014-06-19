@@ -1,5 +1,5 @@
 <?php 
-add_action('frm_after_create_entry', 'after_entry_created', 41, 2);
+add_filter('frm_after_create_entry', 'after_entry_created', 41, 2);
 
 //Create a parent relationship after completion of form
 function frm_after_create_entry($entry_id, $form_id){
