@@ -12,6 +12,7 @@ public function display()
     {
         echo $this->_artist;
 	}
+}
 
 //Grab id of 'Artist post'
 function create_artist_parent($entry_id, $form_id){
