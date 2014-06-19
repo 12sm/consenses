@@ -38,24 +38,30 @@
 [wpv-layout-start]
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
-		<wpv-loop> 
-<div class="row">
-	<div class="col-sm-12">
-		<img src="[types field="art-image" size="large" url="true" resize="proportional"][/types]" class="img-responsive" />
-	</div>
-</div>
-<div class="row">
+		<wpv-loop>
+          <div class="row week-header">
 	<div class="col-sm-8">
-		<i class="fa fa-pencil"></i>[tag piece form]
+		<h3>Weekly Challenge: "[wpv-post-title]"</h3>
+		<p>[types field="description"][/types]</p>
 	</div>
-	<div class="col-sm-4">
-		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wordCloud">
-			What do others see? View Tags. <i class="fa fa-tags"></i>
-		</button>
+	<div class="col-sm-2">
+		<div class="btn-container">
+          <a href="[wpv-post-url]" class="chain-btn btn">
+              See the Chain
+          </a>
+		</div>
+	</div>
+	<div class="col-sm-2">
+	<a href="[wpv-post-url]#submit">
+		<div class="submit-btn btn">
+			<h3>Submit</h3>
+			<p>to this challenge</p>
+		</div>
+	</a>
 	</div>
 </div>
-
-<!--tag Cloud-->
+          [wpv-view name="home-weekly-challenge-art" wpvprchildof="[wpv-post-id]"]
+          <!--tag Cloud-->
 <div class="modal fade" id="wordCloud" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -65,10 +71,7 @@
       </div>
       <div class="modal-body">
         <div>
-          	<ul class="word-cloud">
-          	[wpv-for-each field=""]
-[wpv-post-taxonomy type="post_tag" separator=", " format="link" show="name" order="asc"]
-			</ul>
+          	[wpv-view name="word-cloud" ids="[wpv-post-id]"]
         </div>
         
         
@@ -79,6 +82,8 @@
     </div>
   </div>
 </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
 		</wpv-loop>
 	<!-- wpv-loop-end -->
 	[/wpv-items-found]
@@ -185,6 +190,24 @@
 	</div>
 </div>
 [wpv-view name="CHAIN SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
+
+<!-- Chain Submit Modal -->
+<div class="modal fade" id="submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      [formidable id=10]
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- -------------- WORD CLOUD SCRIPT ----------------- -->
 <script>
