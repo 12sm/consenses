@@ -5,12 +5,12 @@
 			<h4>Connecting the world <span class="red">through art</span></h4>
 		</div>
 		<div class="row">
-			<div class="col-sm-6">
-				<div class="explore">
+			<div class="col-sm-4">
+				<a href="/explore"><div class="explore">
 					<h3>Explore</h3>
-				</div>
+				</div></a>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-4">
 				<div class="create">
 					<h3>+ Create</h3>
 				</div>
