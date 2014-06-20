@@ -122,7 +122,16 @@ transition:background-color .3s ease;
    .modal-dialog{
       width: 75%;
    }
-
+   /* =========================
+      Artist Modal
+      ========================= */
+.profile-pic>img{
+   border-radius: 50%;
+height: 50px;
+}
+.profile-pic{
+float: left;
+}
 
    /* ==========================================================================
    ARTIST SINGLE
