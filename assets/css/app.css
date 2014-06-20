@@ -19,6 +19,10 @@ background: #C0202B;
 .page-header{
    display: none;
 }
+.home-top{
+   background: url(../img/top-banner.jpg) no-repeat;
+   background-size: cover;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -122,7 +126,11 @@ float: left;
  }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+@media (min-width: 992px) {
+.home-top{
+   padding-bottom: 20%;
+}
+ }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { }
