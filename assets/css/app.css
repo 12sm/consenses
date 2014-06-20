@@ -7,8 +7,12 @@
    Base
    ========================================================================== */
 
-body { }
-
+body { 
+background: #C0202B;
+}
+.wrap .container{
+   background: #fff;
+}
 .img-container{
    padding-bottom: 100%;
 }
