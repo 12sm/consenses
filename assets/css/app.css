@@ -8,14 +8,14 @@
    ========================================================================== */
 
 html {
-	font-family: "proxima-nova"!important;
+	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
 	font-weight: 100;
 }
 
 body { 
 	background: #C0202B;
-	font-family: "proxima-nova"!important;
+	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
 	font-weight: 100;
 }
@@ -68,7 +68,7 @@ header>.container{
 .welcome-box h4 {font-weight: 100;font-size: 36px;margin:0;}
 
 .explore h3 {
-color: #000;
+color: purple;
 font-weight: lighter!important;
 background-color: rgba(255, 255, 255, .8);
 padding: 3%;
