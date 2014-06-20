@@ -20,7 +20,7 @@ body {
 	font-weight: 100;
 }
 
-a {transition:color .3s ease, background-color .3s ease;}
+a {transition:color .3s ease, background-color .3s ease, opacity .3s ease;}
 
 .wrap {
    background: #fff;
@@ -44,6 +44,24 @@ a {transition:color .3s ease, background-color .3s ease;}
 /* ==========================================================================
    Header
    ========================================================================== */
+
+/* ----- NAVBAR ----- */
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+color: #FFF;background-color: rgba(191, 33, 41, 1);}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+border-color: transparent;}
+
+#menu-primary-navigation li {background-color: rgba(191, 33, 41, 1);}
+#menu-primary-navigation li a {color: #757575;text-transform: uppercase;}
+
+
+
+/* ----- HOME ----- */
 
 .banner { }
 
@@ -69,7 +87,7 @@ header>.container{
 
 .explore h3 {
 color: #000;
-font-weight: lighter!important;
+font-weight: 100!important;
 background-color: rgba(255, 255, 255, .8);
 padding: 4%;
 width: 100%;
