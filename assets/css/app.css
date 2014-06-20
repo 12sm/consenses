@@ -19,6 +19,10 @@ background: #C0202B;
 .page-header{
    display: none;
 }
+.home-top{
+   background: url(../img/top-banner.jpg) no-repeat;
+   background-size: cover;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
