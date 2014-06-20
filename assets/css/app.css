@@ -32,7 +32,8 @@ background: #C0202B;
    display: none;
 }
 header{
-   background: transparent;
+   background-color: transparent!important;
+   border-color: transparent!important;
 }
 header>.container{
    background: #f0f0f0;
