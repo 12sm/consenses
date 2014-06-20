@@ -9,7 +9,7 @@
 
 body { 
 background: #C0202B;
-font-family: "proxima-nova", sans-serif;
+font-family: "proxima-nova", sans-serif!important;
 font-style: normal;
 font-weight: 100;
 }
@@ -31,6 +31,8 @@ font-weight: 100;
    background-size: cover;
 }
 
+.red {color: #bf2129;}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -51,6 +53,24 @@ header{
 header>.container{
    background: #f0f0f0;
 }
+
+.banner-box {position: relative;top: 50px;}
+.welcome-box {background-color: rgba(255,255,255,.8);padding: 10px;}
+.welcome-box h2 {font-size: 60px;font-weight: 100;margin:0;}
+.welcome-box h4 {font-weight: 100;font-size: 36px;margin:0;}
+
+.explore h3 {
+color: #FFF;
+font-weight: lighter!important;
+background-color: #bf2129;
+padding: 3%;
+width: 55%;
+text-align: center;
+font-size: 44px;
+transition:background-color .3s ease;
+}
+
+.explore h3:hover, .explore h3:active, .explore h3:focus, {background-color: #d42c35;}
 
 /* ==========================================================================
    Content
