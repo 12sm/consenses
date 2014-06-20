@@ -9,34 +9,45 @@
 
 body { 
 background: #C0202B;
+font-family: "proxima-nova",sans-serif;
+font-style: normal;
+font-weight: 100;
 }
+
 .wrap {
    background: #fff;
 }
+
 .img-container{
    padding-bottom: 100%;
 }
+
 .page-header{
    display: none;
 }
+
 .home-top{
    background: url(../img/top-banner.jpg) no-repeat;
    background-size: cover;
 }
+
 /* ==========================================================================
    Header
    ========================================================================== */
 
 .banner { }
+
 #artist-content{
    display: none;
 }
+
 header{
    background-color: transparent!important;
    border-color: transparent!important;
    margin-bottom: 0px!important;
    border-width: 0px!important;
 }
+
 header>.container{
    background: #f0f0f0;
 }
