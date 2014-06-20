@@ -31,7 +31,12 @@ background: #C0202B;
 #artist-content{
    display: none;
 }
-
+header{
+   background: transparent;
+}
+header>.container{
+   background: #f0f0f0;
+}
 
 /* ==========================================================================
    Content
