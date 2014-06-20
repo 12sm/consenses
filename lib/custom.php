@@ -27,6 +27,11 @@ function create_form_parent($entry_id, $form_id){
   }
 }
 
+add_filter('frm_upload_folder', 'frm_custom_upload');
+function frm_custom_upload($folder){
+    $folder = '';
+    return $folder;
+}
 
 define( 'UPLOADS', ''.'assets' );
 
