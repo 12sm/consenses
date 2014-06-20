@@ -34,6 +34,7 @@ background: #C0202B;
 header{
    background-color: transparent!important;
    border-color: transparent!important;
+   margin-bottom: 0px!important;
 }
 header>.container{
    background: #f0f0f0;
