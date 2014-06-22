@@ -250,10 +250,10 @@ return weight;
 	<!-- wpv-loop-start -->
 		<wpv-loop>
           <div class="masonry-img item"><a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]">	[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
-				[wpv-if img='wpcf-art-image" evaluate='!empty($img)'']
+				[wpv-if img="wpcf-art-image" evaluate='!empty($img)'']
 					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
 				[/wpv-if]
-				[wpv-if $img="wpcf-artimage" evaluate="empty($img)"]
+				[wpv-if $img="wpcf-art-image" evaluate="empty($img)"]
 					<img src="[artthing]" class="img-responsive" />
 				[/wpv-if]
 		[/wpv-if]
