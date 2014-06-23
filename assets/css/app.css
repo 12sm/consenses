@@ -204,6 +204,7 @@ background: #F69143;
 .tag-chain p {
 float: left;
 color: #fff;
+margin-bottom: 0px;
 }
 i.fa.fa-pencil {
 float: left;
