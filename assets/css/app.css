@@ -437,6 +437,7 @@ list-style: none;
 }
 .socials>li>a{
    padding: 15px;
+   color: #000;
 }
 .socials>li>a>i>*{
    text-decoration: none;
