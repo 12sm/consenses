@@ -438,7 +438,7 @@ list-style: none;
 .socials>li>a{
    padding: 15px;
 }
-.socials>li>a>i{
+.socials>li>a>i>*{
    text-decoration: none;
 }
 /* ==========================================================================
