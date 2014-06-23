@@ -62,6 +62,7 @@ border-color: transparent;}
 #menu-primary-navigation li.active{color: #fff; background-color: #bf2129;}
 #menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
 
+.navbar-brand{padding: 0px 15px!important;}
 /* ----- HOME ----- */
 
 .banner { }
