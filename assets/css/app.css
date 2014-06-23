@@ -117,6 +117,7 @@ padding-top: 5%;
 }
 .week-header{
    background: #C0202B;
+   padding:1%;
 }
 .week-header h3{
    color: #fff;
@@ -144,11 +145,14 @@ padding-top: 5%;
 .chain-btn.btn {
 background: #D62C35;
 border-radius: 0px;
-padding: 15px;
+padding: 20px;
 font-size: 20px;
 color: #fff;
 font-weight: 100;
 }
+
+.chain-btn.btn:hover {background: #D62C35;}
+
 .submit-btn h3{
 font-size: 26px;
 font-weight: 100;
