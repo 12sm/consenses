@@ -59,13 +59,16 @@ color: #FFF;background-color: rgba(191, 33, 41, 1);}
 .navbar-default .navbar-form {border-color: transparent;}
 nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 
-
+#menu-primary-navigation li:hover {background-color: rgba(191, 33, 41, 1);}
+#menu-primary-navigation li a {font-family: 'proxima-nova'; font-weight: 600; color: #757575;text-transform: uppercase;}
+#menu-primary-navigation li a:hover {color:#FFF;}
+#menu-primary-navigation li.active{color: #fff; background-color: #bf2129;}
+#menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
 #menu-primary-navigation-1>li {
 display: inline-block;
 padding: 20px;
 }
 #menu-primary-navigation-1>li>a{
-   text-transform: uppercase;
    text-decoration: none;
    color: #6b1116 ;
    font-weight: 100;
