@@ -201,6 +201,9 @@ height: 25px;
 border-radius: 5px;
 background: #F69143;
 }
+.tag-chain i{
+   color: #fff;
+}
 .tag-chain p {
 float: left;
 color: #fff;
