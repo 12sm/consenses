@@ -60,7 +60,7 @@ color: #FFF;background-color: rgba(191, 33, 41, 1);}
 nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 
 #menu-primary-navigation li:hover {background-color: rgba(191, 33, 41, 1);}
-#menu-primary-navigation li a {font-family: 'proxima-nova'; font-weight: 600; color: #757575;text-transform: uppercase;}
+#menu-primary-navigation li a {font-family: 'proxima-nova'; font-weight: 200; color: #757575;text-transform: uppercase;}
 #menu-primary-navigation li a:hover {color:#FFF;}
 #menu-primary-navigation li.active{color: #fff; background-color: #bf2129;}
 #menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
@@ -194,7 +194,7 @@ border: none!important
 }
 form#cred_form_661_1 {
 display: inline-block;
-float: right;
+float: left;
 }
 input.myzebra-text{
    width: 75%!important;
@@ -211,16 +211,21 @@ margin-top: 3px;
 }
 
 .MyZebra_Form div.myzebra-form-message {
-border: none;
-background: transparent;
-position: relative;
-overflow: hidden;
-background-image: none;
-height: 30px;
-position: absolute;
-top: 0px;
-right: 10px;
-width: 240px;
+border: none!important;
+background: transparent!important;
+position: relative!important;
+overflow: hidden!important;
+background-image: none!important;
+height: 30px!important;
+position: absolute!important;
+top: 0px!important;
+right: 10px!important;
+width: 240px!important;
+}
+
+/* removes redundant "Add" button */
+a.myzebra-add-new-term {
+display: none;
 }
 
 .tag-chain p {
@@ -275,6 +280,7 @@ height: 30px;
 }
 .tag-btn{
 background: #B7B7B7;
+padding: .3% 0;
 }
 /* ----- News Section ----- */
 
