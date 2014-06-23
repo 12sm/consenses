@@ -11,29 +11,30 @@
 		<h3>Weekly Challenge: "[wpv-post-title]"</h3>
       <p>[trim  length="150"][types field="description"][/types][/trim]</p>
 	</div>
-	<div class="col-sm-2">
+	<div class="col-sm-4">
 		<div class="btn-container">
           <a href="[wpv-post-url]" class="chain-btn btn">
               See the Chain
           </a>
 		</div>
-	</div>
-	<div class="col-sm-2">
-	<a href="[wpv-post-url]#submit-form">
-		<div class="submit-btn btn">
-			<h3>Submit</h3>
-			<p>to this challenge</p>
-		</div>
-	</a>
-	</div>
-</div>
+        <div class="btn-container">
+            <a href="[wpv-post-url]#submit-form">
+                <div class="submit-btn btn">
+                    <h3>Submit</h3>
+                    <p>to this challenge</p>
+                </div>
+            </a>
+            </div>
+        </div>
+              </div>
           [wpv-view name="home-weekly-challenge-art" wpvprchildof="[wpv-post-id]"]
           </div>
       </div>
           <div class="row">
 	<div class="col-sm-8">
-		<i class="fa fa-pencil"></i>[cred_link_form form="Tag This Piece" text="Edit %TITLE%" target="_self"]
+		<i class="fa fa-pencil"></i>[cred_form form="Tag Chain"]
 	</div>
+          </div>
 	<div class="col-sm-4">
 		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wordCloud">
 			What do others see? View Tags. <i class="fa fa-tags"></i>
