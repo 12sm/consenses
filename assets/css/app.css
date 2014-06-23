@@ -213,6 +213,14 @@ float: left;
 padding: 5px;
 color: #fff;
 }
+input#cred_form_661_1_form_submit_1 {
+background: #F69143;
+border: transparent;
+border-radius: 3px;
+color: #fff;
+font-weight: 200;
+margin-top: 3px;
+}
 .home-events{
    background: #F0F0F0;
    padding: 25px 10%;
