@@ -193,6 +193,9 @@ float: right;
 input.myzebra-text{
    width: 75%!important;
 }
+.tag-chain p {
+float: left;
+}
 i.fa.fa-pencil {
 float: left;
 }
