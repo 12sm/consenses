@@ -41,6 +41,7 @@ a:hover, a:focus {text-decoration: none!important;}
 }
 
 .red {color: #bf2129;}
+p::selection {color: #FFFFFF;background-color: #bf2129;}
 
 /* ==========================================================================
    Header
@@ -232,6 +233,12 @@ font-size: 13px!important;
 color: #000000;
 font-size: 14px;
 }
+
+.home-news a {
+color: #BF2129;
+text-transform: uppercase;
+}
+
 
 /* ==========================================================================
    Content
