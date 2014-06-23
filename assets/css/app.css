@@ -212,6 +212,27 @@ font-size: 28px;
    font-weight: 100;
    background-color: #C0202B;
 }
+
+
+/* ----- News Section ----- */
+
+.home-news a h4 {
+color: #BF2129;
+font-weight: 100;
+font-size: 35px;
+}
+
+p.date {
+color: #7e7e7e!important;
+text-transform: uppercase!important;
+font-size: 13px!important;
+}
+
+.home-news p {
+color: #000000;
+font-size: 14px;
+}
+
 /* ==========================================================================
    Content
    ========================================================================== */
