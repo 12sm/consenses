@@ -435,7 +435,8 @@ list-style: none;
 .socials>li{
    display: inline-block;
 }
-.socials>li>{
+.socials>li>a{
+   text-decoration: none;
    padding: 15px;
 }
 
