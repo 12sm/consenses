@@ -134,7 +134,19 @@ padding-top: 5%;
    outline: 1px solid #F0F0F0;
 }
 .week-art>img{
-   width: 100%;
+   width: 
+}
+.week-header h3{
+   margin-top: 0px;
+}
+
+.chain-btn.btn {
+background: #D62C35;
+border-radius: 0px;
+padding: 15px;
+}
+.submit-btn {
+background: #F37512;
 }
 /* ==========================================================================
    Content
