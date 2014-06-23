@@ -1,12 +1,15 @@
 <!-- HOME | WEEKLY-CHALLENGE | CHAIN-->
 [wpv-layout-start]
+[wpv-layout-start]
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <div class="row week-header">
+          <div class="row week-container">
+          	<div class="col-sm-12">
+          	<div class="row week-header">
 	<div class="col-sm-8">
 		<h3>Weekly Challenge: "[wpv-post-title]"</h3>
-		<p>[types field="description"][/types]</p>
+      <p>[trim  length="150"][types field="description"][/types][/trim]</p>
 	</div>
 	<div class="col-sm-2">
 		<div class="btn-container">
@@ -25,6 +28,8 @@
 	</div>
 </div>
           [wpv-view name="home-weekly-challenge-art" wpvprchildof="[wpv-post-id]"]
+          </div>
+      </div>
           <div class="row">
 	<div class="col-sm-8">
 		<i class="fa fa-pencil"></i>[cred_link_form form="Tag This Piece" text="Edit %TITLE%" target="_self"]
@@ -59,8 +64,6 @@
 </div>
 		</wpv-loop>
 	<!-- wpv-loop-end -->
-	<!-- wpv-loop-end -->
-	[/wpv-items-found]
 	[wpv-no-items-found]
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
