@@ -191,7 +191,7 @@ display: inline-block;
 float: right;
 }
 input.myzebra-text{
-   width: 75%;
+   width: 75%!important;
 }
 i.fa.fa-pencil {
 float: left;
