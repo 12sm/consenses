@@ -60,7 +60,7 @@ border-color: transparent;}
 #menu-primary-navigation li a {font-family: 'proxima-nova'; font-weight: 200; color: #757575;text-transform: uppercase;}
 #menu-primary-navigation li a:hover {color:#FFF;}
 #menu-primary-navigation li.active{color: #fff; background-color: #bf2129;}
-#menu-primary-navigation .menu-create, #menu-primary-navigation .menu-explore{color: #f27514;}
+#menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
 
 /* ----- HOME ----- */
 
