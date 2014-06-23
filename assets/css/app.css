@@ -193,6 +193,13 @@ float: right;
 input.myzebra-text{
    width: 75%!important;
 }
+.tag-chain{
+   background-color: #F37717;
+}
+.MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
+width: 200px;
+background: #F69143;
+}
 .tag-chain p {
 float: left;
 }
