@@ -197,7 +197,7 @@ display: inline-block;
 float: left;
 }
 input.myzebra-text{
-   width: 75%!important;
+   width: 100%!important;
 }
 .tag-chain{
    background-color: #F37717;
@@ -234,21 +234,31 @@ color: #fff;
 margin-bottom: 0px;
 padding: 5px;
 }
+
 .tag-chain i{
 float: left;
-padding: 5px;
+padding: 8px 0px 0px 10px;
 color: #fff;
 }
+
+.tag-btn .btn-primary:hover {
+color: #fff;
+background-color: #C0202B;
+border-color: #C0202B;
+}
+
 input#cred_form_661_1_form_submit_1 {
 background: #F69143;
-border: transparent;
-border-radius: 3px;
+border: none;
+border-radius: 5px;
 color: #fff;
 font-weight: 200;
 margin-top: 3px;
 font-size: 14px;
 padding: 2px 6px;
+margin-left: 3px;
 }
+
 .home-events{
    background: #F0F0F0;
    padding: 25px 10%;
@@ -279,7 +289,7 @@ border-radius: 0px!important;
 height: 30px;
 }
 .tag-btn{
-background: #B7B7B7;
+background: #C0202B;
 padding: .3% 0;
 }
 /* ----- News Section ----- */
