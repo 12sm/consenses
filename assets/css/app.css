@@ -122,7 +122,7 @@ padding-top: 5%;
 }
 .week-header{
    background: #C0202B;
-   padding:1%;
+   padding: 2% 1% 1% 1%;
 }
 .week-header h3{
    color: #fff;
@@ -203,6 +203,7 @@ font-size: 28px;
 }
 .home-events h1{
    font-size: 54px;
+   font-weight: 100;
 }
 .btn-default{
    font-size: 41px;
