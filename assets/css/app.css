@@ -248,6 +248,8 @@ font-weight: 100;
 font-size: 35px;
 }
 
+.home-news-main {padding: 7% 0;}
+
 p.date {
 color: #7e7e7e!important;
 text-transform: uppercase!important;
