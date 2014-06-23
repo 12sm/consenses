@@ -160,6 +160,12 @@ border-radius: 0px;
 .btn-container {
 display: inline-block;
 }
+.myzebra-terms{
+   display: none!important;
+}
+.cred-label{
+   display: none;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
