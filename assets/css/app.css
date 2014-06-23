@@ -132,6 +132,9 @@ height: 50px;
 .profile-pic{
 float: left;
 }
+.word-cloud{
+   text-align: center;
+}
 
    /* ==========================================================================
    ARTIST SINGLE
