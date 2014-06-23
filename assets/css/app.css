@@ -121,10 +121,12 @@ padding-top: 5%;
 .week-header h3{
    color: #fff;
    font-size: 44px;
+   font-weight: 200;
 }
 .week-header p{
    color: #fff;
    font-size: 13px;
+   font-weight: 200;
 }
 /* ==========================================================================
    Content
