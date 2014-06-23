@@ -195,7 +195,16 @@ font-size: 28px;
 .home-events{
    background: #F1F6F5;
    padding: 25px 10%;
+   font-weight: 100;
+   color: #000;
 }
+.home-events p{
+   font-size: 22px;
+}
+.home-events h1{
+   font-size: 54px;
+}
+
 /* ==========================================================================
    Content
    ========================================================================== */
