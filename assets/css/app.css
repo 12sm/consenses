@@ -244,11 +244,13 @@ padding: 2px 6px;
    font-weight: 100;
    background-color: #C0202B;
 }
-button.btn.btn-primary {
+.btn-primary {
 font-weight: 100;
 font-size: 14px;
 width: 100%;
 background: #B7B7B7;
+border: transparent!important;
+border-radius: 0px!important
 }
 
 /* ----- News Section ----- */
