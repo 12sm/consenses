@@ -25,9 +25,13 @@
 				<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
 			</div>
 		</div>
-		<div class="row home-events">
-			<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
-		</div>
+	</div>
+</div>
+<div class="row home-events">
+	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
+</div>
+<div class="row">
+	<div class="col-sm-10 col-sm-offset-1">
 		<div class="row home-news">
 			<?php echo do_shortcode('[wpv-view name="HOME | NEWS"]'); ?>
 		</div>
