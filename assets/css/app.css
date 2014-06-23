@@ -416,6 +416,7 @@ float: left;
 #menu-primary-navigation-1 {
 list-style: none;
 padding: 0px;
+display: inline-block;
 }
 #menu-primary-navigation-1>li {
 display: inline-block;
@@ -428,6 +429,7 @@ padding: 20px;
    font-size: 13px;
 }
 .socials {
+   display: inline-block;
 list-style: none;
 }
 .socials>li{
