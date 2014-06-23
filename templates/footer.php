@@ -1,9 +1,9 @@
 <footer class="content-info container" role="contentinfo">
   <div class="row">
-  <div class="col-md-2 col-md-offset-2">
+  <div class="col-sm-2 col-sm-offset-1">
     <img src="/wp-content/themes/consenses/assets/img/logo-footer.png" class="img-responsive">
   </div>
-    <div class="col-md-8">
+    <div class="col-sm-8">
       <div class="row sidebar-footer">
       	<?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
@@ -24,6 +24,14 @@
   </div>
       <p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
     </div>
+    <div class="col-sm-1">
+      <ul class="socials">
+        <li><i class="fa fa-youtube-play"></i></li>
+        <li><i class="fa fa-twitter"></i></li>
+        <li><i class="fa fa-facebook"></i></li>
+        <li><i class="fa fa-envelope-o"></i></li>
+      </ul>
+  </div>
   </div>
 </footer>
 
