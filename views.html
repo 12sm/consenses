@@ -69,18 +69,19 @@
 <!-------------------------------- /END VIEW -------------------------------->
 
 
-<!-------------------------- HOME | CHALLENEGE | ART ----------------------------------->
+<!-- ------------------------ HOME | CHALLENEGE | ART ---------------------------------- -->
 [wpv-layout-start]
-	[wpv-items-found]
-	<!-- wpv-loop-start -->
-		<wpv-loop> 
+	[wpv-items-found]		
+<wpv-loop> 
 <div class="row">
 	<div class="col-sm-12">
-      [wpv-if img='wpcf-art-image" evaluate='!empty($img)'']
+      [wpv-if imag='wpcf-art-image' evaluate='!empty($imag)']
 		<img src="[types field="art-image" size="large" url="true" resize="proportional"][/types]" class="img-responsive" />
+      <h2>Art-image</h2>
 	[/wpv-if]
-	[wpv-if $img="wpcf-artimage" evaluate="empty($img)"]
-	<img src="[artthing]" class="img-responsive" />
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+	<img src="[wpv-post-featured-image raw="true"]" class="img-responsive" />
+      <h2>Feat-img</h2>
 	[/wpv-if]
 	</div>
 </div>
@@ -485,4 +486,3 @@ return weight;
 
 <!--------------------- DONORS ---------------------------------------------->
 <div class="row">
-	

@@ -27,6 +27,18 @@ function create_form_parent($entry_id, $form_id){
   }
 }
 
+//Length shortcode
+add_shortcode('trim', 'trim_shortcode');
+function trim_shortcode($atts, $content = '') {
+  $content = wpv_do_shortcode($content);
+  $length = (int)$atts['length'];
+  if (strlen($content) > $length) {
+    $content = substr($content, 0, $length) . '&hellip;';
+  }
+  return $content;
+}
+
+
 add_filter('frm_upload_folder', 'frm_custom_upload');
 function frm_custom_upload($folder){
     $folder = '';
