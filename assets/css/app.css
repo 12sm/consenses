@@ -197,7 +197,8 @@ input.myzebra-text{
    background-color: #F37717;
 }
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
-width: 200px;
+height: 25px;
+border-radius: 5px;
 background: #F69143;
 }
 .tag-chain p {
