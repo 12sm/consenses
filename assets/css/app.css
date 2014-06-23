@@ -56,8 +56,9 @@ color: #FFF;background-color: rgba(191, 33, 41, 1);}
 .navbar-default .navbar-form {
 border-color: transparent;}
 
-#menu-primary-navigation li {background-color: rgba(191, 33, 41, 1);}
+#menu-primary-navigation li:hover {background-color: rgba(191, 33, 41, 1);}
 #menu-primary-navigation li a {color: #757575;text-transform: uppercase;}
+#menu-primary-navigation li a:hover {color:#FFF;}
 
 
 
@@ -121,7 +122,19 @@ transition:background-color .3s ease;
    .modal-dialog{
       width: 75%;
    }
-
+   /* =========================
+      Artist Modal
+      ========================= */
+.profile-pic>img{
+   border-radius: 50%;
+height: 50px;
+}
+.profile-pic{
+float: left;
+}
+.word-cloud{
+   text-align: center;
+}
 
    /* ==========================================================================
    ARTIST SINGLE
