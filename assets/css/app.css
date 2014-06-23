@@ -64,16 +64,7 @@ nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 #menu-primary-navigation li a:hover {color:#FFF;}
 #menu-primary-navigation li.active{color: #fff; background-color: #bf2129;}
 #menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
-#menu-primary-navigation-1>li {
-display: inline-block;
-padding: 20px;
-}
-#menu-primary-navigation-1>li>a{
-   text-decoration: none;
-   color: #6b1116 ;
-   font-weight: 100;
-   font-size: 13px;
-}
+
 .navbar-brand{padding: 0px 15px!important;}
 
 /* ==========================================================================
@@ -377,10 +368,16 @@ float: left;
 list-style: none;
 padding: 0px;
 }
-#menu-primary-navigation-1 li:hover {background-color: rgba(191, 33, 41, 1);}
-#menu-primary-navigation-1 li a {font-family: 'proxima-nova'; font-weight: 200; color: #757575;text-transform: uppercase;}
-#menu-primary-navigation-1 li a:hover {color:#FFF;}
-#menu-primary-navigation-1 .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
+#menu-primary-navigation-1>li {
+display: inline-block;
+padding: 20px;
+}
+#menu-primary-navigation-1>li>a{
+   text-decoration: none;
+   color: #6b1116 ;
+   font-weight: 100;
+   font-size: 13px;
+}
 
 /* ==========================================================================
    WordPress Generated Classes
