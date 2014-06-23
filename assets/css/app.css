@@ -288,10 +288,18 @@ border: transparent!important;
 border-radius: 0px!important;
 height: 30px;
 }
-.tag-btn{
-background: #C0202B;
+
+.tag-btn {
+background: #B7B7B7;
 padding: .3% 0;
 }
+
+.tag-btn:hover {
+background: #C0202B;
+}
+
+
+
 /* ----- News Section ----- */
 
 .home-news a h4 {
