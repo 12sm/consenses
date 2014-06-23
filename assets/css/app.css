@@ -113,7 +113,7 @@ font-size: 44px;
 transition:background-color .3s ease;
 }
 
-.explore h3:hover {background-color: rgba(242, 117, 20, 1);}
+.create h3:hover {background-color: #F39437;}
 
 .home-bottom {
 padding-top: 5%;
@@ -154,19 +154,25 @@ color: #fff;
 font-weight: 100;
 }
 
-.chain-btn.btn:hover {background: #D62C35;}
+.chain-btn.btn:hover {background: #DD464E;}
 
 .submit-btn h3{
 font-size: 26px;
 font-weight: 100;
 }
+
 .submit-btn {
 background: #F37512;
 border-radius: 0px;
 }
+
+.submit-btn:hover {
+background: #F39437;}
+
 .btn-container {
 display: inline-block;
 }
+
 .myzebra-terms{
    display: none!important;
 }
