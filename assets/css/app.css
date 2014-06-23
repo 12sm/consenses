@@ -435,6 +435,9 @@ list-style: none;
 .socials>li{
    display: inline-block;
 }
+.socials>li>{
+   padding: 15px;
+}
 
 /* ==========================================================================
    WordPress Generated Classes
