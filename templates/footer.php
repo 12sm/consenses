@@ -3,7 +3,7 @@
   <div class="col-sm-2 col-sm-offset-1">
     <img src="/wp-content/themes/consenses/assets/img/logo-footer.png" class="img-responsive">
   </div>
-    <div class="col-sm-8">
+    <div class="col-sm-9">
       <div class="row sidebar-footer">
       	<?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
@@ -13,6 +13,12 @@
        wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));
      endif;
   ?>
+  <ul class="socials">
+        <li><i class="fa fa-youtube-play"></i></li>
+        <li><i class="fa fa-twitter"></i></li>
+        <li><i class="fa fa-facebook"></i></li>
+        <li><i class="fa fa-envelope-o"></i></li>
+      </ul>
     </div>
          
       <div id="social" class="row social-nav">
@@ -24,14 +30,6 @@
   </div>
       <p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
     </div>
-    <div class="col-sm-1">
-      <ul class="socials">
-        <li><i class="fa fa-youtube-play"></i></li>
-        <li><i class="fa fa-twitter"></i></li>
-        <li><i class="fa fa-facebook"></i></li>
-        <li><i class="fa fa-envelope-o"></i></li>
-      </ul>
-  </div>
   </div>
 </footer>
 
