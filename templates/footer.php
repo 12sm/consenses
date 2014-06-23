@@ -21,7 +21,7 @@
       </ul>
     </div>
          
-      <!--<div id="social" class="row social-nav">
+      <div id="social" class="row social-nav">
   <?php
      if (has_nav_menu('social_navigation')) :
        wp_nav_menu(array('theme_location' => 'social_navigation', 'menu_class' => ''));
@@ -30,7 +30,7 @@
   </div>
       <p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
     </div>
-  </div>-->
+  </div>
 </footer>
 
 <?php wp_footer(); ?>
