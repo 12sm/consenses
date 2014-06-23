@@ -427,6 +427,12 @@ padding: 20px;
    font-weight: 100;
    font-size: 13px;
 }
+.socials {
+list-style: none;
+}
+.socials>li{
+   display: inline-block;
+}
 
 /* ==========================================================================
    WordPress Generated Classes
