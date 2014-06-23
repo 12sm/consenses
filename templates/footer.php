@@ -1,7 +1,8 @@
 <footer class="content-info container" role="contentinfo">
   <div class="row">
   <div class="col-md-3">
-  <img src="/wp-content/themes/consenses/assets/img/logo-footer.png" class="img-responsive">
+    <img src="/wp-content/themes/consenses/assets/img/logo-footer.png" class="img-responsive">
+  </div>
     <div class="col-md-9">
       <div class="row sidebar-footer">
       	<?php dynamic_sidebar('sidebar-footer'); ?>
