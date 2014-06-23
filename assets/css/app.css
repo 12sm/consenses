@@ -188,10 +188,13 @@ display: inline-block;
 }
 form#cred_form_661_1 {
 display: inline-block;
+float: right;
+}
+input.myzebra-text{
+   width: 75%;
 }
 i.fa.fa-pencil {
 float: left;
-font-size: 28px;
 }
 .home-events{
    background: #F0F0F0;
