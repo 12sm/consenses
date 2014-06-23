@@ -14,10 +14,10 @@
      endif;
   ?>
   <ul class="socials">
-        <li><i class="fa fa-youtube-play"></i></li>
-        <li><i class="fa fa-twitter"></i></li>
-        <li><i class="fa fa-facebook"></i></li>
-        <li><i class="fa fa-envelope-o"></i></li>
+        <li><a href="https://www.facebook.com/pages/CONSENSES/430573690342868" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+        <li><a href="https://twitter.com/ConSensesArt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/pages/CONSENSES/430573690342868" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.facebook.com/pages/CONSENSES/430573690342868" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
       </ul>
     </div>
          
