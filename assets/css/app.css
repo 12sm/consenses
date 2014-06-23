@@ -130,6 +130,7 @@ padding-top: 5%;
 }
 .week-container{
    border: 3px solid #fff;
+   border-radius: 5px;
    outline: 1px solid #000;
 }
 /* ==========================================================================
