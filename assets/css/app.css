@@ -436,10 +436,11 @@ list-style: none;
    display: inline-block;
 }
 .socials>li>a{
-   text-decoration: none;
    padding: 15px;
 }
-
+.socials>li>a>i{
+   text-decoration: none;
+}
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
