@@ -409,6 +409,8 @@ float: left;
    ========================================================================== */
    .donors ul{
       list-style: none;
+      padding-left: 0px;
+      text-align:center;
    }
    .donors ul >li{
       display: inline-block;
