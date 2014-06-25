@@ -24,16 +24,14 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
       imagesLoaded( '.js-masonry', function() {
-        alert('masonry is firing');
       var container = document.querySelector('.js-masonry');
 var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
-  columnWidth: 'col-xs-3',
   gutter: 5
 });
 });
-      $('.masonry-img').imgLiquid();
+
 $('.img-container').imgLiquid();
 $('.img-video-tab > .entry-content-asset').fitVids();
 
