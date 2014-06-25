@@ -433,15 +433,22 @@ background-position: center center;
 font-size: 26px;
 font-weight: 600;
 color: #434343;
-border-right: 1px solid #EEE;
+border-right: 1px solid #CCC;
 border-bottom: 1px solid #CCC;
+border-left: 1px solid #CCC;
 padding: .3%;
+padding-left: 3%;
+}
+
+ul.artist-socials a {
+font-size: 13px;
+padding: 1%;
 }
 
 /* Borders */
 .biz-card-information {border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;border-right: 1px solid #CCC;}
 .biz-card .col-sm-4 {border-bottom: 1px solid #CCC;}
-.biz-card-website {border-bottom: 1px solid #CCC;}
+.biz-card-website {border-bottom: 1px solid #CCC;border-left: 1px solid #CCC;}
 .biz-card .col-sm-6 {border-left: 1px solid #CCC;}
 ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 
