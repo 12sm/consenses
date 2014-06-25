@@ -27,7 +27,7 @@ var Roots = {
 var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
-  columnWidth: '.col-sm-3',
+  columnWidth: 25%,
   gutter: 5
 });
 $('.img-container').imgLiquid();
@@ -51,8 +51,8 @@ $('.img-video-tab > .entry-content-asset').fitVids();
     init: function() {
       // JavaScript to be fired on the home page
     }
-  },
-  // About us page, note the change from about-us to about_us.
+  }
+  ,// About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
       // JavaScript to be fired on the about us page
