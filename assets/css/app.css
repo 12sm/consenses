@@ -350,6 +350,9 @@ text-transform: uppercase;
    .modal-dialog{
       width: 75%;
    }
+   .vid-container > img {
+margin: 0 auto;
+}
    /* =========================
       Artist Modal
       ========================= */
@@ -367,13 +370,35 @@ float: left;
    font-weight: 300;
 }
 
-   /* ==========================================================================
+/* ==========================================================================
    ARTIST SINGLE
-   ========================================================================== */
-   .artist-socials{
-      list-style: none;
-      padding-left: 0px;
-   }
+========================================================================== */
+
+.artist-socials{
+list-style: none;
+padding-left: 0px;
+}
+   
+body.single-artists h1 {
+font-size: 48px;
+font-weight: 100;
+color:#FFF;
+margin:0px;
+}
+
+body.single-artists h3 {
+font-size: 22px;
+font-weight: 600;
+color:#7b7b7b;
+margin:0px 0px 4% 0px;
+}
+
+body.single-artists article p {
+font-size: 16px;
+color: #404040;
+line-height: 1.5;
+font-weight: 300;
+}
 
 /* ==========================================================================
    Primary Content
