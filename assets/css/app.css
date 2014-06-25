@@ -393,6 +393,8 @@ float: left;
    ARTIST SINGLE
 ========================================================================== */
 
+body.single-artists article {margin-top: 3%;}
+
 .artist-socials{
 list-style: none;
 padding-left: 0px;
@@ -418,6 +420,25 @@ color: #404040;
 line-height: 1.5;
 font-weight: 300;
 }
+
+.img-cont {
+background-color: #EEE;
+height: 500px;
+background-image: url('/wp-content/themes/consenses/assets/img/logo-footer.png');
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+.row.biz-card {border: 1px solid #CCC;}
+
+/* NAME */ .biz-card .col-sm-8 {
+font-size: 26px;
+font-weight: 600;
+color: #434343;
+border-right: 1px solid #EEE;
+padding: .3%;
+}
+
 
 /* ==========================================================================
    Primary Content
