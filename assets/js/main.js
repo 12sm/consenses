@@ -23,12 +23,14 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+      imagesLoaded( '.js-masonry', function() {
       var container = document.querySelector('.js-masonry');
 var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
   columnWidth: 25%,
   gutter: 5
+});
 });
 $('.img-container').imgLiquid();
 $('.img-video-tab > .entry-content-asset').fitVids();
