@@ -381,8 +381,12 @@ margin-bottom: 50px;
 float: left;
 }
 .grey>*{
-   float: right;
+   text-align: right;
 }
+.chain-title{
+   text-align: right;
+}
+
 /* ==========================================================================
    ARTIST SINGLE
 ========================================================================== */
