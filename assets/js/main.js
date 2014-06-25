@@ -28,10 +28,11 @@ var Roots = {
 var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
-  columnWidth: 25%,
+  columnWidth: 'col-xs-3',
   gutter: 5
 });
 });
+      $('.masonry-img').imgLiquid();
 $('.img-container').imgLiquid();
 $('.img-video-tab > .entry-content-asset').fitVids();
 
