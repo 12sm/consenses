@@ -380,13 +380,15 @@ margin-bottom: 50px;
 .grey > i {
 float: left;
 }
-.grey>*{
-   text-align: right;
-}
 .chain-title{
+   text-transform: uppercase;
+}
+.chain-meta{
    text-align: right;
 }
-
+.single-chain a{
+   text-decoration: none;
+}
 /* ==========================================================================
    ARTIST SINGLE
 ========================================================================== */
