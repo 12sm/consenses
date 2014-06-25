@@ -29,7 +29,6 @@ var Roots = {
 var msnry = new Masonry( container, {
   // options...
   itemSelector: '.item',
-  columnWidth: 'col-xs-3',
   gutter: 5
 });
 });
