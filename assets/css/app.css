@@ -350,6 +350,9 @@ text-transform: uppercase;
    .modal-dialog{
       width: 75%;
    }
+   .vid-container > img {
+margin: 0 auto;
+}
    /* =========================
       Artist Modal
       ========================= */
