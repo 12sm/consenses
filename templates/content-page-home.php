@@ -6,7 +6,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
-				<a href="#weekly-challenge"><div class="explore">
+				<a href="#wwekly-challenge"><div class="explore">
 					<h3>Explore</h3>
 				</div></a>
 			</div>
