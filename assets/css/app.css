@@ -36,6 +36,13 @@ margin-right:-15px;
 
 .img-container{
    padding-bottom: 100%;
+   transition:filter .3s ease, -webkit-filter .3s ease, -moz-filter .3s ease;
+}
+
+.img-container:hover {
+-webkit-filter: brightness(115%);
+filter: brightness(115%);
+-moz-filter: brightness(115%);
 }
 
 .page-header{
