@@ -1,1 +1,1 @@
-<?php echo do_shortcode('[wpve-view name="CREATE | CHAIN"]'); ?>
+<?php echo do_shortcode('[wpv-view name="CREATE | CHAIN"]'); ?>
