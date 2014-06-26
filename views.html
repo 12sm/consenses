@@ -749,7 +749,11 @@ return weight;
 </div>
 
 <!--------------- CREATE | CHAIN ---------------->
-<div class="row">
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="row">
 	<div class="col-sm-4">
 		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
       [types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
@@ -764,14 +768,58 @@ return weight;
 	[/wpv-if]
 	</div>
 	<div class="col-sm-8">
-		[wpv-view name='CREATE | ARTIST']
+		[wpv-view name='CREATE | ART' wpvprchildof='[wpv-post-id]']
 		<div class="row create-buttons">
 			<div class="col-sm-6">
-			[form= tag chain]
+			[cred_form form="Tag Chain"]
+			</div>
 			</div>
 			<div class="col-sm-6">
-				<button class='btn btn-create'>+Create</button>
+				<button class='btn fire-create btn-create'>+Create</button>
 			</div>
 	</div>
 </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+          <div class="modal fade" id="submit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      [formidable id=10]
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----------- CREATE | ARTISTS ------------>
+<div class="row">
+	<div class="col-sm-4">
+		<div class="img-container">
+			[wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
+				[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+			[/wpv-if]
+			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"]
+				<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg">
+			[/wpv-if]
+		</div>
+	</div>
+	<div class="col-sm-8">
+		<a href="[wpv-post-url]"><h3>[wpv-post-title]</h3></a>
+		[types field="bio"][/types]
+	</div>
+</div>
+
 
