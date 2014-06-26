@@ -19,6 +19,14 @@
         <li><a href="https://www.facebook.com/pages/CONSENSES/430573690342868" target="_blank"><i class="fa fa-facebook"></i></a></li>
         <li><a href="mailto:#" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
       </ul>
+	  
+	  <form class="navbar-form navbar-left" role="search">
+		  <div class="form-group">
+			 <input type="text" class="form-control" placeholder="Search">
+		  </div>
+		  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+	  </form>
+	  
     </div>
          
       <div id="social" class="row social-nav">
