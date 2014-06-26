@@ -397,7 +397,8 @@ color: #ac3234;
    NEWS (reel)
    ========================================================================== */
 
-.news-grid {margin:0 auto;}
+.news-grid {margin:0 auto;margin-top:3%;}
+body.news .img-container {padding-bottom: 50%;}
 
 
 /* ==========================================================================
