@@ -169,22 +169,28 @@
 		<p>[types field="description"][/types]</p>
 	</div>
 </div>
-<div class="row">
+<div class="row" id="word-accord">
 	<div class="col-sm-6 col-sm-offset-3">
 		<h4>What one thing ties these pieces together for you?</h4>
-		<button class="btn btn-view" data-toggle="modal" data-target="#wordCloud"><i class="fa fa-tags"></i> View the Consenses on this Chain</button>
+[cred_form form="Tag This Piece"]		<button class="btn btn-view" data-toggle="collapse" href="#word-cloud-accord" data-parent="#word-accord"><i class="fa fa-tags"></i> View the Consenses on this Chain</button>     
+
+<div class="row grey panel-collapse collapse" id="word-cloud-accord">
+	<div class="col-sm-12">
+		[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
+	</div>
+</div>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-12">
 		<div class="vid-container">
+          [wpv-if video='wpcf-video-embed' evaluate="!empty($video)"]
 			[types field="video-embed"][/types]
+          [/wpv-if]
+          [wpv-if video='wpcf-video-embed' evaluate="empty($video)"]
+          	[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+          [/wpv-if]
 		</div>
-	</div>
-</div>
-<div class="row grey">
-	<div class="col-sm-12">
-		[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
 	</div>
 </div>
 <div class="row">
@@ -196,8 +202,7 @@
 </div>
 [wpv-view name="CHAIN SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
 
-<!-- Chain Submit Modal -->
-<div class="modal fade" id="submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="submit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
