@@ -13,7 +13,7 @@ function create_artist_parent($entry_id, $form_id){
   echo "
   <script>
   $('#submit-form').modal();
-  </script
+  </script>
   ";
 	}
 }
