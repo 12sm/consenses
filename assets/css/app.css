@@ -525,7 +525,7 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
    Footer
    ========================================================================== */
 
-footer {padding: 1%;color: #6b1116;background-color:#bf2129;}
+footer {padding: 1%;color: #6b1116;background-color:#bf2129;margin-left: 0px!important;overflow: hidden;}
 footer i {color: #6b1116;}
 
 #social ul {margin:0px; padding:0px; list-style: none;}

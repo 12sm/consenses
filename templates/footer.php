@@ -1,4 +1,4 @@
-<footer class="content-info container" role="contentinfo">
+<footer class="content-info container-full" role="contentinfo">
   <div class="row">
   <div class="col-sm-2 col-sm-offset-1">
     <img src="/wp-content/themes/consenses/assets/img/logo-footer.png" class="img-responsive">
