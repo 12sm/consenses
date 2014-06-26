@@ -406,6 +406,10 @@ body.news .img-container {padding-bottom: 100%;}
 .continue-div:hover {background-color:#ECECEC; }
 a.continue {color: #ac3234;font-weight: bold;}
 
+/* ----- Individual Posts ----- */
+
+body.single-post article {margin-top: 3%;}
+
 
 /* ==========================================================================
    CHAIN SINGLE
