@@ -36,7 +36,7 @@ margin-right:-15px;
 
 .img-container{
    padding-bottom: 100%;
-   transition:filter .3s ease, -webkit-filter .3s ease, -moz-filter .3s ease;
+   transition: -webkit-filter .3s ease;
 }
 
 .img-container:hover {
