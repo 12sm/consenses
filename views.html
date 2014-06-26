@@ -749,12 +749,12 @@ return weight;
 </div>
 
 <!--------------- CREATE | CHAIN ---------------->
-[[wpv-layout-start]
+[wpv-layout-start]
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
           <div class="row">
-	<div class="col-sm-4">
+	<div class="col-sm-6">
 	<h1>[wpv-post-title]</h1>
 		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
       [types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
@@ -768,17 +768,84 @@ return weight;
 		[/wpv-if]
 	[/wpv-if]
 	</div>
-	<div class="col-sm-8">
+	<div class="col-sm-6">
 		[wpv-view name='CREATE | ART' wpvprchildof='[wpv-post-id]']
 		<div class="row create-buttons">
+		<div class="col-sm-6">
+        	<p>What does this image mean to you? Sum it up in one word.</p>
+        	</div>
 			<div class="col-sm-6">
 			[cred_form form="Tag Chain"]
 			</div>
-			<div class="col-sm-6">
-				<button class='btn fire-create btn-create'>+Create</button>
-			</div>
 	</div>
 </div>
+          </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+
+
+<!----------- CREATE | ART ------------>
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>[wpv-post-title]</h4>
+				[wpv-if evaluate="has_term('Collage', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Dance', 'medium', null) = '1'"]
+			<i class="fa fa-random"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Film', 'medium', null) = '1'"]
+			<i class="fa fa-film"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Food & Spice', 'medium', null) = '1'"]
+			<i class="fa fa-cutlery"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Glass Sculptor', 'medium', null) = '1'"]
+			<i class="fa fa-glass"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Music', 'medium', null) = '1'"]
+			<i class="fa fa-music"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Paint', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Painting', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Perfume', 'medium', null) = '1'"]
+			<i class="fa fa-flask"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Photograph', 'medium', null) = '1'"]
+			<i class="fa fa-camera-retro"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Poem', 'medium', null) = '1'"]
+			<i class="fa fa-align-center"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Sculpture', 'medium', null) = '1'"]
+			<i class="icomoon icon-hammer-2"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Song', 'medium', null) = '1'"]
+			<i class="fa fa-music"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-cube"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-leaf"></i>
+			[/wpv-if]
+			[wpv-post-taxononmy-stuff-medium-fill me in you son of a bitch]
+			</div>
+		</div>
+		<div class="row">
+          [wpv-view name="create-artist" ids="[wpv-post-id id='$artists']"]
+        </div>
 		</wpv-loop>
 	<!-- wpv-loop-end -->
 	[/wpv-items-found]
@@ -786,22 +853,6 @@ return weight;
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
-          <div class="modal fade" id="submit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-      [formidable id=10]
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!----------- CREATE | ARTISTS ------------>
@@ -809,20 +860,22 @@ return weight;
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <div class="row">
-	<div class="col-sm-4">
+	<div class="col-sm-6">
 			[wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
-				[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+				[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive artist-profile"][/types]
 			[/wpv-if]
 			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"]
-				<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg">
+				<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="artist-profile">
 			[/wpv-if]
+			<a href="[wpv-post-url]"><h3>[wpv-post-title]</h3></a>
+			<wpv-post-taxonomy-shit>
+			<artist website>
+			<a href="twitter"><i class="fa fa-twitter"></i></a>
+			<a href="facebook"><i class="fa fa-facebook"></i></a>
 	</div>
-	<div class="col-sm-8">
-		<a href="[wpv-post-url]"><h3>[wpv-post-title]</h3></a>
-		[types field="bio"][/types]
+	<div class="col-sm-6">
+		[wpv-view name="CREATE | SUBMIT BUTTON" IDS='[wpv-post-id]']
 	</div>
-</div>
 		</wpv-loop>
 	<!-- wpv-loop-end -->
 	[/wpv-items-found]
@@ -831,4 +884,5 @@ return weight;
 	[/wpv-no-items-found]
 [wpv-layout-end]
 
-
+<!----------------- CREATE | SUBMIT BUTTON ---------------------->
+<button class="btn create-btn" href='[wpv-post-url]#submit-modal'>Submit <span class='small'>your interpretation</span></button>
