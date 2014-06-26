@@ -53,6 +53,18 @@ p::selection {color: #FFFFFF;background-color: #bf2129;}
 .grey{
    background: #F0F0F0;
 }
+
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open 
+.dropdown-toggle.btn-default {
+filter: brightness(115%);
+-moz-filter: brightness(115%);
+-webkit-filter: brightness(115%);
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
