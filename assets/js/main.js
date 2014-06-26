@@ -61,6 +61,10 @@ $('.vid-container').fitVids();
       $('.fire-create').click(function(){
         $('#submit-form').modal();
       });
+
+      //Grab post id
+      var artID = $('#createID').text(); //gets the id
+  $('#field_7zp7h4').val(artID);
     }
   },
 // About us page, note the change from about-us to about_us.
