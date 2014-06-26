@@ -1,5 +1,5 @@
 <div class="row home-top">
-	<div class="col-sm-8 banner-box">
+	<div class="col-sm-8 col-sm-offset-1 banner-box">
 		<div class="welcome-box">
 			<h2>Welcome to <span class="red">Consenses</span></h2>
 			<h4>Connecting the world <span class="red">through art</span></h4>
