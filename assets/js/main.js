@@ -40,7 +40,6 @@ $('.vid-container').fitVids();
   if(window.location.hash) {
     var hash = window.location.hash.substring(0);
   $(hash).modal('show')
-  console.log(hash);
   }
 
   //jquery to pull artist id and shit
