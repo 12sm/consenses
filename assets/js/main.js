@@ -34,6 +34,7 @@ var msnry = new Masonry( container, {
 
 $('.img-container').imgLiquid();
 $('.img-video-tab > .entry-content-asset').fitVids();
+$('.vid-container').fitVids();
 
 //Open submit modal on open of page
   if(window.location.hash) {
