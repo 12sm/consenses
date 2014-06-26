@@ -1,7 +1,7 @@
 <div class="row container">
 	<div class="col-sm-12 about-body-copy">
 	
-		<img src="/wp-content/themes/consenses/assets/img/about-banner.jpg" style="width:100%;margin-bottom:5%;" />
+		<img src="/wp-content/themes/consenses/assets/img/about-banner.jpg" style="width:100%;margin-bottom:3%;" />
 		
 		<?php while (have_posts()) : the_post(); ?>
 	 	<?php the_content(); ?>
