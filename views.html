@@ -465,7 +465,17 @@ return weight;
 		<wpv-loop>
 <div class="col-sm-4 chain-padding">
 	<div class="img-container">
+	[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
       [types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+    [/wpv-if]
+    [wpv-if art="wpcf-art-image" evaluate="empty($art)"]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate="!empty($thumb)"]
+    		[wpv-post-featured-image size='thumbnail']
+    	[/wpv-if]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
+    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
+		[/wpv-if]
+	[/wpv-if]
 	</div>
 </div>
 		</wpv-loop>
