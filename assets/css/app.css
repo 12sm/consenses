@@ -27,8 +27,6 @@ a:hover, a:focus {text-decoration: none!important;}
    background: #fff;
 }
 
-.container {width:100%!important;}
-
 .img-container{
    padding-bottom: 100%;
 }
@@ -54,7 +52,7 @@ p::selection {color: #FFFFFF;background-color: #bf2129;}
 
 /* ----- NAVBAR ----- */
 
-.container-nav {width: 1170px;margin: 0 auto;}
+/*.container-nav {width: 1170px;margin: 0 auto;}*/
 
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:hover, 
@@ -577,22 +575,27 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
 .artist-sidebar {
 width: 25%;
 float: left;
 }
- }
+
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
 .home-top{
    padding-bottom: 20%;
 }
- }
+
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
+.container-full {width:100%!important;}
 .home-events .btn-default {margin: 10% 0;}
 
 }
