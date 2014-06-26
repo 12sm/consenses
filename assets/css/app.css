@@ -34,10 +34,8 @@ margin-left:-15px;
 margin-right:-15px;
 }
 
-.img-container{
-   padding-bottom: 100%;
-   transition: -webkit-filter .3s ease;
-}
+.img-container{padding-bottom: 50%;transition: -webkit-filter .3s ease;} /* Thumbnail posts */
+.home-news .col-sm-4 .img-container {padding-bottom: 100%;} /* Featured post */
 
 .img-container:hover {
 -webkit-filter: brightness(115%);
