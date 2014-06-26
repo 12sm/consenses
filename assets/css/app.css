@@ -82,7 +82,7 @@ filter: brightness(115%);
 .navbar-default .navbar-nav>.active>a:hover, 
 .navbar-default .navbar-nav>.active>a:focus {
 color: #FFF!important;background-color: rgba(191, 33, 41, 1);}
-.navbar-default {padding: .5%;background-color: #f8f8f8!important;}
+.navbar-default {background-color: #f8f8f8!important;}
 
 .navbar-default .navbar-collapse, 
 .navbar-default .navbar-form {border-color: transparent;}
@@ -95,7 +95,7 @@ nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 #menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
 
 .navbar-brand {padding: 1% 7% 1% 0;!important;}
-.nav>li {padding: 1% 0;}
+.nav>li {padding: 1% 0;transition: background-color .1s ease;}
 .navbar .form-group {padding: 1% 0;}
 
 
@@ -392,6 +392,12 @@ font-weight: 100;
 padding-top: 55px;
 color: #ac3234;
 }
+
+/* ==========================================================================
+   NEWS (reel)
+   ========================================================================== */
+
+.news-grid {margin:0 auto;}
 
 
 /* ==========================================================================
