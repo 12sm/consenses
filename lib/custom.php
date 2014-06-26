@@ -23,9 +23,6 @@ function create_form_parent($entry_id, $form_id){
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
     update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
     add_post_meta($post_id,'_wpcf_belongs_artists_id', $artist_id);
-    echo "$post_id is the child";
-    echo "$parent this is the parent";
-    echo "$artist_id";
   }
 }
 
