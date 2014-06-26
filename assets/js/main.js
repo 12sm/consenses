@@ -63,7 +63,7 @@ $('.vid-container').fitVids();
       });
     }
   },
-  ,// About us page, note the change from about-us to about_us.
+// About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
       // JavaScript to be fired on the about us page
