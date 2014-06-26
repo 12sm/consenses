@@ -354,12 +354,7 @@ return weight;
 	<!-- wpv-loop-start -->
 		<wpv-loop>
           <div class="modal-sidebar">
-        [wpv-if imag='wpcf-profile-img' evaluate="!empty($imag)"]
-			[types field="profile-img" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
-		[/wpv-if]
-		[wpv-if imag='wpcf-profile-img' evaluate="empty($imag)"]
-			<img src="/wp-content/themes/assets/img/placeholder.jpg" class="img-responsive" />
-		[/wpv-if]
+	[types field="profile-img" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
 	<p><span class="red-bold">[wpv-post-title]</span> [occupation]</p>
 	<p>[location]</p>
 	<p>[types field="website" target="_blank"][/types]</p>
