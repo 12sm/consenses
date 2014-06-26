@@ -12,7 +12,9 @@ function create_artist_parent($entry_id, $form_id){
   update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
   echo "
   <script>
+  $(document).ready(function(){
   $('#submit-form').modal();
+});
   </script>
   ";
 	}
