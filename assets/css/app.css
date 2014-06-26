@@ -54,6 +54,8 @@ p::selection {color: #FFFFFF;background-color: #bf2129;}
 
 /* ----- NAVBAR ----- */
 
+.container-nav {width: 1170px;margin: 0 auto;}
+
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:hover, 
 .navbar-default .navbar-nav>.active>a:focus {
@@ -71,6 +73,7 @@ nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 #menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
 
 .navbar-brand{padding: 0px 15px!important;}
+
 
 /* ==========================================================================
    HOME
