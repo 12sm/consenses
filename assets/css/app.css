@@ -268,20 +268,27 @@ margin-left: 3px;
    font-weight: 100;
    color: #000;
 }
+
 .home-events p{
    font-size: 22px;
 }
+
 .home-events h1{
    font-size: 54px;
    color: #C0202B;
    font-weight: 100;
 }
-.btn-default{
-   font-size: 41px;
-   color: #fff;
-   font-weight: 100;
-   background-color: #C0202B;
+
+.btn-default {
+color: #fff;
+font-weight: 100;
+background-color: #C0202B;
+border: none;
+border-radius: 0;
 }
+
+.home-events .btn-default {font-size: 41px;}
+
 .btn-primary {
 font-weight: 100;
 font-size: 14px;
@@ -502,7 +509,8 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
    Footer
    ========================================================================== */
 
-.content-info { }
+footer {padding: 1%;color: #6b1116;}
+footer i {color: #6b1116;}
 
 #social ul {margin:0px; padding:0px; list-style: none;}
 #social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
@@ -572,4 +580,8 @@ float: left;
  }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+
+.home-events .btn-default {margin: 10% 0;}
+
+}
