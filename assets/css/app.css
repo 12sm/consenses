@@ -399,6 +399,8 @@ color: #ac3234;
 
 .news-grid {margin:0 auto;margin-top:3%;}
 body.news .img-container {padding-bottom: 100%;}
+.news-grid a p {font-size: 32px;color:#ac3234;margin-top: 3%;}
+.border-only {border: 1px solid #E0E0E0;padding: 1%;}
 
 
 /* ==========================================================================
