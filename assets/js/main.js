@@ -54,7 +54,7 @@ $('.vid-container').fitVids();
     init: function() {
       // JavaScript to be fired on the home page
     }
-  }
+  },
    //Create page
   create: {
     init: function(){
