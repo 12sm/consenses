@@ -747,3 +747,31 @@ return weight;
 		[bio]
 	</div>
 </div>
+
+<!--------------- CREATE | CHAIN ---------------->
+<div class="row">
+	<div class="col-sm-4">
+		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
+      [types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+    [/wpv-if]
+    [wpv-if art="wpcf-art-image" evaluate="empty($art)"]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate="!empty($thumb)"]
+    		[wpv-post-featured-image size='thumbnail']
+    	[/wpv-if]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
+    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
+		[/wpv-if]
+	[/wpv-if]
+	</div>
+	<div class="col-sm-8">
+		[wpv-view name='CREATE | ARTIST']
+		<div class="row create-buttons">
+			<div class="col-sm-6">
+			[form= tag chain]
+			</div>
+			<div class="col-sm-6">
+				<button class='btn btn-create'>+Create</button>
+			</div>
+	</div>
+</div>
+
