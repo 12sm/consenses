@@ -369,14 +369,20 @@ color: #BF2129;
 text-transform: uppercase;
 }
 
-
 /* ==========================================================================
-   Content
+   ABOUT
    ========================================================================== */
 
-.content { }
+.about-body-copy {
+font-size: 15px;
+font-weight: 300;
+line-height: 1.5;	
+margin:3% 0;
+}
 
-
+body.about .container {
+margin: 0 auto!important;
+}
 
 
 /* ==========================================================================
