@@ -272,11 +272,12 @@ padding: 2px 6px;
 margin-left: 3px;
 }
 
-.home-events{
+.home-events {
    background: #F0F0F0;
    padding: 25px 10%;
    font-weight: 100;
    color: #000;
+   margin-left:15px;
 }
 
 .home-events p{
@@ -343,7 +344,7 @@ font-size: 13px!important;
 
 .home-news p {
 color: #000000;
-font-size: 14px;
+font-size: 18px;
 }
 
 .home-news a {

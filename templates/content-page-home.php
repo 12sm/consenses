@@ -27,7 +27,7 @@
 		</div>
 	</div>
 </div>
-<div class="row home-events">
+<div class="row home-events container-full">
 	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
 </div>
 <div class="row home-news-main">
