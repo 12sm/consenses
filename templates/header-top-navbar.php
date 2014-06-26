@@ -16,6 +16,14 @@
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
         endif;
       ?>
+	  
+	  <form class="navbar-form navbar-left" role="search">
+		  <div class="form-group">
+			 <input type="text" class="form-control" placeholder="Search">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+	  </form>
+	  
     </nav>
   </div>
 </header>
