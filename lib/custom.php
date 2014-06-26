@@ -2,7 +2,7 @@
 add_filter('frm_after_create_entry', 'create_form_parent', 41, 2);
 add_filter('frm_after_create_entry', 'create_artists_parent', 41, 2);
 //Grab id of 'Artist post'
-function create_artist_parent($entry_id, $form_id){
+function create_artists_parent($entry_id, $form_id){
   if($form_id == 10){
   	global $artist_id;
   global $frm_entry;
