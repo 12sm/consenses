@@ -55,6 +55,14 @@ $('.vid-container').fitVids();
       // JavaScript to be fired on the home page
     }
   }
+   //Create page
+  create: {
+    init: function(){
+      $('.fire-create').click(function(){
+        $('#submit-form').modal();
+      });
+    }
+  },
   ,// About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
