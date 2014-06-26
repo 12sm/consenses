@@ -409,6 +409,7 @@ a.continue {color: #ac3234;font-weight: bold;}
 /* ----- Individual Posts ----- */
 
 body.single-post article {margin-top: 3%;}
+body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 
 
 /* ==========================================================================
