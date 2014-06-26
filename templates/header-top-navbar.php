@@ -21,7 +21,7 @@
 		  <div class="form-group">
 			 <input type="text" class="form-control" placeholder="Search">
 		  </div>
-		  <button type="submit" class="btn btn-default">Submit</button>
+		  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 	  </form>
 	  
     </nav>
