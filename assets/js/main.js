@@ -54,8 +54,17 @@ $('.vid-container').fitVids();
     init: function() {
       // JavaScript to be fired on the home page
     }
-  }
-  ,// About us page, note the change from about-us to about_us.
+  },
+  //Single Chains page
+  single_chains: {
+    init: function(){
+      $('.menu-create').click(function(){
+        $('#submit-form').modal();
+      });
+    }
+  },
+
+  // About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
       // JavaScript to be fired on the about us page
