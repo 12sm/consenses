@@ -284,49 +284,49 @@ return weight;
     <div class="modal-content">
 			      <div class="modal-header">
 			    <ul class="nav nav-tabs">
-			  <li class="active"><a href="#img" data-toggle="tab">Art</a></li>
-			  <li><a href="#cloud" data-toggle="tab">Word Cloud</a></li>
-			  <li><a href="#form" data-toggle="tab">What Do You See?</a></li>
+			  <li class="active"><a href="#img[wpv-post-id]" data-toggle="tab">Art</a></li>
+			  <li><a href="#cloud[wpv-post-id]" data-toggle="tab">Word Cloud</a></li>
+			  <li><a href="#form[wpv-post-id]" data-toggle="tab">What Do You See?</a></li>
 				</ul>
 			      </div>
 			      <div class="modal-body">
 			      	<div class="row">
 		      			<div class="tab-content col-sm-9">
-						  <div class="tab-pane active" id="img">
+                          <div class="tab-pane img-video-tab active" id="img[wpv-post-id]">
 						  [wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
-							[types field="art-image" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+							[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+				[/wpv-if]
+				[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+            <img src='[wpv-post-featured-image size='medium' raw="true"]' class="img-responsive" />
+				[/wpv-if]
 							[/wpv-if]
 							[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
-							[video thumbnail]
+							[types field="video-embed"][/types]
 							[/wpv-if]
 						  </div>
-						  <div class="tab-pane" id="cloud">
+						  <div class="tab-pane" id="cloud[wpv-post-id]">
 						  	[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
 						  </div>
-						  <div class="tab-pane" id="form">
-						  [tag this form]
+						  <div class="tab-pane" id="form[wpv-post-id]">
+						  [cred_form form="Tag This Piece"]
 						  </div>
 						</div>
 						 <div class="artist-sidebar col-sm-3">
-		    	<div class="row">
-		    		<div class="col-sm-3">
-					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]]
-					</div>
-					<div class="col-sm-9">
 						<div class="artist-meta">
-							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids="[wpv-post-id id="$artist"]"]
+							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids='[wpv-post-id id="$artists"]']
 						</div>
 						<div class="art-title">
-							[wpv-post-title]
+							[wpv-post-title id="[wpv-post-id]"]
 						</div>
                       <div class="medium">
-                        [types field="medium"][/types]
+                        [types field="medium" id="[wpv-post-id]"][/types]
                       </div>
 						<div class="art-description">
-							[types field="description"][/types]
+							[types field="description" id="[wpv-post-id]"][/types]
 						</div>
 						<div class="inspiration-piece">
-							[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chain"]"]
+							[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chains"]"]
 					</div>
 				</div>
 			</div>
