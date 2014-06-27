@@ -570,7 +570,7 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 body.events-list img#consenses-about-banner {display: none;}
 
 h2.tribe-events-page-title {
-color: rgba(191, 33, 41, 1);
+color: rgba(191, 33, 41, 1)!important;
 font-size: 42px;
 font-weight: 100;
 }
