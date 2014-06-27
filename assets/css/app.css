@@ -478,8 +478,23 @@ float: left;
    ARTIST [Reel]
 ========================================================================== */
 
-.artist .col-sm-3 {padding: 0!important;}
-.img-container-artists {height: auto;padding: 40%;}
+.artist .col-sm-2 {padding: 0!important;}
+.artist.container {margin-top: 3%;}
+
+.img-container-artists {
+	height: auto;
+	padding: 40%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition:filter .3s ease, -webkit-filter .3s ease, -moz-filter .3s ease;
+}
+
+.img-container-artists:hover {
+	-webkit-filter: grayscale(0%) brightness(115%);
+	-moz-filter: grayscale(0%) brightness(115%);
+	filter: grayscale(0%) brightness(115%);
+}
 
 
 /* ==========================================================================
