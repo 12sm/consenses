@@ -23,32 +23,47 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
-      imagesLoaded( '.js-masonry', function() {
-      var container = document.querySelector('.js-masonry');
-var msnry = new Masonry( container, {
-  // options...
-  itemSelector: '.item',
-  gutter: 5
-});
-});
+      
 
 $('.img-container').imgLiquid();
 $('.img-video-tab > .entry-content-asset').fitVids();
 $('.vid-container').fitVids();
 
+
+
+  //jquery to pull artist id and shit
+  var artID = $('#artist-content').text(); //gets the id
+  $('#field_rk2uay').val(artID); //puts it in the form
+
+  soundManager.setup({
+  url: 'soundmanager2.swf',
+  flashVersion: 9, // optional: shiny features (default = 8)
+  // optional: ignore Flash where possible, use 100% HTML5 mode
+  // preferFlash: false,
+  onready: function() {
+    // Ready to use; soundManager.createSound() etc. can now be called.
+  }
+});
+
+    }
+  },
+  //single chains
+  chains: {
+    init: function(){
 //Open submit modal on open of page
   if(window.location.hash) {
     var hash = window.location.hash.substring(0);
   $(hash).modal('show')
   }
 
-  //jquery to pull artist id and shit
-  var artID = $('#artist-content').text(); //gets the id
-  $('#field_rk2uay').val(artID); //puts it in the form
-
-  //initialize audiojs
-  audiojs.events.ready(function() {
-    var as = audiojs.createAll();
+  //masonry
+  imagesLoaded( '.js-masonry', function() {
+        var container = document.querySelector('.js-masonry');
+  var msnry = new Masonry( container, {
+    // options...
+    itemSelector: '.item',
+    gutter: 5
+  });
   });
 
     }
