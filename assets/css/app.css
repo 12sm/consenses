@@ -596,6 +596,13 @@ transition: background-color .3s ease;
 
 a.tribe-events-read-more:hover {background-color: rgba(224, 70, 77, .8);}
 
+/* ==========================================================================
+   CHAINS [Reel]
+   ========================================================================== */
+
+.row.container.chains-reel {margin-top: 3%;}
+.chain-border-only {padding: 2%;border: 1px solid #E2E2E2;}
+
 
 /* ==========================================================================
    Primary Content
