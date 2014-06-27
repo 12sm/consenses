@@ -555,7 +555,14 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .hentry time { }
 .hentry .byline { }
 .hentry .entry-content { }
-.hentry footer { }
+.hentry footer {background-color: transparent;}
+
+.entry-content h1 {
+color: #bf2129;
+font-size: 32px;
+font-weight: 100;
+margin-bottom: 3%;
+}
 
 /* ==========================================================================
    Donors

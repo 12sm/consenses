@@ -4,6 +4,7 @@
     </header>
     <div class="entry-content">
 	  <h1><?php wp_title(''); ?></h1>
+	  <p class="date"><?php the_date(); ?></p>
       <?php the_content(); ?>
     </div>
     <footer>
