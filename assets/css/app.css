@@ -561,28 +561,42 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .hentry time { }
 .hentry .byline { }
 .hentry .entry-content { }
-.hentry footer {background-color: transparent;}
+
+.hentry footer {
+background-color: transparent;
+border-top: 1px solid #EBEBEB;
+margin-top: 6%;
+margin-bottom: 3%;
+}
 
 .entry-content h1 {
 color: #bf2129;
-font-size: 32px;
+font-size: 42px;
 font-weight: 100;
 margin-bottom: 3%;
+margin-top:0;
 }
 
 /* ==========================================================================
    Donors
    ========================================================================== */
-   .donors ul{
+
+.donors ul{
       list-style: none;
       padding-left: 0px;
       text-align:center;
-   }
-   .donors ul >li{
+}
+
+.donors ul >li{
       display: inline-block;
-   }
+}
 
+/* ==========================================================================
+   Contact
+   ========================================================================== */
 
+body.contact #consenses-about-banner {display:none;}
+body.contact .container {margin: 0 auto;}
 
 
 /* ==========================================================================
