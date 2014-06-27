@@ -631,6 +631,14 @@ font-size: 20px;
 font-weight: 300;
 }
 
+.row.create-background-row {
+background-color: #F6F6F6;
+height: 300px;
+border: 1px solid #E4E4E4;
+overflow: hidden;
+margin-bottom: 2%;
+}
+
 /* ==========================================================================
    Primary Content
    ========================================================================== */
