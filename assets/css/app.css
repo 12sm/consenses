@@ -585,6 +585,17 @@ font-weight: 300;
 background-color: #E4E4E4;
 }
 
+a.tribe-events-read-more {
+color: #FFF!important;
+background-color: rgba(191, 33, 41, 1);
+padding: 1%;
+margin-top: 2%;
+display: block;
+transition: background-color .3s ease;
+}
+
+a.tribe-events-read-more:hover {rgba(224, 70, 77, .8)}
+
 
 /* ==========================================================================
    Primary Content
