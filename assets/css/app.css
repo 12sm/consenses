@@ -478,8 +478,16 @@ float: left;
    ARTIST [Reel]
 ========================================================================== */
 
-.artist .col-sm-3 {padding: 0!important;}
-.img-container-artists {height: auto;padding: 40%;}
+.artist .col-sm-2 {padding: 0!important;}
+
+.img-container-artists {
+	height: auto;
+	padding: 40%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition:filter .3s ease;
+}
 
 
 /* ==========================================================================
