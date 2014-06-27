@@ -75,7 +75,7 @@ $('.vid-container').fitVids();
     }
   },
    //Create page
-  create: {
+ /* create: {
     init: function(){
       $('.fire-create').click(function(){
         $('#submit-form').modal();
@@ -85,7 +85,7 @@ $('.vid-container').fitVids();
       var artID = $('#createID').text(); //gets the id
   $('#field_7zp7h4').val(artID);
     }
-  },
+  },*/
 // About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
