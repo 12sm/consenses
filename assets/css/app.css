@@ -490,9 +490,9 @@ float: left;
 }
 
 .img-container-artists:hover {
-	-webkit-filter: grayscale(0%), brightness(115%);
-	-moz-filter: grayscale(0%);
-	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%) brightness(115%);
+	-moz-filter: grayscale(0%) brightness(115%);
+	filter: grayscale(0%) brightness(115%);
 }
 
 
