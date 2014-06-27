@@ -25,7 +25,16 @@ function create_form_parent($entry_id, $form_id){
     add_post_meta($post_id,'_wpcf_belongs_artists_id', $artist_id);
   }
 }
-
+function wp_html_excerpt (){
+    global $post;
+    $content = $post->post_content;
+    $more_post = strpos($content, '<!--more-->');
+    if($more_post>0){
+        $content = substr($content, 0, $more_post);
+    }
+    return apply_filters('the_content', $content);
+}
+add_shortcode('wp-html-excerpt', 'wp_html_excerpt');
 //Length shortcode
 add_shortcode('trim', 'trim_shortcode');
 function trim_shortcode($atts, $content = '') {
