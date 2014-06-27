@@ -3,6 +3,7 @@
     <header>
     </header>
     <div class="entry-content">
+	  <p class="date"><?php the_date(); ?></p>
       <?php the_content(); ?>
     </div>
     <footer>
