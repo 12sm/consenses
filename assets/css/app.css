@@ -173,6 +173,9 @@ padding-bottom: 3%;
    border-radius: 5px;
    outline: 1px solid #F0F0F0;
 }
+.week-art {
+padding: 0;
+}
 .week-art>img{
    width: 100%;
 }
@@ -469,6 +472,16 @@ float: left;
 .single-chain a{
    text-decoration: none;
 }
+
+
+/* ==========================================================================
+   ARTIST [Reel]
+========================================================================== */
+
+.artist .col-sm-3 {padding: 0!important;}
+.img-container-artists {height: auto;padding: 40%;}
+
+
 /* ==========================================================================
    ARTIST SINGLE
 ========================================================================== */
