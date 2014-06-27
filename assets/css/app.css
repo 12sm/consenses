@@ -666,6 +666,9 @@ font-size: 16px;
 margin:0;
 }
 
+.create-details a {color: #BF222B;}
+.col-sm-9.create-artist-details {border-right: 1px solid #D8D8D8;}
+
 /* ==========================================================================
    Primary Content
    ========================================================================== */
