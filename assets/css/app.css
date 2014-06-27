@@ -561,6 +561,20 @@ padding: 1%;
 ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 
 
+/* ==========================================================================
+   Events
+========================================================================== */
+
+#tribe-events {margin-top: 3%;}
+.row.container {margin: 0 auto;}
+body.events-list img#consenses-about-banner {display: none;}
+
+h2.tribe-events-page-title {
+color: rgba(191, 33, 41, 1);
+font-size: 42px;
+font-weight: 100;
+}
+
 
 /* ==========================================================================
    Primary Content
