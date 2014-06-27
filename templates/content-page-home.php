@@ -6,14 +6,16 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
-				<a href="#wwekly-challenge"><div class="explore">
+				<a href="/chains/"><div class="explore">
 					<h3>Explore</h3>
 				</div></a>
 			</div>
 			<div class="col-sm-4">
+			<a href="#weekly-challenge">
 				<div class="create">
 					<h3>+ Create</h3>
 				</div>
+			</a>
 			</div>
 		</div>
 	</div>
