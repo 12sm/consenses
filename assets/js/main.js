@@ -46,11 +46,6 @@ $('.vid-container').fitVids();
   var artID = $('#artist-content').text(); //gets the id
   $('#field_rk2uay').val(artID); //puts it in the form
 
-  //initialize audiojs
-  audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-  });
-
     }
   },
   // Home page
