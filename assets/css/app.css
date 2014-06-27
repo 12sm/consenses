@@ -669,6 +669,23 @@ margin:0;
 .create-details a {color: #BF222B;}
 .col-sm-9.create-artist-details {border-right: 1px solid #D8D8D8;}
 
+button.btn.create-btn-create {
+background-color: #F88A28;
+color: #FFF;
+width: 100%;
+height: 77px;
+border-radius: 0;
+font-size: 30px;
+font-weight: 200;
+}
+
+.small-create {
+font-size: 50%;
+width: 100%;
+display: block;
+line-height: 1;
+}
+
 /* ==========================================================================
    Primary Content
    ========================================================================== */
