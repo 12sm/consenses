@@ -570,9 +570,19 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 body.events-list img#consenses-about-banner {display: none;}
 
 h2.tribe-events-page-title {
-color: rgba(191, 33, 41, 1)!important;
+color: rgba(191, 33, 41, 1);
 font-size: 42px;
 font-weight: 100;
+}
+
+#tribe-events-content a, .tribe-events-event-meta a {
+text-decoration: none;
+color: rgba(191, 33, 41, 1);
+font-weight: 300;
+}
+
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"]>a, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, #tribe-events .tribe-events-button, .tribe-events-button.tribe-inactive, #tribe-events .tribe-events-button:hover, .tribe-events-button:hover, .tribe-events-button.tribe-active:hover {
+background-color: #E4E4E4;
 }
 
 
