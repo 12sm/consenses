@@ -479,6 +479,7 @@ float: left;
 ========================================================================== */
 
 .artist .col-sm-2 {padding: 0!important;}
+.artist.container {margin-top: 3%;}
 
 .img-container-artists {
 	height: auto;
