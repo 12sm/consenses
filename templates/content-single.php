@@ -3,6 +3,11 @@
     <header>
     </header>
     <div class="entry-content">
+<<<<<<< HEAD
+	  <h1><?php wp_title(''); ?></h1>
+	  <p class="date"><?php the_date(); ?></p>
+=======
+>>>>>>> FETCH_HEAD
       <?php the_content(); ?>
     </div>
     <footer>
