@@ -594,7 +594,7 @@ display: block;
 transition: background-color .3s ease;
 }
 
-a.tribe-events-read-more:hover {rgba(224, 70, 77, .8)}
+a.tribe-events-read-more:hover {background-color: rgba(224, 70, 77, .8);}
 
 
 /* ==========================================================================
