@@ -715,7 +715,7 @@ line-height: 1;
 
 .col-sm-6.create-artwork.img-container.imgLiquid_bgSize.imgLiquid_ready {
 background-size: 110%!important;
-background-position: 0!important;
+background-position: center top!important;
 }
 
 /* ==========================================================================
