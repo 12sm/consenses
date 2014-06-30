@@ -83,6 +83,8 @@ border-radius:0!important;
 -moz-border-radius:0!important;
 }
 
+.modal-dialog {margin-top:5%;}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -763,6 +765,13 @@ body.donors .container {margin: 0 auto;}
 
 .donors ul >li{
       display: inline-block;
+}
+
+ul.sponsor-list li {
+width: 15%;
+height: auto;
+margin: 2%;
+vertical-align:middle;
 }
 
 /* ==========================================================================
