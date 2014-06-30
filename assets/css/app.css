@@ -723,7 +723,7 @@ background-position: -50px -50px!important;
 .tag-row .tag-chain p {color: #202020;}
 .tag-row .tag-chain i {cololr:#202020;}
 .tag-row {padding: 2%;border-top: 1px solid #D8D8D8;}
-.border-top {border-top: 1px solid #D8D8D8;}
+.border-top {border-top: 1px solid #D8D8D8;padding:2%;}
 .col-sm-6.border-top.submit.col {padding: 1%;}
 
 
