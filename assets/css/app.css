@@ -501,7 +501,7 @@ float: left;
 ========================================================================== */
 
 .artist .col-sm-2 {padding: 0!important;}
-.artist.container {margin-top: 3%;}
+.artist.container {margin-top: 3%;margin-bottom:3%;}
 
 .img-container-artists {
 	height: auto;
@@ -517,6 +517,8 @@ float: left;
 	-moz-filter: grayscale(0%) brightness(115%);
 	filter: grayscale(0%) brightness(115%);
 }
+
+nav.post-nav {display: none;}
 
 
 /* ==========================================================================
@@ -699,13 +701,20 @@ height: 77px;
 border-radius: 0;
 font-size: 30px;
 font-weight: 200;
+transition:opacity .3s ease;
 }
+
+button.btn.create-btn-create:hover {opacity:.8;}
 
 .small-create {
 font-size: 50%;
 width: 100%;
 display: block;
 line-height: 1;
+}
+
+.col-sm-6.create-artwork.img-container.imgLiquid_bgSize.imgLiquid_ready {
+background-size: 110%;
 }
 
 /* ==========================================================================
