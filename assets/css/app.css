@@ -728,7 +728,7 @@ margin:0;
 .create-details a {color: #BF222B;}
 .col-sm-9.create-artist-details {border-right: 1px solid #D8D8D8;}
 
-button.btn.create-btn-create {
+.btn.create-btn-create {
 background-color: #F88A28;
 color: #FFF;
 width: 100%;
@@ -739,7 +739,7 @@ font-weight: 200;
 transition:opacity .3s ease;
 }
 
-button.btn.create-btn-create:hover {opacity:.8;}
+.btn.create-btn-create:hover {opacity:.8;}
 
 .small-create {
 font-size: 50%;
