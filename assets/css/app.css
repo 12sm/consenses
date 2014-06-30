@@ -738,10 +738,8 @@ float:none;
 width: 90%;
 }
 
-.tag-row .btn-primary {
-background: #F6F6F6;
-color: #444;
-}
+.tag-row .btn-primary {background: #F6F6F6;color: #444;}
+.tag-row .tag-btn {background: transparent;padding: .3% 0;}
 
 
 /* ==========================================================================
