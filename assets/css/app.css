@@ -725,6 +725,10 @@ background-position: -50px -50px!important;
 
 .tag-btn .btn-primary {height: auto;}
 .row.tag-row {padding: 2%;}
+.tag-btn .tag-chain {background-color:transparent;}
+.tag-btn .tag-chain p {color: #202020;}
+.tag-btn .tag-chain i {cololr:#202020;}
+.tag-row {padding: 2%;border-top: 1px solid #D8D8D8;}
 
 /* ==========================================================================
    Primary Content
