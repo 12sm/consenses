@@ -726,6 +726,12 @@ background-position: -50px -50px!important;
 .border-top {border-top: 1px solid #D8D8D8;padding:2%;}
 .col-sm-6.border-top.submit.col {padding: 1%;}
 
+.tag-row .MyZebra_Form input.myzebra-password, 
+.tag-row .MyZebra_Form input.myzebra-text, 
+.tag-row .MyZebra_Form input[type="text"] {
+background: #DDD;
+}
+
 
 /* ==========================================================================
    EXPLORE
