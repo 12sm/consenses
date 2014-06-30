@@ -724,6 +724,7 @@ background-position: -50px -50px!important;
    ========================================================================== */
 
 body.explore .btn-primary {height: 30px;}
+.row.tag-row {padding: 2%;}
 
 /* ==========================================================================
    Primary Content
