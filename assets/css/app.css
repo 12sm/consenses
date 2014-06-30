@@ -757,6 +757,7 @@ margin-top:0;
 
 body.donors .container {margin: 0 auto;}
 body.donors .grey {background: #F0F0F0;padding: 2% 0%;}
+.sponsor-page.row.container {margin-top: 3%;}
 
 body.donors h3 {
 color: #BF2129;
@@ -768,10 +769,13 @@ border-bottom: 1px solid #EBEBEB;
 padding-bottom: 2%;
 }
 
-.donors ul{
+.donors ul.twentyk-list, 
+ul.tenk-list, 
+ul.fivek-list, 
+ul.onek-list {
 list-style: none;
 padding-left: 0px;
-text-align:center;
+text-align: center;
 margin-bottom: 5%;
 }
 
