@@ -419,12 +419,17 @@ color: #ac3234;
    NEWS (reel)
    ========================================================================== */
 
-.news-grid {margin:0 auto;margin-top:3%;}
+.news-grid {margin:0 auto;margin-top:3%!important;}
 body.news .img-container {padding-bottom: 100%;}
 .news-grid h2 {color: #ac3234;font-size: 32px;font-weight: 100;}
 .news-grid a p {font-size: 16px;color:#707070;margin-top: 3%;}
-.border-only {border: 1px solid #E0E0E0;padding: 1%;margin-bottom:10%;min-height: 376px;}
-.continue-div {background-color: #D6D6D6;padding: 2%;transition: background-color .3s ease;text-align:right;}
+.border-only {border: 1px solid #E0E0E0;padding: 1%;margin-bottom:10%;min-height: 411px;}
+.continue-div {
+transition: background-color .3s ease;
+text-align: right;
+display: table-caption;
+}
+
 .continue-div:hover {background-color:#ECECEC; }
 a.continue {color: #ac3234;font-weight: bold;}
 
@@ -438,13 +443,24 @@ body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
    CHAIN SINGLE
    ========================================================================== */
 
-.modal-dialog {
-width: 75%;
+.modal-dialog {width: 75%;}
+.vid-container > img {margin: 0 auto;}
+.chain-info {text-align: center;}
+body.single-chains .date {display: none;}
+.chains {margin-top: 3%;}
+
+body.single-chains .entry-content h1 {
+color: #303030;
+font-size: 62px;
+font-weight: 100;
+margin-bottom: 5%;
+margin-top: 5%;
 }
 
-.vid-container > img {
-margin: 0 auto;
-}
+.chain-info {font-size: 18px;margin-bottom:5%;}
+
+
+
 
    /* =========================
       Artist Modal
