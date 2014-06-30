@@ -79,6 +79,8 @@ box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
 -webkit-box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
 -moz-box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
 border-radius:0!important;
+-webkit-border-radius:0!important;
+-moz-border-radius:0!important;
 }
 
 /* ==========================================================================
