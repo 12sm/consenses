@@ -774,10 +774,7 @@ font-size: 24px!important;
 font-weight: 500;
 }
 
-ul.tenk-list li {
-font-size: 24px!important;
-font-weight: 500;
-}
+ul.tenk-list li {font-weight: 500;}
 
 .donors ul.twentyk-list, 
 ul.tenk-list, 
@@ -796,6 +793,8 @@ height: auto;
 margin: 2%;
 vertical-align:middle;
 }
+
+ul.sponsor-list {text-align: center;}
 
 ul.twentyk-list li,
 ul.tenk-list li,
