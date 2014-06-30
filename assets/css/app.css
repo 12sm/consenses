@@ -657,7 +657,7 @@ font-weight: 300;
 
 .row.create-background-row {
 background-color: #F6F6F6;
-height: 256px;
+height: 270px;
 border: 1px solid #E4E4E4;
 overflow: hidden;
 margin-bottom: 2%;
@@ -736,6 +736,12 @@ background: #DDD;
 display: inline-block;
 float:none;
 width: 90%;
+}
+
+.tag-row input {
+background-color: #AFAFAF;
+border: none;
+color: #FFF;
 }
 
 .tag-row .btn-primary {background: #F6F6F6;color: #444;}
