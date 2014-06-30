@@ -739,9 +739,15 @@ width: 90%;
 }
 
 .tag-row input {
-background-color: #AFAFAF;
+background: #F69143;
 border: none;
-color: #FFF;
+border-radius: 5px;
+color: #fff;
+font-weight: 200;
+margin-top: 3px;
+font-size: 14px;
+padding: 2px 6px;
+margin-left: 3px;
 }
 
 .tag-row .btn-primary {background: #F6F6F6;color: #444;}
