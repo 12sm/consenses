@@ -719,7 +719,7 @@ background-position: -50px -50px!important;
 
 .tag-btn .btn-primary {height: auto;}
 .row.tag-row {padding: 2%;}
-.tag-row .tag-chain {background-color:transparent;}
+.tag-row .tag-chain {background-color:transparent;border-right: 1px solid #D8D8D8;}
 .tag-row .tag-chain p {color: #202020;}
 .tag-row .tag-chain i {color:#202020;}
 .tag-row {padding: 2%;border-top: 1px solid #D8D8D8;}
@@ -730,6 +730,12 @@ background-position: -50px -50px!important;
 .tag-row .MyZebra_Form input.myzebra-text, 
 .tag-row .MyZebra_Form input[type="text"] {
 background: #DDD;
+}
+
+.tag-row form#cred_form_661_1 {
+display: inline-block;
+float:none;
+width: 90%;
 }
 
 
