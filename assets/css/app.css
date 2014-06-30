@@ -418,10 +418,10 @@ body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 /* ==========================================================================
    CHAIN SINGLE
    ========================================================================== */
-   .modal-dialog{
-      width: 75%;
-   }
-   .vid-container > img {
+.modal-dialog{
+width: 55%;
+}
+.vid-container > img {
 margin: 0 auto;
 }
    /* =========================
