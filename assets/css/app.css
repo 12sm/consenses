@@ -70,6 +70,17 @@ filter: brightness(115%);
 -webkit-filter: brightness(115%);
 }
 
+
+/* All Modals */
+
+.modal-dialog {
+margin-top:5%;
+box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
+-webkit-box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
+-moz-box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
+border-radius:0!important;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -282,6 +293,12 @@ background-color: #C0202B;
 border-color: #C0202B;
 }
 
+/* Weekly Challenge Home page Modal */
+.modal-dialog {
+width: 55%;
+}
+
+
 input#cred_form_661_1_form_submit_1 {
 background: #F69143;
 border: none;
@@ -340,7 +357,6 @@ padding: .3% 0;
 .tag-btn:hover {
 background: #C0202B;
 }
-
 
 
 /* ----- News Section ----- */
@@ -418,12 +434,15 @@ body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 /* ==========================================================================
    CHAIN SINGLE
    ========================================================================== */
-.modal-dialog{
-width: 55%;
+
+.modal-dialog {
+width: 75%;
 }
+
 .vid-container > img {
 margin: 0 auto;
 }
+
    /* =========================
       Artist Modal
       ========================= */
