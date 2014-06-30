@@ -480,7 +480,7 @@ body.single-chains button.btn.btn-view {
 margin: 5% 0%;
 }
 
-body.single-chains .border-only {
+.border-only-chain {
 border: 1px solid #E0E0E0;
 padding: 3px;
 margin: 4px;
