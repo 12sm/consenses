@@ -73,7 +73,7 @@ filter: brightness(115%);
 
 /* All Modals */
 
-.modal-dialog {
+.modal-content {
 margin-top:5%;
 box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
 -webkit-box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
@@ -296,9 +296,8 @@ border-color: #C0202B;
 }
 
 /* Weekly Challenge Home Page Modal */
-body.home .modal-dialog {
-width: 55%;
-}
+body.home .modal-dialog {width: 55%;}
+body.home .modal-footer {display:none;}
 
 
 input#cred_form_661_1_form_submit_1 {
