@@ -657,7 +657,7 @@ font-weight: 300;
 
 .row.create-background-row {
 background-color: #F6F6F6;
-height: 300px;
+height: 256px;
 border: 1px solid #E4E4E4;
 overflow: hidden;
 margin-bottom: 2%;
@@ -718,17 +718,21 @@ background-size: 110%!important;
 background-position: -50px -50px!important;
 }
 
+.tag-btn .btn-primary {height: auto;}
+.row.tag-row {padding: 2%;}
+.tag-row .tag-chain {background-color:transparent;}
+.tag-row .tag-chain p {color: #202020;}
+.tag-row .tag-chain i {cololr:#202020;}
+.tag-row {padding: 2%;border-top: 1px solid #D8D8D8;}
+.row.artist-row {border-top: 1px solid #D8D8D8;padding: 2%;}
+.border-top {border-top: 1px solid #D8D8D8;}
+
 
 /* ==========================================================================
    EXPLORE
    ========================================================================== */
 
-.tag-btn .btn-primary {height: auto;}
-.row.tag-row {padding: 2%;}
-.tag-btn .tag-chain {background-color:transparent;}
-.tag-btn .tag-chain p {color: #202020;}
-.tag-btn .tag-chain i {cololr:#202020;}
-.tag-row {padding: 2%;border-top: 1px solid #D8D8D8;}
+
 
 /* ==========================================================================
    Primary Content
