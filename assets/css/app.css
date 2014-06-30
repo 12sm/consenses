@@ -771,6 +771,13 @@ margin: 2%;
 vertical-align:middle;
 }
 
+ul.twentyk-list li,
+ul.tenk-list li,
+ul.fivek-list li,
+ul.onek-list li {
+font-size: 18px;
+line-height: 1.5em;
+}
  
 /* ==========================================================================
    Contact
