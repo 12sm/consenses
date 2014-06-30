@@ -295,8 +295,8 @@ background-color: #C0202B;
 border-color: #C0202B;
 }
 
-/* Weekly Challenge Home page Modal */
-.modal-dialog {
+/* Weekly Challenge Home Page Modal */
+body.home .modal-dialog {
 width: 55%;
 }
 
