@@ -714,7 +714,7 @@ line-height: 1;
 }
 
 .col-sm-6.create-artwork.img-container.imgLiquid_bgSize.imgLiquid_ready {
-background-size: 110%;
+background-size: 110%!important;
 }
 
 /* ==========================================================================
