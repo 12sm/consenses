@@ -769,6 +769,16 @@ border-bottom: 1px solid #EBEBEB;
 padding-bottom: 2%;
 }
 
+ul.twentyk-list li {
+font-size: 24px!important;
+font-weight: 500;
+}
+
+ul.tenk-list li {
+font-size: 24px!important;
+font-weight: 500;
+}
+
 .donors ul.twentyk-list, 
 ul.tenk-list, 
 ul.fivek-list, 
