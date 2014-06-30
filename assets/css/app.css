@@ -723,7 +723,7 @@ background-position: -50px -50px!important;
    EXPLORE
    ========================================================================== */
 
-body.explore .btn-primary {height: 30px;}
+.tag-btn .btn-primary {height: 30px;}
 .row.tag-row {padding: 2%;}
 
 /* ==========================================================================
@@ -734,7 +734,6 @@ body.explore .btn-primary {height: 30px;}
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
-
 
 
 /* ==========================================================================
