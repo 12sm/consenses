@@ -738,6 +738,11 @@ float:none;
 width: 90%;
 }
 
+.tag-row .btn-primary {
+background: #F6F6F6;
+color: #444;
+}
+
 
 /* ==========================================================================
    EXPLORE
