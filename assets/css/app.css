@@ -479,12 +479,14 @@ body.single-chains h5 {
 font-weight: 100!important;
 font-size: 18px!important;
 color: #000!important;
-margin-top: 0px;
+margin: 0px;
 }
 
 body.single-chains button.btn.btn-view {
 margin: 5% 0%;
 }
+
+body.single-chains .tag-chain h5 {padding: 20px 0px 0px;}
 
 .border-only-chain {
 border: 1px solid #E0E0E0;
