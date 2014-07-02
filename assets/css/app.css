@@ -50,7 +50,14 @@ filter: brightness(115%);
    background-size: cover;
 }
 
+p {
+font-size: 16px;
+line-height: 1.5em;
+font-weight: 300;
+}
+
 .red {color: #bf2129;}
+
 p::selection {color: #FFFFFF;background-color: #bf2129;}
 
 .grey{
