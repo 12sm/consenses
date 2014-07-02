@@ -35,4 +35,38 @@
 			<p>A 10-member Board of Directors guides Consenses. The impressive individuals comprising this group are:</p>
 		</div>
 	</div>
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Michelle Boyers</h3>
+			<small>Education and Business</small>
+			<p>Michelle served as an advisor to the Massachusetts
+Department of Education on strengthening human
+resources and human capital management systems and
+capacity in the state’s largest urban school districts and
+helped to launch Teach Plus, a national non-profit whose
+mission is to improve outcomes for urban children by
+ensuring that a greater proportion of students have access
+to effective, experienced teachers. Previously, Michelle
+served as the Assistant Superintendent for Human Resources
+for the Boston Public Schools where she oversaw the
+recruitment, hiring, support and HR services for nearly 10,000
+school leaders, teachers and other school and central
+office staff.</p>
+		</div>
+		<div class="col-sm-6">
+			<h2>Simone Levinson</h2>
+			<small>Art Curator, Southampton Center</small>
+			<p>For the past two years, Simone and other members of the
+mayor-appointed founders committee have been working
+with Southampton Mayor Mark Epley to create the
+Southampton Center, a new institution that will help
+maintain the arts-centric integrity of the village by restoring
+and repurposing the building and grounds that will be left
+behind when the Parrish Art Museum moves to Water Mill
+this fall.</p>
+		</div>
+	</div>
+	
+	
 </div><!-- end sponsor page row container -->
