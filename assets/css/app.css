@@ -1079,6 +1079,14 @@ margin-top: 20px;
 text-align: center;
 }
 
+
+footer input[type=text] {
+background: transparent;
+border-radius: 0;
+border: transparent;
+border-bottom:2px solid #6b1116!important;
+}
+
 #menu-primary-navigation-1 {
 list-style: none;
 padding: 0px;
