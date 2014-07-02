@@ -18,6 +18,7 @@
 			<p>CONSENSES is a sponsored project of Fractured Atlas, a non-profit arts service organization. Contributions for the charitable purposes of CONSENSES must be made payable to Fractured Atlas only and are tax-deductible to the extent permitted by law.</p>
 		</div>
 	</div>
+	<hr />
 </div>
 
 	<div class="col-sm-12">
