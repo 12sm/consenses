@@ -993,7 +993,16 @@ font-size: 18px;
 color: #757575;
 }
 
-textarea {height:145px;}
+textarea {height:145px!important;}
+
+body.contact input[type="submit"] {
+background-color: #BF2129;
+border: none;
+border-radius: 5px;
+padding: 10px;
+font-size: 22px;
+color: #FFF;
+}
 
 
 /* ==========================================================================
