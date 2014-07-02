@@ -980,9 +980,9 @@ font-weight: 300;
 font-size: 18px;
 }
 
-input[type=text],
-input[type=email],
-textarea {
+body.contact fieldset input[type=text], 
+body.contact fieldset input[type=email], 
+body.contact fieldset textarea {
 background: #F0F0F0;
 border: none;
 border-radius: 5px;
@@ -991,9 +991,10 @@ width: 100%;
 padding: 10px;
 font-size: 18px;
 color: #757575;
+margin-bottom:10px;
 }
 
-textarea {height:145px!important;}
+body.contact fieldset textarea {height:145px!important;}
 
 body.contact input[type="submit"] {
 background-color: #BF2129;
@@ -1002,7 +1003,11 @@ border-radius: 5px;
 padding: 10px;
 font-size: 22px;
 color: #FFF;
+transition:background-color .3s ease;
 }
+
+body.contact input[type="submit"]:hover,
+body.contact input[type="submit"]:active {background-color: #E2131D;}
 
 
 /* ==========================================================================
