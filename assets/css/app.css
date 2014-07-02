@@ -946,7 +946,8 @@ ul.tenk-list li {font-weight: 500;}
 .donors ul.twentyk-list, 
 ul.tenk-list, 
 ul.fivek-list, 
-ul.onek-list {
+ul.onek-list,
+ul.fivehunny-list {
 list-style: none;
 padding-left: 0px;
 text-align: center;
