@@ -918,7 +918,10 @@ font-weight: 100;
 margin-top: 30px;
 }
 
-button.btn.btn-default.donation-btn {margin: 0 auto;display: block;font-size:22px;}
+button.btn.btn-default.donation-btn {
+margin: 0 auto;
+font-size: 14px;
+}
 
 .atlas-sponsored {margin-top: 50px;color: #AFAFAF;margin-bottom: 50px;}
 
@@ -930,6 +933,7 @@ text-align: center;
 margin-bottom: 2%;
 border-bottom: 1px solid #EBEBEB;
 padding-bottom: 2%;
+border-bottom:
 }
 
 ul.twentyk-list li {
