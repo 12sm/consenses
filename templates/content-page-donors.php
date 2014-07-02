@@ -16,16 +16,23 @@
 		</div>
 	</div>
 	<hr />
-</div>
-
-	<div class="col-sm-12">
-	<?php echo do_shortcode('[wpv-view name="DONORS | 20K"]');
-		  echo do_shortcode('[wpv-view name="DONORS | 10K"]');
-		  echo do_shortcode('[wpv-view name="DONORS | 5K"]');
-		  echo do_shortcode('[wpv-view name="DONORS | 1K"]');
-		  echo do_shortcode('[wpv-view name="DONORS | 500"]');
-		  echo do_shortcode('[wpv-view name="DONORS | ADDITIONAL DONATIONS"]');
-		  echo do_shortcode('[wpv-view name="DONORS | SPONSORS"]');
-		  ?>
+	<div class="row">
+		<div class="col-sm-12">
+		<?php echo do_shortcode('[wpv-view name="DONORS | 20K"]');
+			  echo do_shortcode('[wpv-view name="DONORS | 10K"]');
+			  echo do_shortcode('[wpv-view name="DONORS | 5K"]');
+			  echo do_shortcode('[wpv-view name="DONORS | 1K"]');
+			  echo do_shortcode('[wpv-view name="DONORS | 500"]');
+			  echo do_shortcode('[wpv-view name="DONORS | ADDITIONAL DONATIONS"]');
+			  echo do_shortcode('[wpv-view name="DONORS | SPONSORS"]');
+			  ?>
+		</div>
 	</div>
-</div>
+	<hr />
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Consenses Advisory Board</h1>
+			<p>A 10-member Board of Directors guides Consenses. The impressive individuals comprising this group are:</p>
+		</div>
+	</div>
+</div><!-- end sponsor page row container -->
