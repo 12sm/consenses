@@ -631,6 +631,10 @@ nav.post-nav {display: none;}
 
 body.single-artists article {margin-top: 30px;}
 
+body.single-artists p.date {
+display: none;
+}
+
 .artist-socials{
 list-style: none;
 padding-left: 0px;
