@@ -1043,7 +1043,11 @@ float: left;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-.col {max-width:70%; margin:0px auto;}
+.col {
+width: 80%;
+margin: 0px auto;
+max-width: 1200px;
+}
 
 .container-full {width:100%!important;}
 .home-events .btn-default {margin: 10% 0;}
