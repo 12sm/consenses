@@ -917,14 +917,9 @@ font-weight: 100;
 margin-top: 30px;
 }
 
-p.make-a-donation {
-text-align: center;
-color: rgb(179, 179, 179);
-font-size: 18px;
-margin-top: 40px;
-}
-
 button.btn.btn-default.donation-btn {margin: 0 auto;display: block;font-size:22px;}
+
+.atlas-sponsored {margin-top: 50px;color: #AFAFAF;margin-bottom: 50px;}
 
 body.donors h3 {
 color: #BF2129;
