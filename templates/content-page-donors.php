@@ -10,7 +10,7 @@
 		</div>
 	</div>
 	
-	<div class="row">
+	<div class="row atlas-sponsored">
 		<div class="col-sm-2 col-sm-offset-2">
 			<img class="img-responsive" src="/wp-content/themes/consenses/assets/img/atlas.png" />
 		</div>
