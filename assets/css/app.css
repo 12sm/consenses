@@ -251,7 +251,7 @@ input.myzebra-text{
 }
 .tag-chain{
    background-color: #F37717;
-   padding: .3% 0;
+   padding: 5px 0;
 }
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
 height: 25px;
@@ -282,7 +282,7 @@ display: none;
 float: left;
 color: #fff;
 margin-bottom: 0px;
-padding: 5px;
+padding: 6px;
 }
 
 .tag-chain i{
@@ -353,12 +353,14 @@ height: 30px;
 }
 
 .tag-btn {
-background: #B7B7B7;
-padding: .3% 0;
 }
 
 .tag-btn:hover {
 background: #C0202B;
+}
+
+.tag-btn button {
+padding: 11px 0;
 }
 
 
