@@ -20,7 +20,7 @@
         <li><a href="mailto:#" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
       </ul>
 	  
-	  <form class="navbar-form navbar-left" role="search">
+	  <form class="navbar-form navbar-right" role="search">
 		  <div class="form-group">
 			 <input type="text" class="form-control" placeholder="Search">
 		  </div>

@@ -104,6 +104,13 @@ border-radius:0!important;
 color: #FFF!important;background-color: rgba(191, 33, 41, 1);}
 .navbar-default {background-color: #f8f8f8!important;}
 
+.navbar-nav>li>.dropdown-menu {
+margin-top: 0;
+border-top-right-radius: 0;
+border-top-left-radius: 0;
+background-color: #BF2129;
+}
+
 .navbar-default .navbar-collapse, 
 .navbar-default .navbar-form {border-color: transparent;}
 nav.collapse.navbar-collapse {background-color: #f8f8f8;}
@@ -1045,6 +1052,7 @@ body.contact input[type="submit"]:active {background-color: #E2131D;}
 
 footer {padding: 1%;color: #6b1116;background-color:#bf2129;margin-left: 0px!important;overflow: hidden;}
 footer i {color: #6b1116;}
+footer .caret {display: none;}
 
 #social ul {margin:0px; padding:0px; list-style: none;}
 #social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
@@ -1055,30 +1063,38 @@ list-style: none;
 padding: 0px;
 display: inline-block;
 }
+
 #menu-primary-navigation-1>li {
 display: inline-block;
-padding: 20px;
+padding: 10px;
 }
+
 #menu-primary-navigation-1>li>a{
    text-decoration: none;
    color: #6b1116 ;
    font-weight: 100;
    font-size: 13px;
 }
+
 .socials {
    display: inline-block;
 list-style: none;
 }
+
 .socials>li{
    display: inline-block;
 }
+
 .socials>li>a{
    padding: 15px;
    color: #000;
 }
+
 .socials>li>a>i>*{
    text-decoration: none;
 }
+
+
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
