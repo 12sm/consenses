@@ -971,6 +971,7 @@ body.contact #consenses-about-banner {display:none;}
 body.contact .container {margin: 0 auto;}
 
 #frm_form_12_container {margin-top: 50px;}
+#frm_field_121_container {width: 100%;}
 
 body.contact label {
 color: rgb(65, 65, 65);
@@ -979,7 +980,9 @@ font-weight: 300;
 font-size: 18px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email],
+textarea {
 background: #F0F0F0;
 border: none;
 border-radius: 5px;
