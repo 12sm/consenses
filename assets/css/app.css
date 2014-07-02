@@ -1063,7 +1063,10 @@ text-decoration: none;
 color: #6b1116;
 font-weight: 100;
 font-size: 13px;
+transition:color .3s ease;
 }
+
+#social li a:hover {color: #FFF;}
 
 #menu-primary-navigation-1 {
 list-style: none;
@@ -1081,7 +1084,10 @@ padding: 10px;
    color: #6b1116 ;
    font-weight: 100;
    font-size: 13px;
+   transition:color .3s ease;
 }
+
+#menu-primary-navigation-1>li>a:hover {color:#FFF;}
 
 .socials {
    display: inline-block;
