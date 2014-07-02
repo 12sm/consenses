@@ -975,6 +975,8 @@ line-height: 1.5em;
 }
 
 ul.additional-list {
+font-size: 16px;
+line-height: 1.5em;
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
 -moz-column-count: 3; /* Firefox */
 column-count: 3;
