@@ -491,6 +491,10 @@ margin: 1px;
 padding:3px;
 }
 
+body.single-chains form#cred_form_661_1 {
+display: initial;
+float: none;
+}
 
 
    /* =========================
