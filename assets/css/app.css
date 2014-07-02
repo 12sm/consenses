@@ -253,7 +253,6 @@ border: none!important
 }
 form#cred_form_661_1 {
 display: inline-block;
-float: left;
 }
 input.myzebra-text{
    width: 100%!important;
@@ -288,7 +287,6 @@ display: none;
 }
 
 .tag-chain p {
-float: left;
 color: #fff;
 margin-bottom: 0px;
 padding: 6px;
@@ -1024,7 +1022,7 @@ list-style: none;
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
 
-.aligncenter { display: block; margin: 0 auto; }
+.aligncenter { display: block; margin: 0 auto; text-align:center;}
 .alignleft { float: left; }
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
