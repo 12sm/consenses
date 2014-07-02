@@ -28,15 +28,6 @@
 	  </form>
 	  
     </div>
-         
-      
-	  <div id="legal" class="row legal-nav">
-		  <?php
-			 if (has_nav_menu('legal_navigation')) :
-			   wp_nav_menu(array('theme_location' => 'legal_navigation', 'menu_class' => ''));
-			 endif;
-		  ?>
-	  </div>
 	  
 	  
 	  <div id="social" class="row social-nav">
