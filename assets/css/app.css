@@ -947,7 +947,8 @@ ul.tenk-list li {font-weight: 500;}
 ul.tenk-list, 
 ul.fivek-list, 
 ul.onek-list,
-ul.fivehunny-list {
+ul.fivehunny-list,
+ul.additional-list {
 list-style: none;
 padding-left: 0px;
 text-align: center;
