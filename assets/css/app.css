@@ -520,7 +520,20 @@ margin-top: 3px;
 font-size: 20px;
 margin-left: 0px;
 height: 45px;
+transition:background .3s ease;
 }
+
+body.single-chains input#cred_form_661_1_form_submit_1:hover {backgrund:#F7832A;}
+
+body.single-chains button.btn.btn-view {
+margin: 5% 0%;
+background: #FFF;
+font-size: 18px;
+color: rgb(102, 102, 102);
+transition:color .3s ease;
+}
+
+body.single-chains button.btn.btn-view:hover {color: #BF2129;}
 
 
    /* =========================
