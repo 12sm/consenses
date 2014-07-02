@@ -45,7 +45,7 @@ var Roots = {
   },
   
   //single chains
-  chains: {
+  single_chains: {
     init: function(){
 	    
 	    //Open submit modal on open of page
