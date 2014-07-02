@@ -482,13 +482,13 @@ margin: 5% 0%;
 
 .border-only-chain {
 border: 1px solid #E0E0E0;
-padding: 3px;
 margin: 4px;
 }
 
-.border-only-chain:nth-child(-n) {
+.border-only-chain-children {
 border: 1px solid #E0E0E0;
 margin: 4px;
+padding:30px;
 }
 
 
