@@ -1051,7 +1051,8 @@ body.contact input[type="submit"]:active {background-color: #E2131D;}
    ========================================================================== */
 
 footer {padding: 1%;color: #6b1116;background-color:#bf2129;margin-left: 0px!important;overflow: hidden;}
-footer i {color: #6b1116;}
+footer i {color: #6b1116;transition:color .3s ease;}
+footer i:hover {color: #FFF;}
 footer .caret {display: none;}
 
 #social ul {margin:0px; padding:0px; list-style: none;}
