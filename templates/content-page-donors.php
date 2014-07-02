@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	
-	<div class="row">
+	<div class="row board-members">
 		<div class="col-sm-6">
 			<h3>Michelle Boyers</h3>
 			<small>Education and Business</small>
@@ -114,7 +114,7 @@ Manager at Loro Piana.</p>
 		</div>
 	</div>
 	
-		<div class="row">
+	<div class="row last-board-member">
 		<div class="col-sm-6">
 			<h3>Tamara Weiss</h3>
 			<small>Fashion Design</small>
