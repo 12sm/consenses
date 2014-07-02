@@ -526,7 +526,7 @@ transition:background .3s ease;
 body.single-chains input#cred_form_661_1_form_submit_1:hover {background:#F7832A;}
 
 body.single-chains button.btn.btn-view {
-margin: 5% 0%;
+margin: 5% 0% 2% 0%;
 background: #FFF;
 font-size: 18px;
 color: rgb(102, 102, 102);
@@ -534,6 +534,8 @@ transition:color .3s ease;
 }
 
 body.single-chains button.btn.btn-view:hover {color: #BF2129;}
+
+#word-cloud-accord {margin-bottom: 5%;}
 
 
    /* =========================
