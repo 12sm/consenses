@@ -32,7 +32,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<h1>Consenses Advisory Board</h1>
-			<p>A 10-member Board of Directors guides Consenses. The impressive individuals comprising this group are:</p>
+			<p class="donors-top-text">A 10-member Board of Directors guides Consenses. The impressive individuals comprising this group are:</p>
 		</div>
 	</div>
 	
