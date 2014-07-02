@@ -293,7 +293,6 @@ padding: 6px;
 }
 
 .tag-chain i{
-float: left;
 padding: 8px 0px 0px 10px;
 color: #fff;
 }
@@ -367,7 +366,7 @@ background: #C0202B;
 }
 
 .tag-btn button {
-padding: 11px 0;
+padding: 22px 0;
 }
 
 
