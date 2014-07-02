@@ -929,11 +929,11 @@ body.donors h3 {
 color: #BF2129;
 font-weight: 100;
 font-size: 32px;
-text-align: center;
-margin-bottom: 2%;
+text-align: left;
+margin-bottom: 10px;
 border-bottom: 1px solid #EBEBEB;
-padding-bottom: 2%;
-border-bottom:
+padding-bottom: 10px;
+border-bottom: :;
 }
 
 ul.twentyk-list li {
