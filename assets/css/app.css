@@ -1058,7 +1058,7 @@ footer .caret {display: none;}
 #social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
 #social li a {padding: 10px;}
 
-ul#menu-sicial-footer-menu-legal-menu>li>a {
+#social li a {
 text-decoration: none;
 color: #6b1116;
 font-weight: 100;
