@@ -24,6 +24,7 @@
 		  echo do_shortcode('[wpv-view name="DONORS | 5K"]');
 		  echo do_shortcode('[wpv-view name="DONORS | 1K"]');
 		  echo do_shortcode('[wpv-view name="DONORS | 500"]');
+		  echo do_shortcode('[wpv-view name="DONORS | ADDITIONAL DONATIONS"]');
 		  echo do_shortcode('[wpv-view name="DONORS | SPONSORS"]');
 		  ?>
 	</div>
