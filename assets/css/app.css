@@ -470,16 +470,16 @@ body.single-chains .col-sm-6.col-sm-offset-3 {text-align: center;}
 
 body.single-chains h4 {
 font-weight: 100!important;
-font-size: 32px!important;
-color: #A7A7A7!important;
-margin-bottom:0px;
+font-size: 23px!important;
+color: #fff!important;
+margin: 0px;
 }
 
 body.single-chains h5 {
 font-weight: 100!important;
-font-size: 20px!important;
-color: #A7A7A7!important;
-margin-top:0px;
+font-size: 18px!important;
+color: #000!important;
+margin-top: 0px;
 }
 
 body.single-chains button.btn.btn-view {
@@ -498,7 +498,6 @@ padding:3px;
 }
 
 body.single-chains form#cred_form_661_1 {
-display: initial;
 float: none;
 }
 
