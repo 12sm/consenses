@@ -419,7 +419,6 @@ margin: 0 auto!important;
 .about-body-copy h1 {
 font-size: 52px;
 font-weight: 100;
-padding-top: 55px;
 color: #ac3234;
 }
 
@@ -970,6 +969,26 @@ line-height: 1.5em;
 
 body.contact #consenses-about-banner {display:none;}
 body.contact .container {margin: 0 auto;}
+
+#frm_form_12_container {margin-top: 50px;}
+
+body.contact label {
+color: rgb(65, 65, 65);
+font-family: 'proxima-nova';
+font-weight: 300;
+font-size: 18px;
+}
+
+input[type=text] {
+background: #F0F0F0;
+border: none;
+border-radius: 5px;
+height: 45px;
+width: 100%;
+padding: 10px;
+font-size: 18px;
+color: #757575;
+}
 
 
 /* ==========================================================================
