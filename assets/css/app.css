@@ -457,9 +457,7 @@ margin-bottom: 5%;
 margin-top: 5%;
 }
 
-body.single-chains form {display: inline-block;float: none;}
 .chain-info {font-size: 18px;margin-bottom:5%;}
-body.single-chains form {display: inline-block;}
 body.single-chains .col-sm-6.col-sm-offset-3 {text-align: center;}
 
 body.single-chains h4 {
@@ -508,10 +506,6 @@ font-size: 20px;
 text-align: center;
 font-weight: 300;
 color: #727272;
-}
-
-body.single-chains input.myzebra-text{
-   width: 100%!important;
 }
 
 body.single-chains input#cred_form_661_1_form_submit_1,
