@@ -41,6 +41,10 @@ var Roots = {
 		  }
 	  });
 	  
+	  var $control=ele;
+	  var terminput=$control.children('.myzebra-text').eq(0);
+      var $form=$control.parent('form'); // get container form
+	  
 	  $('body').on('submit', '#'+$form.attr('id'),function(e) {
 	  // add taxonomy terms to CRED forms
             var val=$.trim(terminput.val());
