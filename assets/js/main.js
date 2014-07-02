@@ -40,6 +40,13 @@ var Roots = {
 		      // Ready to use; soundManager.createSound() etc. can now be called.
 		  }
 	  });
+	  
+	  $('body').on('submit', '#'+$form.attr('id'),function(e) {
+	  // add taxonomy terms to CRED forms
+            var val=$.trim(terminput.val());
+            addTerm(val,true,false);
+            terminput.val('');
+      });
 
     }
   },
