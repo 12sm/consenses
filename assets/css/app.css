@@ -510,7 +510,11 @@ font-weight: 300;
 color: #727272;
 }
 
-body.single-chains input#cred_form_661_1_form_submit_1 {
+body.single-chains input#cred_form_661_1_form_submit_1,
+body.single-chains .MyZebra_Form input.myzebra-button, 
+body.single-chains .MyZebra_Form input.myzebra-reset, 
+body.single-chains .MyZebra_Form input.myzebra-submit, 
+body.single-chains .MyZebra_Form label.myzebra-button {
 background: #F69143;
 border: none;
 border-radius: 5px;
