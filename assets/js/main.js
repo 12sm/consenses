@@ -63,6 +63,7 @@ var Roots = {
 	        	gutter: 5
 	        });
 	    });
+	    $('.myzebra-text').attr("placeholder", "Sum it up in one word.");
     }
   },
   
