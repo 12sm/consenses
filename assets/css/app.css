@@ -204,6 +204,8 @@ padding: 0;
    margin-bottom: 0px;
 }
 
+.week-header .btn-container {width:49.5%;}
+
 .chain-btn.btn {
 background: #D62C35;
 border-radius: 0px;
@@ -212,6 +214,7 @@ font-size: 20px;
 color: #fff;
 font-weight: 100;
 transition:background-color .3s ease;
+width:100%;
 }
 
 .chain-btn.btn:hover {background: #DD464E;}
@@ -224,6 +227,7 @@ font-weight: 100;
 .submit-btn {
 background: #F37512;
 border-radius: 0px;
+width:100%;
 }
 
 .submit-btn:hover {
@@ -1043,6 +1047,16 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 width: 25%;
 float: left;
 }
+
+.submit-btn {
+padding: 10px 8px 2px 8px;
+}
+
+.chain-btn.btn {
+padding: 20px 8px;
+}
+
+.week-header .btn-container {width:auto;}
 
 }
 
