@@ -442,7 +442,7 @@ a.continue {color: #ac3234;font-weight: bold;}
 
 /* ----- Individual Posts ----- */
 
-body.single-post article {margin-top: 3%;}
+body.single-post article {margin-top: 30px;}
 body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 
 
@@ -626,7 +626,7 @@ nav.post-nav {display: none;}
    ARTIST SINGLE
 ========================================================================== */
 
-body.single-artists article {margin-top: 3%;}
+body.single-artists article {margin-top: 30px;}
 
 .artist-socials{
 list-style: none;
@@ -690,7 +690,7 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
    Events
 ========================================================================== */
 
-#tribe-events {margin-top: 3%;}
+#tribe-events {margin-top: 30px;}
 .row.container {margin: 0 auto;}
 body.events-list img#consenses-about-banner {display: none;}
 
@@ -725,7 +725,7 @@ a.tribe-events-read-more:hover {background-color: rgba(224, 70, 77, .8);}
    CHAINS [Reel]
    ========================================================================== */
 
-.row.container.chains-reel {margin-top: 3%;}
+.row.container.chains-reel {margin-top: 30px;}
 .chain-border-only {padding: 2%;border: 1px solid #E2E2E2;}
 .grey {background: #F0F0F0;padding: 2%;}
 .grey > i {float: left;color: #868686;font-size: 18px;}
@@ -910,7 +910,17 @@ margin-top:0;
 
 body.donors .container {margin: 0 auto;}
 body.donors .grey {background: #F0F0F0;padding: 2% 0%;}
-.sponsor-page.row.container {margin-top: 3%;}
+.sponsor-page.row.container {margin-top: 30px;}
+
+p.donors-top-text {
+font-size: 22px;
+color: #5E5E5E;
+text-align: center;
+line-height: 1.6;
+margin-bottom: 100px;
+font-weight: 100;
+margin-top: 30px;
+}
 
 body.donors h3 {
 color: #BF2129;
