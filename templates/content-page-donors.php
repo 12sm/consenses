@@ -55,7 +55,7 @@ school leaders, teachers and other school and central
 office staff.</p>
 		</div>
 		<div class="col-sm-6">
-			<h2>Simone Levinson</h2>
+			<h3>Simone Levinson</h3>
 			<small>Art Curator, Southampton Center</small>
 			<p>For the past two years, Simone and other members of the
 mayor-appointed founders committee have been working
