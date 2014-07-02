@@ -37,10 +37,15 @@
      endif;
   ?>
   </div>
-      <p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  | No materials in this web site may be reproduced, copied, downloaded, or used in any form without permission.
-	  <br />
-	  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
     </div>
+  </div>
+  <div class="row">
+  	<div class="col-sm-12">
+		      <p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  | No materials in this web site may be reproduced, copied, downloaded, or used in any form without permission.
+	  <br />
+	  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a>
+	  </p>
+	</div>
   </div>
 </footer>
 
