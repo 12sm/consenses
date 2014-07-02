@@ -68,5 +68,65 @@ this fall.</p>
 		</div>
 	</div>
 	
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Christy Nicholas</h3>
+			<small>Science and Art</small>
+			<p>Art appreciator and MIT scientist of cognitive neurology.</p>
+		</div>
+		<div class="col-sm-6">
+			<h3>Dean Bragonier</h3>
+			<small>Business, Design, and Art</small>
+			<p>Managing Director for Partners For Youth With Disabilities
+and Sally’s sweet and amazing husband.</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Nina Fialko</h3>
+			<small>Ballet</small>
+			<p>Former dancer and Boston Ballet Trustee.</p>
+		</div>
+		<div class="col-sm-6">
+			<h3>Carol Beggy</h3>
+			<small>Public Relations</small>
+			<p>Award-winning writer and editor who has worked at several
+eastern Massachusetts publications, including The Boston
+Globe, where she worked for more than ten years.</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Sherrie Johnson</h3>
+			<small>Production</small>
+			<p>Senior Curator of the PuSh Festival and internationally
+renown curator, artistic director and producer of critically
+acclaimed and award-winning, theatre, dance, film and
+performing arts festivals.</p>
+		</div>
+		<div class="col-sm-6">
+			<h3>Kathleen Connor</h3>
+			<small>Theater Art and Fashion</small>
+			<p>Board of the American Repertoire Theater and General
+Manager at Loro Piana.</p>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-sm-6">
+			<h3>Tamara Weiss</h3>
+			<small>Fashion Design</small>
+			<p>Owner of Midnight Farm, a boutique of fashion and design.</p>
+		</div>
+		<div class="col-sm-6">
+			<h3>Kristina Lyons</h3>
+			<small>Design and Production</small>
+			<p>Owner of Portobello Road and former associate producer
+for Frontline PBS.</p>
+		</div>
+	</div>
+	
 	
 </div><!-- end sponsor page row container -->
