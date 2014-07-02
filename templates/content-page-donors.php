@@ -11,7 +11,7 @@
 </div>
 
 	<div class="col-sm-3">
-		<img src="/wp-content/themes/consenses/assets/img/atlas.png" />
+		<img class="img-responsive" src="/wp-content/themes/consenses/assets/img/atlas.png" />
 	</div>
 	<div class="col-sm-9">
 		<p>CONSENSES is a sponsored project of Fractured Atlas, a non-profit arts service organization. Contributions for the charitable purposes of CONSENSES must be made payable to Fractured Atlas only and are tax-deductible to the extent permitted by law.</p>
