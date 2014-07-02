@@ -496,6 +496,32 @@ display: initial;
 float: none;
 }
 
+body.single-chains .MyZebra_Form input.myzebra-password, 
+body.single-chains .MyZebra_Form input.myzebra-text, 
+body.single-chains .MyZebra_Form input[type="text"] {
+height: 45px;
+border-radius: 5px;
+background: #EEEEEE;
+margin-top: 3px;
+padding: 2%;
+font-size: 20px;
+text-align: center;
+font-weight: 300;
+color: #727272;
+}
+
+body.single-chains input#cred_form_661_1_form_submit_1 {
+background: #F69143;
+border: none;
+border-radius: 5px;
+color: #fff;
+font-weight: 200;
+margin-top: 3px;
+font-size: 20px;
+margin-left: 0px;
+height: 45px;
+}
+
 
    /* =========================
       Artist Modal
