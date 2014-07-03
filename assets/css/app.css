@@ -738,6 +738,9 @@ border-radius: 5px;
 color: #FFF;
 }
 
+div.row.artist-artwork {
+margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Events
