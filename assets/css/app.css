@@ -201,7 +201,8 @@ padding-bottom: 3%;
    outline: 1px solid #F0F0F0;
 }
 .week-art {
-padding: 0;
+padding: 0px;
+min-height:500px;
 }
 .week-art>img{
    width: 100%;
