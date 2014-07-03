@@ -289,11 +289,6 @@ right: 10px!important;
 width: 240px!important;
 }
 
-/* removes redundant "Add" button */
-a.myzebra-add-new-term {
-
-}
-
 .tag-chain p {
 color: #fff;
 margin-bottom: 0px;
@@ -317,7 +312,7 @@ body.home .modal-footer {display:none;}
 
 input#cred_form_661_1_form_submit_1 {display:none;}
 
-.myzebra-add-new-term {
+a.myzebra-add-new-term {
 background: #F69143;
 border: none;
 border-radius: 5px;
