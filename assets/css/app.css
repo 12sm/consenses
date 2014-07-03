@@ -773,7 +773,12 @@ background-repeat: no-repeat;
 background-position: center center;
 }
 
-body.single-artists .profile-pic .img-cont {height:400px;}
+body.single-artists .profile-pic .img-cont {
+height: 0px;
+padding-bottom: 100%;
+background-position: 50% 0px!important;
+}
+
 .biz-card {height: 182px;overflow: hidden;border-bottom: 1px solid #CCC;}
 
 /* NAME */ .biz-card .col-sm-8 {
