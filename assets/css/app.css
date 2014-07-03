@@ -668,13 +668,16 @@ line-height: 1.5;
 font-weight: 300;
 }
 
-.img-cont {
+body.single-artists .img-cont {
 background-color: #EEE;
 height: auto;
 background-image: url('/wp-content/themes/consenses/assets/img/logo-footer.png');
 background-repeat: no-repeat;
 background-position: center center;
 }
+
+body.single-artists .profile-pic .img-cont {height:400px;}
+
 
 /* NAME */ .biz-card .col-sm-8 {
 font-size: 26px;
@@ -747,6 +750,7 @@ div.row.artist-artwork {
 margin-bottom: 50px;
 }
 
+.artist-artwork .item {padding-bottom:60%;}
 /* ==========================================================================
    Events
 ========================================================================== */
