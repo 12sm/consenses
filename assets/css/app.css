@@ -582,7 +582,7 @@ content: "\f04b";
 }
 
 .modal-sidebar .artist-circle {
-width: 50px;
+artist: 50px;
 height: 50px;
 }
 
@@ -591,7 +591,7 @@ font-size: 14px;
 margin-bottom: 0;
 }
 
-.modal-sidebar .artist-socials {
+.artist-sidebar .artist-socials {
 list-style: none;
 padding-left: 0px;
 border-top: 1px solid #CCC;
@@ -599,29 +599,29 @@ border-left:none;
 margin-top: 15px;
 }
 
-.modal-sidebar ul.artist-socials li:nth-child(1) {
+.artist-sidebar ul.artist-socials li:nth-child(1) {
 border-bottom: none;
 }
 
-.modal-sidebar span.red-bold {
+.artist-sidebar span.red-bold {
 color: #BF2129;
 font-weight: bold;
 width: 100%;
 display: block;
 }
 
-.modal-sidebar a {
+.artist-sidebar a {
 color: #575757;
 }
 
-.modal-sidebar .art-title {
+.artist-sidebar .art-title {
 font-size: 22px;
 font-weight: 500;
 line-height: 1.1;
 border-top: 1px solid #CCC;
 padding-top: 10px;
 }
- 
+
 
 /* ==========================================================================
    CHAIN ARCHIVE
