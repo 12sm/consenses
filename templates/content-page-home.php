@@ -5,7 +5,7 @@
 			<h4>Connecting the world <span class="red">through art</span></h4>
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-4 hidden">
 				<a href="/chains/"><div class="explore">
 					<h3>Explore</h3>
 				</div></a>
