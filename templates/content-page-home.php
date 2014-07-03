@@ -2,7 +2,7 @@
 	<div class="col-sm-8 col-sm-offset-1 banner-box">
 		<div class="welcome-box">
 			<h2>Welcome to <span class="red">Consenses</span></h2>
-			<h4>Connecting the world <span class="red">through art</span></h4>
+			<h4>Art makes <span class="red">sense.</span></h4>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 hidden">
