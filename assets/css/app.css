@@ -595,11 +595,31 @@ margin-bottom: 0;
 list-style: none;
 padding-left: 0px;
 border-top: 1px solid #CCC;
+border-left:none;
 margin-top: 15px;
 }
 
 .modal-sidebar ul.artist-socials li:nth-child(1) {
 border-bottom: none;
+}
+
+.modal-sidebar span.red-bold {
+color: #BF2129;
+font-weight: bold;
+width: 100%;
+display: block;
+}
+
+.modal-sidebar a {
+color: #575757;
+}
+
+.modal-sidebar .art-title {
+font-size: 22px;
+font-weight: 500;
+line-height: 1.1;
+border-top: 1px solid #CCC;
+padding-top: 10px;
 }
 
 
@@ -706,6 +726,8 @@ border-bottom: 1px solid #CCC;
 padding: .3%;
 padding-left: 3%;
 height: 45px;
+overflow: scroll;
+line-height: 1.1;
 }
 
 ul.artist-socials a {
@@ -719,7 +741,7 @@ ul.artist-socials li {padding-left: 5px;}
 /* Borders */
 .biz-card-information {border:1px solid #CCC;}
 .biz-card .col-sm-4 {border-bottom: 1px solid #CCC;height:45px;}
-.biz-card-website {border-bottom: 1px solid #CCC;height: 45px;height: 18px;font-size: 12px;}
+.biz-card-website {border-bottom: 1px solid #CCC;height: 45px;height: 18px;font-size: 12px;overflow: scroll;}
 ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .biz-card-website .col-sm-6:nth-child(2) {border-left: 1px solid #CCC;}
 .social-col {padding:0;}
