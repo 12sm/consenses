@@ -727,6 +727,10 @@ background-position: 50% 0px!important;
 	filter: grayscale(0%) brightness(115%);
 }
 
+.row.profile-pic {
+margin-bottom: 20px;
+}
+
 .artists .artist .artist-info {
 text-align: center;
 background: rgba(191, 33, 41, 0.8);
@@ -806,7 +810,11 @@ padding-bottom: 100%;
 background-position: 50% 0px!important;
 }
 
-.biz-card {height: 182px;overflow: hidden;border-bottom: 1px solid #CCC;}
+.biz-card {height: 174px;overflow: hidden;border-bottom: 1px solid #CCC;}
+
+div.col-sm-12.email-me-please {
+border: none!important;
+}
 
 /* NAME */ .biz-card .col-sm-8 {
 font-size: 26px;
@@ -906,6 +914,7 @@ font-size: 18px;
 font-weight: 500;
 color: #ACACAC;
 display: inline-block;
+margin-bottom:0px;
 }
 
 body.single-artist .img-container:hover {
