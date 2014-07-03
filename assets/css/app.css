@@ -657,7 +657,7 @@ float: left;
    ARTIST [Reel]
 ========================================================================== */
 
-.artists .col-sm-2 {padding: 0!important;}
+.artists .artist {padding: 0!important;}
 .artists.col {margin-top: 30px;margin-bottom:30px;}
 
 .img-container-artists {
