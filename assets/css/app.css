@@ -685,12 +685,13 @@ float: left;
 .artists.col {margin-top: 30px;margin-bottom:30px;}
 
 .img-container-artists {
-	height: auto;
-	padding: 40%;
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	filter: grayscale(100%);
-	transition:filter .3s ease, -webkit-filter .3s ease, -moz-filter .3s ease;
+height: auto;
+padding: 40%;
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: filter .3s ease, -webkit-filter .3s ease, -moz-filter .3s ease;
+background-position: 50% 0px!important;
 }
 
 .img-container-artists:hover,
