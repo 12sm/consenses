@@ -899,10 +899,12 @@ margin-bottom: 50px;
 
 .artist-artwork .item {padding-bottom:15%;}
 
-span.location {
+.location h4,
+.mediums h4 {
 font-size: 18px;
 font-weight: 500;
 color: #ACACAC;
+display: inline-block;
 }
 
 body.single-artist .img-container:hover {
