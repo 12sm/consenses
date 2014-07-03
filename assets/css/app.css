@@ -665,7 +665,7 @@ font-weight: 300;
 
 .img-cont {
 background-color: #EEE;
-height: 500px;
+height: auto;
 background-image: url('/wp-content/themes/consenses/assets/img/logo-footer.png');
 background-repeat: no-repeat;
 background-position: center center;
