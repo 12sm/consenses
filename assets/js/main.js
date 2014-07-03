@@ -44,7 +44,7 @@ var Roots = {
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
       alert('click function is firing');
-		  $('#cred_form_661_1_form_submit_1').trigger("click");
+		  $('#cred_form_661_1_form_submit_1').delay(800).trigger("click");
 	  })
     $('#cred_form_661_1_form_submit_1').click(function(){
       alert('submit has been clicked');
