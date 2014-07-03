@@ -590,6 +590,13 @@ background-color: #F37717;
 color: #FFF;
 }
 
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+-webkit-filter: brightness(110%);
+-moz-filter: brightness(110%);
+filter: brightness(110%);
+}
+
 .single-art-modal .modal-header .close {
 margin-top: -2px;
 padding: 15px;
