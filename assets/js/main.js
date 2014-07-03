@@ -42,7 +42,7 @@ var Roots = {
 	  });
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
-		  setTimeout('$('#cred_form_661_1').trigger("submit");', 800 );
+		  setTimeout(function(){'$('#cred_form_661_1').trigger("submit");'}, 800 );
 	  });
 
 
