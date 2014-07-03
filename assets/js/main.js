@@ -104,6 +104,7 @@ var Roots = {
  //Create page
  create: {
     init: function(){
+      console.log('create js firing');
       $('.fire-create').click(function(){
         $('#submit-form').modal();
       });
