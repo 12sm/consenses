@@ -40,10 +40,12 @@ var Roots = {
 		      // Ready to use; soundManager.createSound() etc. can now be called.
 		  }
 	  });
+      //Make forms submit and add in one click
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
       setTimeout(function(){
-		  $('#cred_form_661_1_form_submit_1').trigger("click");
+		  $('#cred_form_661_1').submit();
+      $('#cred_form_504_5').submit();
     }, 800);
 	  });
 
