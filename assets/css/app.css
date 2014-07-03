@@ -639,6 +639,7 @@ display: none;
 list-style: none;
 padding-left: 0px;
 border-right: 1px solid #CCC;
+margin-bottom: 0;
 }
    
 body.single-artists h1 {
@@ -701,6 +702,15 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .thumbnail-art-img {
 background-color: #CCC;
 height: 250px;
+}
+
+.socials-logo-row {
+border-bottom: 1px solid #CCC;
+}
+
+div.col-sm-6.social-img img {
+width: 80%;
+margin: 0 auto;
 }
 
 
