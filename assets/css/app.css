@@ -699,6 +699,17 @@ float: left;
 	filter: grayscale(0%) brightness(115%);
 }
 
+.artists .artist .artist-info {
+text-align: center;
+background: rgba(0,0,0,0.5);
+margin: 0px;
+padding: 10px;
+color: #fff;
+position: absolute;
+bottom: 0px;
+width: 100%;	
+}
+
 
 
 
