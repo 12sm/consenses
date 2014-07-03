@@ -638,7 +638,6 @@ display: none;
 .artist-socials{
 list-style: none;
 padding-left: 0px;
-border-left: 1px solid #CCC;
 border-right: 1px solid #CCC;
 }
    
@@ -688,6 +687,7 @@ padding: 1%;
 }
 
 ul.artist-socials li {padding-left: 5px;}
+.artist-socials li i {padding-left: 10px;padding-bottom: 3px;}
 
 /* Borders */
 .biz-card-information {border:1px solid #CCC;}
@@ -697,6 +697,11 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .biz-card-website .col-sm-6:nth-child(2) {border-left: 1px solid #CCC;}
 .social-col {padding:0;}
 .border-bottom {border-bottom:1px solid #CCC;}
+
+.thumbnail-art-img {
+background-color: #CCC;
+height: 250px;
+}
 
 
 /* ==========================================================================
