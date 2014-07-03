@@ -764,7 +764,7 @@ background-position: center center;
 }
 
 body.single-artists .profile-pic .img-cont {height:400px;}
-.biz-card {height: 182px;overflow: hidden;}
+.biz-card {height: 182px;overflow: hidden;border-bottom: 1px solid #CCC;}
 
 /* NAME */ .biz-card .col-sm-8 {
 font-size: 26px;
@@ -818,6 +818,11 @@ width: 80%;
 margin: 0 auto;
 }
 
+.row.email-col {
+height: 100px;
+overflow: hidden;
+}
+
 .row.email-col p {
 font-size: 13px;
 margin: 2px;
@@ -848,6 +853,9 @@ margin-bottom: 50px;
 }
 
 .artist-artwork .item {padding-bottom:15%;}
+
+
+
 /* ==========================================================================
    Events
 ========================================================================== */
