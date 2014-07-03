@@ -749,7 +749,7 @@ background-position: center center;
 }
 
 body.single-artists .profile-pic .img-cont {height:400px;}
-
+.biz-card {height: 182px;overflow: hidden;}
 
 /* NAME */ .biz-card .col-sm-8 {
 font-size: 26px;
