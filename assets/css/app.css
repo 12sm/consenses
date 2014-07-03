@@ -713,6 +713,11 @@ width: 80%;
 margin: 0 auto;
 }
 
+.email-col .col-sm-6 p {
+font-size: 13px;
+line-height: 1;
+}
+
 
 /* ==========================================================================
    Events
