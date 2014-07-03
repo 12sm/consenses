@@ -639,6 +639,7 @@ display: none;
 list-style: none;
 padding-left: 0px;
 border-left: 1px solid #CCC;
+border-right: 1px solid #CCC;
 }
    
 body.single-artists h1 {
@@ -690,11 +691,13 @@ padding: 1%;
 ul.artist-socials li {padding-left: 5px;}
 
 /* Borders */
-.biz-card-information {border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;border-right: 1px solid #CCC;}
+.biz-card-information {border:1px solid #CCC;}
 .biz-card .col-sm-4 {border-bottom: 1px solid #CCC;height:45px;}
 .biz-card-website {border-bottom: 1px solid #CCC;border-left: 1px solid #CCC;height: 45px;height: 18px;font-size: 12px;}
 ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .biz-card-website .col-sm-6 {border-right: 1px solid #CCC;}
+
+.border-bottom {border-bottom:1px solid #CCC;}
 
 
 /* ==========================================================================
