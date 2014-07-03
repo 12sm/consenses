@@ -267,6 +267,7 @@ input.myzebra-text{
 .tag-chain{
    background-color: #F37717;
    padding: 5px 0;
+   min-height: 100px;
 }
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
 height: 25px;
@@ -314,8 +315,9 @@ border-color: #C0202B;
 body.home .modal-dialog {width: 55%;}
 body.home .modal-footer {display:none;}
 
+input#cred_form_661_1_form_submit_1 {display:none;}
 
-input#cred_form_661_1_form_submit_1 {
+.myzebra-add-new-term {
 background: #F69143;
 border: none;
 border-radius: 5px;
