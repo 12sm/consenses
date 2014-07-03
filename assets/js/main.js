@@ -40,7 +40,6 @@ var Roots = {
 		      // Ready to use; soundManager.createSound() etc. can now be called.
 		  }
 	  });
-	  console.log('page is reading js');
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
       alert('click function is firing');
