@@ -550,8 +550,13 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
 
 #word-accord {margin: 10% 0%;}
 
-body.single-chains .tag-and-view {
-margin-top: 100px;
+body.single-chains .tag-and-view {margin-top: 100px;}
+body.single-chains .video-montage {margin-top: 100px;}
+.video-montage h2.aligncenter {
+font-weight: 100;
+color: #A2A2A2;
+margin-bottom: 20px;
+font-size: 42px;
 }
 
    /* =========================
