@@ -790,7 +790,14 @@ ul.artist-socials li {padding-left: 5px;}
 /* Borders */
 .biz-card-information {border:1px solid #CCC;}
 .biz-card .col-sm-4 {border-bottom: 1px solid #CCC;height:45px;}
-.biz-card-website {border-bottom: 1px solid #CCC;height: 45px;height: 18px;font-size: 12px;overflow: scroll;}
+.biz-card-website {
+border-bottom: 1px solid #CCC;
+height: 45px;
+height: 26px;
+font-size: 12px;
+overflow: scroll;
+line-height: 1;
+}
 ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .biz-card-website .col-sm-8 {border-left: 1px solid #CCC;}
 .social-col {padding:0;}
