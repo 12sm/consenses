@@ -882,6 +882,10 @@ color: #ACACAC;
 body.single-artist .img-container:hover {
 }
 
+body.single-artists p.p1 {
+margin-top: 30px;
+}
+
 
 
 /* ==========================================================================
