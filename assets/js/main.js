@@ -31,7 +31,7 @@ var Roots = {
       var artID = $('#artist-content').text(); //gets the id
       $('#field_rk2uay').val(artID); //puts it in the form
 
-      soundManager.setup({
+      /*soundManager.setup({
 	      url: 'soundmanager2.swf',
 	      flashVersion: 9, // optional: shiny features (default = 8)
 	      // optional: ignore Flash where possible, use 100% HTML5 mode
@@ -39,7 +39,7 @@ var Roots = {
 	      onready: function() {
 		      // Ready to use; soundManager.createSound() etc. can now be called.
 		  }
-	  });
+	  });*/
 	  
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
