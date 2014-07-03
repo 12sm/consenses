@@ -119,7 +119,7 @@ var Roots = {
           // selector for the NEXT link (to page 2)
           itemSelector : ".create-background-row"          
           // selector for all items you'll retrieve
-      }
+      });
     }
   },
   
