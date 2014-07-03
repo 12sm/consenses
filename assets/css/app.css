@@ -553,13 +553,11 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
    /* =========================
       Artist Modal
       ========================= */
-.modal-sidebar .profile-pic>img{
-   border-radius: 50%;
-height: 50px;
-}
-.modal-sidebar .profile-pic{
-float: left;
-}
+
+.modal-sidebar .profile-pic>img{border-radius: 50%;height: 50px;}
+.modal-sidebar .profile-pic{float: left;}
+.modal-sidebar .artist-circle {artist: 50px;height: 50px;}
+
 .word-cloud{
    text-align: center;
    max-width: 40%;
@@ -567,24 +565,13 @@ float: left;
    font-weight: 300;
 }
 
-.item img {
-width: 100%;
-}
+.item img {width: 100%;}
+.item {width: 24.555%;}
 
-.item {
-width: 24.555%;
-}
-.sm2_link>.fa :before, .sm2_paused>.fa:before {
-content: "\f04b";
-}
-.sm2_playing>.fa:before{
-  content: "\f04c";
-}
+.sm2_link>.fa :before, .sm2_paused>.fa:before {content: "\f04b";}
+.sm2_playing>.fa:before{content: "\f04c";}
 
-.modal-sidebar .artist-circle {
-artist: 50px;
-height: 50px;
-}
+.artist-sidebar {border-left: 1px solid #CCC;}
 
 .artist-meta p {
 font-size: 14px;
