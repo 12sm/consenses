@@ -671,6 +671,11 @@ margin-top: 10px;
 
 .single-art-modal .modal-footer {display:none;}
 
+.biz-card-information div.col-sm-12:nth-child(1) {
+font-size: 16px;
+font-weight: 600;
+border-bottom: 1px solid #CCC;
+}
 
 /* ==========================================================================
    CHAIN ARCHIVE
