@@ -43,7 +43,7 @@ var Roots = {
 	  
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
-		  $('.myzebra-submit.').trigger('click');
+		  $('.myzebra-submit.').click();
 	  })
 
     }
