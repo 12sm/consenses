@@ -114,9 +114,9 @@ var Roots = {
   $('#field_7zp7h4').val(artID);
 
   $('.scroll').infinitescroll({
-        navSelector  : ".post-nav .pager",            
+        navSelector  : "wpv-filter-previous-link js-wpv-pagination-previous-link",            
           // selector for the paged navigation (it will be hidden)
-          nextSelector : ".post-nav .pager .previous a",    
+          nextSelector : ".wpv-filter-next-link js-wpv-pagination-next-link",    
           // selector for the NEXT link (to page 2)
           itemSelector : ".piece"          
           // selector for all items you'll retrieve
