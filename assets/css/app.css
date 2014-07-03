@@ -552,7 +552,9 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
 
 body.single-chains .tag-and-view {margin-top: 100px;}
 body.single-chains .video-montage {margin-top: 100px;}
-.video-montage h2.aligncenter {
+
+.video-montage h2.aligncenter,
+.the-chain h2.aligncenter {
 font-weight: 100;
 color: #A2A2A2;
 margin-bottom: 20px;
