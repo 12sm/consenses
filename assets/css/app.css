@@ -693,7 +693,8 @@ float: left;
 	transition:filter .3s ease, -webkit-filter .3s ease, -moz-filter .3s ease;
 }
 
-.img-container-artists:hover {
+.img-container-artists:hover,
+.artists .artist .artist-info:hover {
 	-webkit-filter: grayscale(0%) brightness(115%);
 	-moz-filter: grayscale(0%) brightness(115%);
 	filter: grayscale(0%) brightness(115%);
@@ -718,9 +719,9 @@ filter: alpha(opacity=0);
 }
 
 .artists .artist:hover .artist-info {
-opacity: 0.8;
--ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.8)";
-filter: alpha(opacity=0.8);	
+opacity: 1;
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+filter: alpha(opacity=1);	
 }
 
 
