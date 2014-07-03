@@ -553,11 +553,11 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
    /* =========================
       Artist Modal
       ========================= */
-.profile-pic>img{
+.modal-sidebar .profile-pic>img{
    border-radius: 50%;
 height: 50px;
 }
-.profile-pic{
+.modal-sidebar .profile-pic{
 float: left;
 }
 .word-cloud{
@@ -768,7 +768,7 @@ div.row.artist-artwork {
 margin-bottom: 50px;
 }
 
-.artist-artwork .item {padding-bottom:60%;}
+.artist-artwork .item {padding-bottom:15%;}
 /* ==========================================================================
    Events
 ========================================================================== */
