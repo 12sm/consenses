@@ -643,6 +643,8 @@ padding-top: 10px;
 margin-top: 10px;
 }
 
+.single-art-modal .modal-footer {display:none;}
+
 
 /* ==========================================================================
    CHAIN ARCHIVE
