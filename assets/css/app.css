@@ -875,16 +875,17 @@ background-color: #ECECEC;
 }
 
 body.single-artists input[type=text] {
-width: 80%!important;
+width: 60%!important;
 }
 
 input#cred_form_856_1_form_submit_1 {
-background-color: orange;
+background-color: #F37717;
 border: none;
 border-radius: 5px;
 color: #FFF;
 margin-left: 7px;
 margin-top: 3px;
+font-weight:300;
 }
 
 div.row.artist-artwork {
