@@ -1249,6 +1249,10 @@ padding: 10px;
    transition:color .3s ease;
 }
 
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+background-color: #D53A3A;
+}
+
 #menu-primary-navigation ul.dropdown-menu li a {
 font-family: 'proxima-nova';
 font-weight: 200;
