@@ -83,12 +83,17 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the home page
       $('.artists').infinitescroll({
+      	  loading: {
+	      	  msgText: "<em>Loading more Artists...</em>",
+      	  }
 	      navSelector  : ".post-nav .pager",            
           // selector for the paged navigation (it will be hidden)
           nextSelector : ".post-nav .pager .previous a",    
           // selector for the NEXT link (to page 2)
           itemSelector : ".artists .artist"          
           // selector for all items you'll retrieve
+      }, function() {
+      	$('.img-container').imgLiquid();	
       });
     }
   },
