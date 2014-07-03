@@ -41,7 +41,7 @@ var Roots = {
 		  }
 	  });
 	  
-	  var $control=ele;
+	  var $control=$('#cred_form_661_1_post_tag');
 	  var terminput=$control.children('.myzebra-text').eq(0);
       var $form=$control.parent('form'); // get container form
 	  
