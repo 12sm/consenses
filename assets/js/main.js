@@ -42,8 +42,8 @@ var Roots = {
 	  });
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
-		  setTimeout('$('#cred_form_661_1').trigger("submit");', 800 );
-	  });
+		  $('#cred_form_661_1_form_submit_1').delay(2000).trigger("click");
+	  })
 
 
     }
