@@ -556,7 +556,11 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
 
 .modal-sidebar .profile-pic>img{border-radius: 50%;height: 50px;}
 .modal-sidebar .profile-pic{float: left;}
-.modal-sidebar .artist-circle {artist: 50px;height: 50px;}
+.modal-sidebar .artist-circle {height: 50px;height: 50px;margin-left:10px;}
+
+.single-art-modal .nav-tabs {border-bottom:none;height: 50px;}
+.single-art-modal .modal-header {padding: 0px;border-bottom: 1px solid #e5e5e5;min-height: 20px;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {color: #555;background-color: #CCC;border-bottom-color: transparent;cursor: default;color:#FFF;}
 
 .word-cloud{
    text-align: center;
