@@ -573,7 +573,12 @@ font-size: 42px;
 .single-art-modal .modal-header {padding: 0px;border-bottom: 1px solid #e5e5e5;min-height: 20px;}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {color: #555;background-color: #CCC;border-bottom-color: transparent;cursor: default;color:#FFF;}
 .single-art-modal .nav>li {padding:0;transition: background-color .1s ease;width: 200px;text-align:center;}
-.single-art-modal.nav-tabs>li>a {border-radius: 0px!important;}
+.nav-tabs>li>a {
+margin-right: 0px;
+line-height: 1.428571429;
+border: 0px;
+border-radius: 0px;
+}
 
 .single-art-modal .modal-header .close {
 margin-top: -2px;
