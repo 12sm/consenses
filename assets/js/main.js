@@ -41,16 +41,10 @@ var Roots = {
 		  }
 	  });
 	  
-	  var $control=$('#cred_form_661_1_post_tag');
-	  var terminput=$control.children('.myzebra-text').eq(0);
-      var $form=$control.parent('form'); // get container form
-	  
-	  $('body').on('submit', '#'+$form.attr('id'),function(e) {
-	  // add taxonomy terms to CRED forms
-            var val=$.trim(terminput.val());
-            addTerm(val,true,false);
-            terminput.val('');
-      });
+	  $('.myzebra-add-new-term').text('Submit');
+	  $('.myzebra-add-new-term').click(function() {
+		  $('.myzebra-submit.').trigger('click');
+	  })
 
     }
   },
