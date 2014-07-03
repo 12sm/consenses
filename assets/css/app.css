@@ -713,9 +713,22 @@ width: 80%;
 margin: 0 auto;
 }
 
-.email-col .col-sm-6 p {
+.row.email-col p {
 font-size: 13px;
-line-height: 1;
+margin: 2px;
+}
+
+form#cred_form_856_1 {
+width: 90%;
+margin: 0 auto;
+}
+
+input#cred_form_856_1_email {
+background-color: #ECECEC;
+}
+
+body.single-artist input.myzebra-text {
+width: 80%!important;
 }
 
 
