@@ -731,6 +731,13 @@ body.single-artist input.myzebra-text {
 width: 80%!important;
 }
 
+input#cred_form_856_1_form_submit_1 {
+background-color: orange;
+border: none;
+border-radius: 5px;
+color: #FFF;
+}
+
 
 /* ==========================================================================
    Events
