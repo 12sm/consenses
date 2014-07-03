@@ -28,6 +28,7 @@ var Roots = {
       $('.vid-container').fitVids();
 
       //jquery to pull artist id 
+
       var artID = $('#artist-content').text(); //gets the id
       $('#field_rk2uay').val(artID); //puts it in the form
 
@@ -104,7 +105,6 @@ var Roots = {
  //Create page
  create: {
     init: function(){
-      console.log('create js firing');
       $('.fire-create').click(function(){
         $('#submit-form').modal();
       });
@@ -113,7 +113,7 @@ var Roots = {
       var artID = $('#createID').text(); //gets the id
   $('#field_7zp7h4').val(artID);
 
-  $('.container').infinitescroll({
+  $('.create-container').infinitescroll({
         navSelector  : ".post-nav .pager",            
           // selector for the paged navigation (it will be hidden)
           nextSelector : ".post-nav .pager .previous a",    
