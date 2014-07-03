@@ -118,7 +118,7 @@ var Roots = {
           // selector for the paged navigation (it will be hidden)
           nextSelector : ".post-nav .pager .previous a",    
           // selector for the NEXT link (to page 2)
-          itemSelector : ".create-background-row"          
+          itemSelector : ".piece"          
           // selector for all items you'll retrieve
       });
     }
