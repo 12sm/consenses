@@ -701,7 +701,7 @@ ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 
 .thumbnail-art-img {
 background-color: #CCC;
-height: 250px;
+height: 173px;
 }
 
 .socials-logo-row {
@@ -727,7 +727,7 @@ input#cred_form_856_1_email {
 background-color: #ECECEC;
 }
 
-body.single-artist input.myzebra-text {
+body.single-artists input[type=text] {
 width: 80%!important;
 }
 
