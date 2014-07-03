@@ -113,14 +113,6 @@ var Roots = {
       var artID = $('#createID').text(); //gets the id
   $('#field_7zp7h4').val(artID);
 
-  $('.scroll').infinitescroll({
-        navSelector  : "wpv-filter-previous-link js-wpv-pagination-previous-link",            
-          // selector for the paged navigation (it will be hidden)
-          nextSelector : ".wpv-filter-next-link js-wpv-pagination-next-link",    
-          // selector for the NEXT link (to page 2)
-          itemSelector : ".piece"          
-          // selector for all items you'll retrieve
-      });
     }
   },
   
