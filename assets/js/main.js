@@ -111,6 +111,15 @@ var Roots = {
       //Grab post id
       var artID = $('#createID').text(); //gets the id
   $('#field_7zp7h4').val(artID);
+
+  $('.create').infinitescroll({
+        navSelector  : ".post-nav .pager",            
+          // selector for the paged navigation (it will be hidden)
+          nextSelector : ".post-nav .pager .previous a",    
+          // selector for the NEXT link (to page 2)
+          itemSelector : ".create-background-row"          
+          // selector for all items you'll retrieve
+      }
     }
   },
   
