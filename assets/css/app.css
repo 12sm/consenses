@@ -580,6 +580,16 @@ border: 0px;
 border-radius: 0px;
 }
 
+li.word-cloud-tab a {
+background-color: #bf2129;
+color: #FFF;
+}
+
+li.what-see-tab a {
+background-color: #F37717;
+color: #FFF;
+}
+
 .single-art-modal .modal-header .close {
 margin-top: -2px;
 padding: 15px;
