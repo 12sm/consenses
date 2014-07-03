@@ -113,7 +113,7 @@ var Roots = {
       var artID = $('#createID').text(); //gets the id
   $('#field_7zp7h4').val(artID);
 
-  $('.create-container').infinitescroll({
+  $('.scroll').infinitescroll({
         navSelector  : ".post-nav .pager",            
           // selector for the paged navigation (it will be hidden)
           nextSelector : ".post-nav .pager .previous a",    
