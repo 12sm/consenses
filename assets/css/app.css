@@ -261,8 +261,9 @@ border: none!important
 form#cred_form_661_1 {
 display: inline-block;
 }
-input.myzebra-text{
-   width: 100%!important;
+input.myzebra-text {
+width: 200px!important;
+float: left;
 }
 .tag-chain{
    background-color: #F37717;
@@ -313,15 +314,17 @@ body.home .modal-footer {display:none;}
 input#cred_form_661_1_form_submit_1 {display:none;}
 
 a.myzebra-add-new-term {
-background: #F69143;
+background-color: #F69143!important;
 border: none;
-border-radius: 5px;
-color: #fff;
+border-radius: 5px!important;
+color: #fff!important;
 font-weight: 200;
 margin-top: 3px;
-font-size: 14px;
-padding: 2px 6px;
+font-size: 14px!important;
+padding: 5px 10px!important;
 margin-left: 3px;
+float: left;
+display: inline-block;
 }
 
 .home-events {
