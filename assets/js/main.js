@@ -98,10 +98,6 @@ var Roots = {
       	$('.img-container').imgLiquid();	
       });
       
-      $('.artist').hover(function(){
-      	$(this).children('.artist-info').css('bottom', '0px');
-      });
-      
     }
   },
    
