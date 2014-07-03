@@ -810,9 +810,13 @@ padding-bottom: 100%;
 background-position: 50% 0px!important;
 }
 
-.biz-card {height: 174px;overflow: hidden;border-bottom: 1px solid #CCC;}
+.biz-card {height: 174px;overflow: hidden;border-bottom: 1px solid #CCC;margin-bottom:20px;}
 
 div.col-sm-12.email-me-please {
+border: none!important;
+}
+
+.row.form-col .col-sm-12 {
 border: none!important;
 }
 
