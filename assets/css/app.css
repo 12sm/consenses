@@ -681,7 +681,7 @@ float: left;
    ARTIST [Reel]
 ========================================================================== */
 
-.artists .artist {padding: 0!important;}
+.artists .artist {padding: 0!important; overflow:hidden;}
 .artists.col {margin-top: 30px;margin-bottom:30px;}
 
 .img-container-artists {
@@ -706,8 +706,12 @@ margin: 0px;
 padding: 10px;
 color: #fff;
 position: absolute;
-bottom: 0px;
+bottom: -60px;
 width: 100%;	
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
 }
 
 
