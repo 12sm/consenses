@@ -590,15 +590,7 @@ background-color: #F37717;
 color: #FFF;
 }
 
-li.word-cloud-tab a:hover {
-background-color: #bf2129;
-}
-
-li.what-see-tab a:hover {
-background-color: #F37717;
-}
-
-.nav>li>a:hover, .nav>li>a:focus {
+.nav>li.what-see-tab>a:hover, .nav>li.what-see-tab>a:focus {
 text-decoration: none;
 -webkit-filter: brightness(110%);
 -moz-filter: brightness(110%);
