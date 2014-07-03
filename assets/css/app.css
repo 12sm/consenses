@@ -706,12 +706,21 @@ margin: 0px;
 padding: 10px;
 color: #fff;
 position: absolute;
-bottom: -60px;
+bottom: 0px;
 width: 100%;	
 -webkit-transition: all .5s ease-in-out;
 -moz-transition: all .5s ease-in-out;
 -o-transition: all .5s ease-in-out;
 transition: all .5s ease-in-out;
+opacity: 0;
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+}
+
+.artists .artist:hover .artist-info {
+opacity: 0.8;
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.8)";
+filter: alpha(opacity=0.8);	
 }
 
 
