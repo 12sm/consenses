@@ -550,6 +550,9 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
 
 #word-accord {margin: 10% 0%;}
 
+body.single-chains .tag-and-view {
+margin-top: 100px;
+}
 
    /* =========================
       Artist Modal
