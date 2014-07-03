@@ -83,9 +83,6 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the home page
       $('.artists').infinitescroll({
-      	  loading: {
-	      	  msgText: "<em>Loading more Artists...</em>",
-      	  }
 	      navSelector  : ".post-nav .pager",            
           // selector for the paged navigation (it will be hidden)
           nextSelector : ".post-nav .pager .previous a",    
