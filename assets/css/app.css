@@ -1236,7 +1236,7 @@ margin-top:0;
 body.donors .container {margin: 0 auto;}
 body.donors .grey {background: #F0F0F0;padding: 2% 0%;}
 .sponsor-page.row.container {margin-top: 30px;}
-body.donors h1 {font-size: 40px;font-weight: 100;color: #ac3234;text-align:center;}
+body.donors h1 {font-size: 40px;font-weight: 100;color: #ac3234;text-align:center;margin-top: 40px;}
 
 p.donors-top-text {
 font-size: 22px;
@@ -1292,7 +1292,7 @@ margin: 2%;
 vertical-align:middle;
 }
 
-ul.sponsor-list {text-align: center;}
+ul.sponsor-list {text-align: center; padding-left: 0px;}
 
 ul.twentyk-list li,
 ul.tenk-list li,
@@ -1305,6 +1305,7 @@ line-height: 1.5em;
 
 ul.additional-list {
 font-size: 16px;
+font-size: 12px;
 line-height: 1.5em;
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
 -moz-column-count: 3; /* Firefox */
@@ -1495,7 +1496,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 .socials{
    width: initial;
 }
-
+ul.additional-list {
+font-size: 16px;
+}
 body.donors h1 {font-size: 52px;}
 
 .artist-sidebar {
