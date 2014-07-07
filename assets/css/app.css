@@ -214,7 +214,12 @@ min-height:500px;
    margin-bottom: 0px;
 }
 
-.week-header .btn-container {width:49.5%;}
+.week-header .btn-container {
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
 
 .chain-btn.btn {
 background: #D62C35;
@@ -1470,6 +1475,8 @@ padding: 20px 8px;
 .home-top{
    padding-bottom: 20%;
 }
+
+.week-header .btn-container {width:49.5%;}
 
 }
 
