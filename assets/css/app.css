@@ -698,7 +698,7 @@ padding: 20px;
 margin-bottom: 15px;
 }
 
-.listen-player h3 {margin-bottom: 0;}
+.listen-player h3 {margin-bottom: 0!important;}
 
 /* ==========================================================================
    CHAIN ARCHIVE
