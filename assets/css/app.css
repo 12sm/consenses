@@ -1129,6 +1129,12 @@ body.create .tag-btn button {
 padding: 10px 0;
 }
 
+body.create .tag-btn .btn-primary:hover, body.create .btn-primary:hover {
+color: #C0202B;
+background-color: transparent;
+border-color: transparent;
+}
+
 .tag-row form#cred_form_661_1 {
 display: inline-block;
 float:none;
