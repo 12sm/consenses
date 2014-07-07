@@ -1125,6 +1125,10 @@ margin-bottom: 0px;
 font-size: 13px;
 }
 
+body.create .tag-btn button {
+padding: 10px 0;
+}
+
 .tag-row form#cred_form_661_1 {
 display: inline-block;
 float:none;
@@ -1487,7 +1491,7 @@ padding: 20px 8px;
 .week-header .btn-container {width:auto;}
 
 .home-events .btn-default {font-size: 41px;}
-.week-header .btn-container {width:49.5%;}
+.week-header .btn-container {width:48.5%;}
 
 .welcome-box h2 {font-size: 60px;}
 
