@@ -5,34 +5,27 @@
   </div>
     <div class="col-sm-9">
       <div class="row sidebar-footer">
-        <div class="col-sm-6">
-        	<?php dynamic_sidebar('sidebar-footer'); ?>
-        </div>
+      	<?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
-    <div class="row footer-nav">
-      <div class="col-sm-6">
-          <?php
-       if (has_nav_menu('footer_navigation')) :
-         wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));
-       endif;
-    ?>
-      </div>
-  <div class="col-sm-3">
+    <div class="row footer-nav">  
+        <?php
+     if (has_nav_menu('footer_navigation')) :
+       wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));
+     endif;
+  ?>
   <ul class="socials">
         <li><a href="https://www.facebook.com/pages/CONSENSES/430573690342868" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
         <li><a href="https://twitter.com/ConSensesArt" target="_blank"><i class="fa fa-twitter"></i></a></li>
         <li><a href="https://www.facebook.com/pages/CONSENSES/430573690342868" target="_blank"><i class="fa fa-facebook"></i></a></li>
         <li><a href="mailto:#" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
       </ul>
-    </div>
-	  <div class="col-sm-3">
+	  
 	  <form class="navbar-form navbar-right" role="search">
 		  <div class="form-group">
 			 <input type="text" class="form-control" placeholder="Search">
 		  </div>
 		  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 	  </form>
-    </div>
 	  
     </div>
 	  
