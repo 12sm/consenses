@@ -573,7 +573,7 @@ font-size: 42px;
 .modal-sidebar .artist-circle img {height:100%;width:100%;}
 
 .single-art-modal .nav-tabs {border-bottom:none;height: 40px;}
-.single-art-modal .modal-header {padding: 0px;border-bottom: 1px solid #e5e5e5;min-height: 20px;}
+.single-art-modal .modal-header {padding: 0px;border-bottom:none!important;min-height: 20px;}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {color: #555;background-color: #CCC;border-bottom-color: transparent;cursor: default;color:#FFF;height: 40px;}
 .single-art-modal .nav>li {padding:0;transition: background-color .1s ease;width: 200px;text-align:center;}
 .nav-tabs>li>a {
