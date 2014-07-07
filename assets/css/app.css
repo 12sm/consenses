@@ -1125,6 +1125,10 @@ margin-bottom: 0px;
 font-size: 13px;
 }
 
+body.create .tag-btn button {
+padding: 10px 0;
+}
+
 .tag-row form#cred_form_661_1 {
 display: inline-block;
 float:none;
