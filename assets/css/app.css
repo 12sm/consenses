@@ -1140,6 +1140,24 @@ margin-left: 3px;
 .tag-row .btn-primary {background: #F6F6F6;color: #444;}
 .tag-row .tag-btn {background: transparent;padding: .3% 0% .3% 2%;}
 
+/* ------- NEW TEMP CREATE PAGE ------- */
+/* Displaying pieces instread of chains */
+
+.wpv-filter-next-link {float: right;}
+.wpv-filter-previous-link {float: left;}
+
+.wpv-filter-next-link, .wpv-filter-previous-link {
+color: #BF2129;
+border: 1px solid #F0F0F0;
+padding: 10px;
+margin-bottom: 10px;
+background-color:#FFF;
+transition:background-color .3s ease;
+}
+
+.wpv-filter-next-link:hover, .wpv-filter-previous-link:hover {background-color:#DBDBDB;}
+
+
 
 /* ==========================================================================
    EXPLORE
