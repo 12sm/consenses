@@ -1445,8 +1445,11 @@ text-transform: uppercase;
 #menu-primary-navigation-1>li>a:hover {color:#FFF;}
 
 .socials {
-   display: inline-block;
+display: inline-block;
 list-style: none;
+width: 100%;
+text-align: center;
+padding-left: 0px;
 }
 
 .socials>li{
@@ -1488,6 +1491,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (min-width: 768px) {
 #menu-primary-navigation-1 {padding: 0px;}
 .col {max-width:100%; margin:0px auto;}
+
+.socials{
+   width: initial;
+}
 
 .artist-sidebar {
 width: 25%;
