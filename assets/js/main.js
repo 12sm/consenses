@@ -51,13 +51,6 @@ var Roots = {
     }, 800);
 	  });
 
-    //Make tabs work
-    $('ul.nav-tabs li a').click(function (e) {
-  $('ul.nav-tabs li.active').removeClass('active')
-  $(this).parent('li').addClass('active')
-})
-
-
     }
   },
   
