@@ -150,7 +150,7 @@ header>.container{
 
 .banner-box {position: relative;margin-top: 50px;}
 .welcome-box {background-color: rgba(255,255,255,.9);padding: 3%;}
-.welcome-box h2 {font-size: 60px;font-weight: 100;margin:0;}
+.welcome-box h2 {font-size: 48px;font-weight: 100;margin:0;}
 .welcome-box h4 {font-weight: 100;font-size: 36px;margin:0;}
 
 .explore h3 {
@@ -360,7 +360,7 @@ border: none;
 border-radius: 0;
 }
 
-.home-events .btn-default {font-size: 41px;transition:background-color .3s ease, color .3s ease;}
+.home-events .btn-default {font-size: 28px;transition:background-color .3s ease, color .3s ease;}
 
 .btn-primary {
 font-weight: 100;
@@ -1484,6 +1484,11 @@ padding: 20px 8px;
 
 .week-header .btn-container {width:auto;}
 
+.home-events .btn-default {font-size: 41px;}
+.week-header .btn-container {width:49.5%;}
+
+.welcome-box h2 {font-size: 60px;}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -1493,9 +1498,7 @@ padding: 20px 8px;
 
 .home-top{
    padding-bottom: 20%;
-}
-
-.week-header .btn-container {width:49.5%;}
+}\
 
 }
 
