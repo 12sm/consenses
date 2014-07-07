@@ -692,6 +692,12 @@ font-weight: 600;
 border-bottom: 1px solid #CCC;
 }
 
+.listen-player {
+background-color: #F1F1F1;
+padding: 10px;
+margin-bottom: 15px;
+}
+
 /* ==========================================================================
    CHAIN ARCHIVE
    ========================================================================== */
