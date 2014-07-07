@@ -1288,11 +1288,14 @@ margin-bottom: 5%;
 ul.sponsor-list > li {
 display: inline-block;
 width: 15%;
+width: 90%;
 height: auto;
-margin: 2%;
+margin: 5% 3%;
 vertical-align:middle;
 }
-
+.sponsor-list img {
+margin: 0 auto;
+}
 ul.sponsor-list {text-align: center; padding-left: 0px;}
 
 ul.twentyk-list li,
@@ -1501,6 +1504,10 @@ ul.additional-list {
 font-size: 16px;
 }
 body.donors h1 {font-size: 52px;}
+
+ul.sponsor-list > li {
+width: 15%;
+}
 
 .artist-sidebar {
 width: 25%;
