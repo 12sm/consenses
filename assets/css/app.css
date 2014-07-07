@@ -148,7 +148,7 @@ header>.container{
    background: #f8f8f8;
 }
 
-.banner-box {position: relative;top: 50px;}
+.banner-box {position: relative;margin-top: 50px;}
 .welcome-box {background-color: rgba(255,255,255,.9);padding: 3%;}
 .welcome-box h2 {font-size: 60px;font-weight: 100;margin:0;}
 .welcome-box h4 {font-weight: 100;font-size: 36px;margin:0;}
