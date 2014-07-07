@@ -279,67 +279,108 @@ return weight;
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <div class="modal fade" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-			      <div class="modal-header">
-			    <ul class="nav nav-tabs">
-			  <li class="active"><a href="#img[wpv-post-id]" data-toggle="tab">Art</a></li>
-			  <li><a href="#cloud[wpv-post-id]" data-toggle="tab">Word Cloud</a></li>
-			  <li><a href="#form[wpv-post-id]" data-toggle="tab">What Do You See?</a></li>
-				</ul>
-			      </div>
-			      <div class="modal-body">
-			      	<div class="row">
-		      			<div class="tab-content col-sm-9">
-                          <div class="tab-pane img-video-tab active" id="img[wpv-post-id]">
-						  [wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
-							[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
-					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
-				[/wpv-if]
-				[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
-            <img src='[wpv-post-featured-image size='medium' raw="true"]' class="img-responsive" />
-				[/wpv-if]
-							[/wpv-if]
-							[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
-							[types field="video-embed"][/types]
-							[/wpv-if]
-						  </div>
-						  <div class="tab-pane" id="cloud[wpv-post-id]">
-						  	[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
-						  </div>
-						  <div class="tab-pane" id="form[wpv-post-id]">
-						  [cred_form form="Tag This Piece"]
-						  </div>
-						</div>
-						 <div class="artist-sidebar col-sm-3">
-						<div class="artist-meta">
-							[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids='[wpv-post-id id="$artists"]']
-						</div>
-						<div class="art-title">
-							[wpv-post-title id="[wpv-post-id]"]
-						</div>
-                      <div class="medium">
-                        [types field="medium" id="[wpv-post-id]"][/types]
-                      </div>
-						<div class="art-description">
-							[types field="description" id="[wpv-post-id]"][/types]
-						</div>
-						<div class="inspiration-piece">
-							[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chains"]"]
-					</div>
-				</div>
+          <div class="modal fade single-art-modal" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							  </div>
+							  <div class="modal-body">
+								<div class="row">
+									
+									<div class="col-sm-9">
+									  <div class="img-video-tab" id="img[wpv-post-id]">
+										[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
+										<div class="listen-player">
+                                          <h3>Listen to song:   
+                                          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
+                                             <i class='fa fa-play'></i>
+                                          </a>
+                                            </h3>
+                                        </div>
+										[/wpv-if]
+										[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+										[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+										[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+										[/wpv-if]
+										[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+										<img src='[wpv-post-featured-image size='medium' raw="true"]' class="img-responsive" height="auto" width="100%" />
+										[/wpv-if]
+										[/wpv-if]
+										[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+										[types field="video-embed"][/types]
+										[/wpv-if]
+										[wpv-if document='wpcf-document-upload' evaluate='!empty($document)']
+										[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+										[/wpv-if]
+									  </div>
+									  
+									  <div class="row">
+										  <div class="col-sm-12">
+											  <ul class="nav nav-tabs">
+													 <li class="word-cloud-tab col-sm-6">
+													 <a href="#cloud[wpv-post-id]" data-toggle="tab" role="tab">View the Consenses</a>
+													 </li>
+													 <li class="what-see-tab col-sm-6">
+													 <a href="#form[wpv-post-id]" data-toggle="tab" role="tab">What Do You See?</a>
+													 </li>       
+											   </ul>
+											</div><!-- end col-sm-12 -->
+									  </div><!-- end row -->
+									  
+									   <div class="row">
+										  <div class="col-sm-12">
+											  <div class="tab-content"> 
+												  <div class="tab-pane active" id="cloud[wpv-post-id]">
+													[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
+												  </div>
+												  <div class="tab-pane" id="form[wpv-post-id]">
+												  [cred_form form="Tag This Piece"]
+												  </div>
+											  </div><!-- end tab content -->
+										  </div><!-- end col-sm-12 -->
+									  </div><!-- end row -->
+									  
+									</div><!-- end col-sm-9 -->
+								  
+								  
+								<div class="artist-sidebar col-sm-3">
+									<div class="row artist-meta">
+									[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids='[wpv-post-id id="$artists"]']
+									</div>
+									<div class="row">   
+										<div class="col-sm-12 art-title">
+										[wpv-post-title id="[wpv-post-id]"]
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 medium">
+										 [types field="medium" id="[wpv-post-id]"][/types]
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 art-description">
+										[types field="description" id="[wpv-post-id]"][/types]
+										</div>
+									</div>
+									<div class="row">  
+										<div class="col-sm-12 inspiration-piece">
+										[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chains"]"]
+										</div>
+									</div>
+								</div>
+								  
+						</div><!-- end top row -->
+					</div><!-- end modal body -->
+				</div><!-- end modal content -->
+			</div><!-- end modal dialog -->
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			</div>
-	    </div>
-					</div>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-	    </div>
-	</div>
-    
-  </div>
+		</div><!-- end modal fade single-art-modal -->
+
+
 		</wpv-loop>
 	<!-- wpv-loop-end -->
 	[/wpv-items-found]
@@ -464,6 +505,7 @@ return weight;
 
 
 <!--------------------- CHAIN ARCHIVE | ART ---------------- -->
+
 [wpv-layout-start]
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
@@ -478,7 +520,12 @@ return weight;
     		[wpv-post-featured-image size='thumbnail']
     	[/wpv-if]
     	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
-    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
+    		[wpv-if music='wpcf-audio-file' evaluate='!empty($music)']
+    		<img src="/wp-content/themes/consenses/assets/img/music-placeholder.jpg">
+    		[/wpv-if]
+    		[wpv-if music='wpcf-audio-file' evaluate='empty($music)']
+    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg">
+    		[/wpv-if]
 		[/wpv-if]
 	[/wpv-if]
 	</div>
@@ -490,6 +537,7 @@ return weight;
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
+
 
 <!----------------- ARTIST SINGLE ------------------>
 <div class="row">
