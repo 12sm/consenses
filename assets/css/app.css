@@ -1305,6 +1305,7 @@ line-height: 1.5em;
 
 ul.additional-list {
 font-size: 16px;
+font-size: 12px;
 line-height: 1.5em;
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
 -moz-column-count: 3; /* Firefox */
@@ -1495,7 +1496,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 .socials{
    width: initial;
 }
-
+ul.additional-list {
+font-size: 16px;
+}
 body.donors h1 {font-size: 52px;}
 
 .artist-sidebar {
