@@ -1293,7 +1293,9 @@ height: auto;
 margin: 5% 3%;
 vertical-align:middle;
 }
-
+.sponsor-list img {
+margin: 0 auto;
+}
 ul.sponsor-list {text-align: center; padding-left: 0px;}
 
 ul.twentyk-list li,
