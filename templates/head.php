@@ -24,7 +24,6 @@ http://12southmusic.com/
   <?php wp_head(); ?>
   <script type="text/javascript" src="//use.typekit.net/dxe5qlg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tab.min.js'></script>
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
   <link rel="shortcut icon" href="<?php echo of_get_option('favicon_upload'); ?>" />
   <script type="text/javascript" src="//use.typekit.net/dxe5qlg.js"></script>
