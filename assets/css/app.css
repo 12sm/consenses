@@ -1413,8 +1413,9 @@ box-shadow: none;
 
 #menu-primary-navigation-1 {
 list-style: none;
-padding: 0px;
+padding: 25px;
 display: inline-block;
+text-align: center;
 }
 
 #menu-primary-navigation-1>li {
@@ -1485,7 +1486,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+#menu-primary-navigation-1 {padding: 0px;}
 .col {max-width:100%; margin:0px auto;}
 
 .artist-sidebar {
