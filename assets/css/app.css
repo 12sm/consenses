@@ -772,7 +772,6 @@ width: 100%;
 -moz-transition: all .2s ease-in-out;
 -o-transition: all .2s ease-in-out;
 transition: all .2s ease-in-out;
-opacity: 0;
 -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
 filter: alpha(opacity=0);
 }
@@ -1501,6 +1500,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+.artists .artist .artist-info{opacity: 0;}
+
 #menu-primary-navigation-1 {padding: 0px;}
 .col {max-width:100%; margin:0px auto;}
 
