@@ -1105,7 +1105,7 @@ background-position: -50px -50px!important;
 */
 
 .tag-btn .btn-primary {height: auto;}
-.row.tag-row {padding: 2%;}
+.row.tag-row {padding: 0px 10px 10px 10px;}
 .tag-row .tag-chain {background-color:transparent;border-right: 1px solid #D8D8D8;padding-right: 2%;}
 .tag-row .tag-chain p {color: #202020;}
 .tag-row .tag-chain i {color:#202020;}
@@ -1356,10 +1356,6 @@ footer i {color: #6b1116;transition:color .3s ease;}
 footer i:hover {color: #FFF;}
 footer .caret {display: none;}
 
-.row.footer-nav {
-height: 35px;
-}
-
 #social ul {margin:0px; padding:0px; list-style: none;}
 #social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
 #social li a {padding: 10px;}
@@ -1498,7 +1494,11 @@ padding: 20px 8px;
 
 .home-top{
    padding-bottom: 20%;
-}\
+}
+
+.row.footer-nav {
+height: 35px;
+}
 
 }
 
