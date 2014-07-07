@@ -679,6 +679,13 @@ margin-top: 10px;
 
 .single-art-modal .modal-footer {display:none;}
 
+
+/* Makes artwork in modal nice and big */
+.img-video-tab img.attachment-thumbnail.img-responsive {
+width: 100%;
+height: auto;
+}
+
 .biz-card-information div.col-sm-12:nth-child(1) {
 font-size: 16px;
 font-weight: 600;
