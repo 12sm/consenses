@@ -1119,6 +1119,12 @@ background-position: -50px -50px!important;
 background: #DDD;
 }
 
+body.create .tag-chain p {
+color: #424242;
+margin-bottom: 0px;
+font-size: 13px;
+}
+
 .tag-row form#cred_form_661_1 {
 display: inline-block;
 float:none;
