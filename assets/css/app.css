@@ -325,10 +325,9 @@ body.home .modal-footer {display:none;}
 
 /* REMOVE AFTER AUGUST 20TH */
 .submissions-closed {
-background: rgba(200,200,200,.3);
-padding: 3px;
+padding: 5px;
 font-size: 15px;
-color: #FFF;
+color: #F3C2C2;
 font-weight: 300;
 line-height: 1.3;
 }
