@@ -1081,7 +1081,7 @@ margin:0;
 }
 
 .create-details a {color: #BF222B;}
-.col-sm-9.create-artist-details {border-right: 1px solid #D8D8D8;}
+.col-sm-9.create-artist-details {border-right: 1px solid #D8D8D8;word-break: break-all;}
 
 .btn.create-btn-create {
 background-color: #F88A28;
