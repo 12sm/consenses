@@ -53,8 +53,8 @@ var Roots = {
 
     //Make tabs work
     $('ul.nav-tabs li a').click(function (e) {
-  $('ul.nav-tabs li.active .tab-pane.active').removeClass('active')
-  $(this).parent('li .tab-pane').addClass('active')
+  $('ul.nav-tabs li.active').removeClass('active')
+  $(this).parent('li').addClass('active')
 })
 
 
