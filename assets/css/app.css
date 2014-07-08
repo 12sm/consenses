@@ -122,14 +122,14 @@ background-color: #BF2129;
 nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 
 #menu-primary-navigation li:hover {background-color: rgba(191, 33, 41, 1);}
-#menu-primary-navigation li a {font-family: 'proxima-nova'; font-weight: 200; color: #757575;text-transform: uppercase;}
+#menu-primary-navigation li a {font-family: 'proxima-nova'; font-weight: 200; color: #757575;text-transform: uppercase; padding: 25px 15px;}
 #menu-primary-navigation li a:hover {color:#FFF;}
 #menu-primary-navigation li.active{color: #fff; background-color: #bf2129;}
 #menu-primary-navigation .menu-create > a, #menu-primary-navigation .menu-explore > a{color: #f27514;}
 
 .navbar-brand {padding: 1% 7% 1% 0;!important;margin-left: 15px;}
-.nav>li {padding: 1% 0;transition: background-color .1s ease;}
-.navbar .form-group {padding: 1% 0;}
+.nav>li {transition: background-color .1s ease;}
+.navbar .form-group {padding: 7px 5px;}
 
 
 /* ==========================================================================
