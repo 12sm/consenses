@@ -632,7 +632,7 @@ padding: 15px;
    margin: 0 auto;
    font-weight: 300;
 }
-
+	
 /*.item img {width: 100%;}
 .item {width: 24.555%;}
 */
@@ -955,7 +955,7 @@ div.row.artist-artwork {
 margin-bottom: 50px;
 }
 
-.artist-artwork .item {padding-bottom:15%;}
+.artist-artwork .item {padding:15%;}
 
 .location h4,
 .mediums h4,
