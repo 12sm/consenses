@@ -492,6 +492,8 @@ display: table-caption;
 .continue-div:hover {background-color:#ECECEC; }
 a.continue {color: #ac3234;font-weight: bold;}
 
+body.blog .news-excerpt {height:75px; overflow:hidden;}
+
 /* ----- Individual Posts ----- */
 
 body.single-post article {margin-top: 30px;}
