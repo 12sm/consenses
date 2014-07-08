@@ -1568,7 +1568,7 @@ font-size: 30px;
 .home-top{
    padding-bottom: 20%;
 }
-.home-events .btn-default {font-size: 41px;}
+
 .row.footer-nav {
 height: 35px;
 }
@@ -1596,7 +1596,7 @@ filter: alpha(opacity=0);
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+.home-events .btn-default {font-size: 41px;}
 .col {
 width: 80%;
 margin: 0px auto;
