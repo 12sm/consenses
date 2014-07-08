@@ -50,6 +50,7 @@ var Roots = {
       setTimeout(function(){
 		  $('#cred_form_661_1').submit();
       $('#cred_form_504_5').submit();
+      $(this).parent().parent().html('selected');
     }, 800);
 	  });
 
