@@ -1561,8 +1561,6 @@ font-size: 20px;
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-.artists .artist .artist-info{opacity: 0;}
-
 .col {max-width:80%; margin:0px auto;}
 
 .home-top{
@@ -1598,6 +1596,7 @@ font-size: 30px;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+   .artists .artist .artist-info{opacity: 0;}
 .home-events .btn-default {font-size: 36px;}
 .col {
 width: 80%;
