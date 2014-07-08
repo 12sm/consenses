@@ -47,8 +47,9 @@ var Roots = {
       //Make forms submit and add in one click
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
+      theID = $(this).closest('form').attr('id');
       setTimeout(function(){
-		  $(this).parents('.cred-form').submit();
+		  $(theID).submit();
     }, 800);
 	  });
 
