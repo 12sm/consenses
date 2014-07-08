@@ -389,13 +389,13 @@ return weight;
 											<div class="row tag-and-view">
 												<div class="col-sm-8 tag-chain aligncenter">		
 											      <div class="row">
-													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel" data-parent="#accordion">
+													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion">
 											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
 											          </button>
 											      </div>
 											  </div>
 												<div class="col-sm-4 tag-btn">
-												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud" data-parent="#accordion">
+												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]" data-parent="#accordion">
 											      <h4><i class="fa fa-tags"></i> What do others see?</h4>
 											      <h5>View the Consenses.</h5>
 													</button>
@@ -404,7 +404,7 @@ return weight;
 											<div class="row">
 											<div class="panel-group" id="accordion">
 											<div class="panel panel-default">  
-														<div id="submit-panel" class="panel-collapse collapse">
+														<div id="submit-panel[wpv-post-id]" class="panel-collapse collapse">
 															<div class="panel-heading">
 																	<i class="fa fa-tags"></i> Submit your interpretation
 																</div>
@@ -415,7 +415,7 @@ return weight;
 													</div>       
 											<div class="panel panel-default">
 											      
-											    <div id="wordCloud" class="panel-collapse collapse">
+											    <div id="wordCloud[wpv-post-id]" class="panel-collapse collapse">
 											    <div class="panel-heading">
 											      <i class="fa fa-tags"></i> The Consenses
 											    </div>
@@ -437,11 +437,11 @@ return weight;
 												  <div class="tab-pane" id="form[wpv-post-id]">
 												  [cred_form form="Tag This Piece"]
 												  </div>
-											  </div><!-- end tab content -->
-										  </div><!-- end col-sm-12 -->
-									  </div><!-- end row -->
+											  </div>
+										  </div>
+									  </div>
 									  
-									</div><!-- end col-sm-9 -->
+									</div>
 								  
 								  
 								<div class="artist-sidebar col-sm-3">
