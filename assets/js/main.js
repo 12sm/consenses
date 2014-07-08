@@ -49,7 +49,7 @@ var Roots = {
 	  $('.myzebra-add-new-term').click(function() {
       theID = $(this).closest('form').attr('id');
       setTimeout(function(){
-		  $(theID).submit();
+		  theID.submit();
     }, 800);
 	  });
 
