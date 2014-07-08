@@ -285,7 +285,7 @@ border: 0px;
 }
 .panel{
    border: 0px;
-   border-radius: 0px;
+   border-radius: 0px!important;
 }
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
 height: 25px;
