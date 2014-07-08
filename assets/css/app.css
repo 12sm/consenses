@@ -516,7 +516,10 @@ font-size: 23px!important;
 color: #fff!important;
 margin: 0px;
 }
-
+.modal .tag-and-view {
+margin-top: 0px!important;
+padding-right: 5px;
+}
 body.single-chains h5 {
 font-weight: 100!important;
 font-size: 18px!important;
