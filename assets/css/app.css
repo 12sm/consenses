@@ -284,6 +284,9 @@ min-height: 100px;
 border: 0px;
 outline: none!important;
 }
+.panel-body {
+text-align: center;
+}
 .panel{
    border: 0px;
    border-radius: 0px!important;
