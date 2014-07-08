@@ -36,14 +36,13 @@ var Roots = {
       	  preferFlash: false,
       	  useFlashBlock: true,
 	      url: '/assets/js',
-	      flashVersion: 9, // optional: shiny features (default = 8)
-	      // optional: ignore Flash where possible, use 100% HTML5 mode
-	      // preferFlash: false,
-	      onready: function() {
-		      // Ready to use; soundManager.createSound() etc. can now be called.
-		      inlinePlayer = new InlinePlayer();
-		  }
+	      flashVersion: 9
 	  });
+	  
+	  soundManager.onready(function() {
+		  // soundManager.createSound() etc. may now be called
+		  inlinePlayer = new InlinePlayer();
+	  }); 
 
       //Make forms submit and add in one click
 	  $('.myzebra-add-new-term').text('Submit');
