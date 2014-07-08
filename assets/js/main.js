@@ -33,12 +33,15 @@ var Roots = {
       $('#field_rk2uay').val(artID); //puts it in the form
 
       soundManager.setup({
-	      url: 'soundmanager2.swf',
+      	  preferFlash: false,
+      	  useFlashBlock: true,
+	      url: '/assets/js',
 	      flashVersion: 9, // optional: shiny features (default = 8)
 	      // optional: ignore Flash where possible, use 100% HTML5 mode
 	      // preferFlash: false,
 	      onready: function() {
 		      // Ready to use; soundManager.createSound() etc. can now be called.
+		      inlinePlayer = new InlinePlayer();
 		  }
 	  });
 
