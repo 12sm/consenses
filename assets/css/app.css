@@ -1549,7 +1549,7 @@ padding: 20px 8px;
 .week-header .btn-container {width:auto;}
 
 .home-events .btn-default {
-font-size: 30px;
+font-size: 20px;
 }
 
 .week-header .btn-container {width:48.5%;}
@@ -1590,13 +1590,15 @@ transition: all .2s ease-in-out;
 -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
 filter: alpha(opacity=0);
 }
-
+.home-events .btn-default {
+font-size: 30px;
+}
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-.home-events .btn-default {font-size: 41px;}
+.home-events .btn-default {font-size: 36px;}
 .col {
 width: 80%;
 margin: 0px auto;
