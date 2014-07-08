@@ -385,20 +385,48 @@ return weight;
 										[wpv-if document='wpcf-document-upload' evaluate='!empty($document)']
 										[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
 										[/wpv-if]
-									  </div>
-									  
-									  <div class="row">
-										  <div class="col-sm-12">
-											  <ul class="nav nav-tabs">
-													 <li class="word-cloud-tab col-sm-6">
-													 <a href="#cloud[wpv-post-id]" data-toggle="tab" role="tab">View the Consenses</a>
-													 </li>
-													 <li class="what-see-tab col-sm-6">
-													 <a href="#form[wpv-post-id]" data-toggle="tab" role="tab">What Do You See?</a>
-													 </li>       
-											   </ul>
-											</div><!-- end col-sm-12 -->
-									  </div><!-- end row -->
+									  </div> 
+											<div class="row tag-and-view">
+												<div class="col-sm-8 tag-chain aligncenter">		
+											      <div class="row">
+													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel" data-parent="#accordion">
+											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
+											          </button>
+											      </div>
+											  </div>
+												<div class="col-sm-4 tag-btn">
+												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud" data-parent="#accordion">
+											      <h4><i class="fa fa-tags"></i> What do others see?</h4>
+											      <h5>View the Consenses.</h5>
+													</button>
+												</div>
+											</div>
+											<div class="row">
+											<div class="panel-group" id="accordion">
+											<div class="panel panel-default">  
+														<div id="submit-panel" class="panel-collapse collapse">
+															<div class="panel-heading">
+																	<i class="fa fa-tags"></i> Submit your interpretation
+																</div>
+																<div class="panel-body">
+											          			[cred_form form="Tag Chain"]
+														    </div>
+													    </div>  
+													</div>       
+											<div class="panel panel-default">
+											      
+											    <div id="wordCloud" class="panel-collapse collapse">
+											    <div class="panel-heading">
+											      <i class="fa fa-tags"></i> The Consenses
+											    </div>
+											      <div class="panel-body">
+											        [wpv-view name="word-cloud" ids="[wpv-post-id]"]
+											      </div>
+											    </div>
+											  
+											</div>
+											</div>
+											</div>
 									  
 									   <div class="row">
 										  <div class="col-sm-12">
