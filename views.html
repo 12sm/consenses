@@ -1,0 +1,1016 @@
+<!-- HOME | WEEKLY-CHALLENGE | CHAIN-->
+[wpv-layout-start]
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="row week-container">
+          	<div class="col-sm-12">
+          	<div class="row week-header">
+	<div class="col-sm-8">
+		<h3>Weekly Challenge: "[wpv-post-title]"</h3>
+      <p>[trim  length="150"][types field="description"][/types][/trim]</p>
+	</div>
+	<div class="col-sm-4">
+		<div class="btn-container">
+          <a href="[wpv-post-url]" class="chain-btn btn">
+              See the Chain
+          </a>
+		</div>
+        <div class="btn-container">
+            <a href="[wpv-post-url]#submit-form">
+                <div class="submit-btn btn">
+                    <h3>Submit</h3>
+                    <p>to this challenge</p>
+                </div>
+            </a>
+            </div>
+        </div>
+              </div>
+          [wpv-view name="home-weekly-challenge-art" wpvprchildof="[wpv-post-id]"]
+          </div>
+      </div>
+          <div class="row">
+	<div class="col-sm-8">
+		<i class="fa fa-pencil"></i>[cred_form form="Tag Chain"]
+	</div>
+          </div>
+	<div class="col-sm-4">
+		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wordCloud">
+			What do others see? View Tags. <i class="fa fa-tags"></i>
+		</button>
+	</div>
+</div>
+          
+          <!--tag Cloud-->
+<div class="modal fade" id="wordCloud" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          	[wpv-view name="word-cloud" ids="[wpv-post-id]"]
+        </div>
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!-------------------------------- /END VIEW -------------------------------->
+
+
+<!-- ------------------------ HOME | CHALLENEGE | ART ---------------------------------- -->
+[wpv-layout-start]
+	[wpv-items-found]		
+<wpv-loop> 
+<div class="row">
+	<div class="col-sm-12">
+      [wpv-if imag='wpcf-art-image' evaluate='!empty($imag)']
+		<img src="[types field="art-image" size="large" url="true" resize="proportional"][/types]" class="img-responsive" />
+      <h2>Art-image</h2>
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+	<img src="[wpv-post-featured-image raw="true"]" class="img-responsive" />
+      <h2>Feat-img</h2>
+	[/wpv-if]
+	</div>
+</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!--------------- END HOME | CHALLENGE | ART -------------------->
+
+<!--------------- HOME | EVENTS ---------------------------------->
+
+    [wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="col-sm-6 events-copy">
+   		[types field="banner-copy"][/types]
+	</div>
+	<div class="col-sm-6">
+		<button class="btn btn-default" href="[types field="button-link" output="raw"][/types]"> [types field="link-title"][/types]</button>
+	</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!--------------------- END HOME| EVENTS ---------------------------------------->
+
+<!--------------------- HOME | NEWS ---------------------------------------------->
+	[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+	
+          <div class="col-sm-12">
+            	<wpv-loop>
+		[wpv-item index=1]
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="img-container">
+					[wpv-post-featured-image size='thumbnail']
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<h4>[wpv-post-title]</h4>
+				<p class="date">[wpv-post-date format='F j, Y']</p>
+				<p>[wpv-post-excerpt length='200']</p>
+			</div>
+		</div>
+        <div class="row">
+		[wpv-item index=other]
+			<div class="col-sm-3">
+				<div class="img-container">
+					[wpv-post-featured-image size='thumbnail']
+				</div>
+				<p class="date">[wpv-post-date format='F j, Y']</p>
+				<h5>[wpv-post-title]</h5>
+			</div>
+		</wpv-loop>
+				</div>
+            	</div>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!------------------------------ CONTENT TEMPLATES -------------------------------------->
+
+<!------------------------------ CHAINS ---------------------------------------------- -->
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2 chain-info">
+		<h1 class="chain-title">"[wpv-post-title]"</h1>
+      	<div class="row">
+	<div class="col-sm-12">
+          <div class="img-container">
+          	[types field="art-image" size="full" align="none" resize="proportional" class="img-responsive"][/types]
+          </div>
+	</div>
+</div>
+		<p>[types field="description"][/types]</p>
+	</div>
+</div>
+
+<div class="row tag-and-view">
+	<div class="col-sm-8 tag-chain aligncenter">		
+      <div class="row">
+		<div class="col-sm-12">
+		<button class="panel-title submit-panel-btn" data-toggle="collapse" data-target="#submit-panel" data-parent="#accordion">
+          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+      	<div class="col-sm-12">
+      		<div class="panel-group" id="accordion">          
+				<div class="panel panel-default">  
+    				<div id="submit-panel" class="panel-collapse collapse">
+    					<div class="panel-heading">
+      						<i class="fa fa-tags"></i> Submit your interpretation
+   						</div>
+      					<div class="panel-body">
+                  			[cred_form form="Tag Chain"]
+					    </div>
+				    </div>  
+				</div>
+			</div>
+        </div>
+    </div>
+  </div>
+	<div class="col-sm-4 tag-btn">
+	<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud" data-parent="#accordion">
+      <h4><i class="fa fa-tags"></i> What do others see?</h4>
+      <h5>View the Consenses.</h5>
+		</button>
+	</div>
+</div>
+<div class="row">
+<div class="panel-group" id="accordion">          
+<div class="panel panel-default">
+      
+    <div id="wordCloud" class="panel-collapse collapse">
+    <div class="panel-heading">
+      <i class="fa fa-tags"></i> The Consenses
+    </div>
+      <div class="panel-body">
+        [wpv-view name="word-cloud" ids="[wpv-post-id]"]
+      </div>
+    </div>
+  
+</div>
+</div>
+</div>
+
+<div class="row video-montage">
+  <h2 class="aligncenter">About the Chain</h2>
+  <div class="vid-container">
+			[types field="video-embed"][/types]
+		</div>
+</div>
+
+<div class="row the-chain">
+  <h2 class="aligncenter">See the Chain</h2>
+  <div class="col-sm-12">
+    <div class="js-masonry">
+		[wpv-view name="CHAIN SINGLE | ART" wpvprchildof="[wpv-post-id]"]
+	</div>
+  </div>
+</div>
+
+<div class="row tag-and-view">
+	<div class="col-sm-8 tag-chain aligncenter">		
+      <div class="row">
+		<div class="col-sm-12">
+          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
+        </div>
+      </div>
+      <div class="row">
+      	<div class="col-sm-12">
+          [cred_form form="Tag Chain"]
+        </div>
+    </div>
+  </div>
+	<div class="col-sm-4 tag-btn">
+	<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud" data-parent="#accordion">
+      <h4><i class="fa fa-tags"></i> What do others see?</h4>
+      <h5>View the Consenses.</h5>
+		</button>
+	</div>
+</div>
+<div class="row">
+<div class="panel-group" id="accordion">          
+<div class="panel panel-default">
+      
+    <div id="wordCloud" class="panel-collapse collapse">
+    <div class="panel-heading">
+      <i class="fa fa-tags"></i> The Consenses
+    </div>
+      <div class="panel-body">
+        [wpv-view name="word-cloud" ids="[wpv-post-id]"]
+      </div>
+    </div>
+  
+</div>
+</div>
+</div>
+
+[wpv-view name="CHAIN SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
+
+<div class="modal fade" id="submit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      [formidable id=10]
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------------- WORD CLOUD SCRIPT ----------------- -->
+<script>
+$('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
+
+        $(".word-cloud").each(function(){
+            var divs = $(this).find('a');
+            for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
+            //the fisher yates algorithm, from http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
+            var i = divs.length;
+            if ( i == 0 ) return false;
+            while ( --i ) {
+               var j = Math.floor( Math.random() * ( i + 1 ) );
+               var tempi = divs[i];
+               var tempj = divs[j];
+               divs[i] = tempj;
+               divs[j] = tempi;
+             }
+            for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
+        });
+        //add spaces after
+        $('.word-cloud > a').after(" ");    
+
+        $('.word-cloud > a').attr('rel', function(){
+var weight = Math.floor((Math.random() * 10) + 1);
+return weight;
+});
+        $(function () {
+  $('.word-cloud > a').tagcloud();
+});
+        </script>
+
+
+<!-- ---------- CHAIN SINGLE | ART ---------- -->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="masonry-img item"><a class="img-transparent" data-toggle="modal" data-target="#[wpv-post-id]">	[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+				[wpv-if img="wpcf-art-image" evaluate='!empty($img)'']
+					[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+				[/wpv-if]
+				[wpv-if $img="wpcf-art-image" evaluate="empty($img)"]
+					<img src="[artthing]" class="img-responsive" />
+				[/wpv-if]
+		[/wpv-if]
+		[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+		[wpv-post-featured-image]
+		[/wpv-if]</a></div>
+         </wpv-loop>
+
+
+<!-- ---------------- CHAIN SINGLE | ART MODAL --------------------- -->
+
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="modal fade single-art-modal" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							  </div>
+							  <div class="modal-body">
+								<div class="row">
+									
+									<div class="col-sm-9">
+									  <div class="img-video-tab" id="img[wpv-post-id]">
+										[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
+										<div class="listen-player">
+                                          <h3>Listen to song:   
+                                          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
+                                             <i class='fa fa-play'></i>
+                                          </a>
+                                            </h3>
+                                        </div>
+										[/wpv-if]
+										[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+										[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+										[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+										[/wpv-if]
+										[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+										<img src='[wpv-post-featured-image size='medium' raw="true"]' class="img-responsive" height="auto" width="100%" />
+										[/wpv-if]
+										[/wpv-if]
+										[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+										[types field="video-embed"][/types]
+										[/wpv-if]
+										[wpv-if document='wpcf-document-upload' evaluate='!empty($document)']
+										[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+										[/wpv-if]
+									  </div>
+									  
+									  <div class="row">
+										  <div class="col-sm-12">
+											  <ul class="nav nav-tabs">
+													 <li class="word-cloud-tab col-sm-6">
+													 <a href="#cloud[wpv-post-id]" data-toggle="tab" role="tab">View the Consenses</a>
+													 </li>
+													 <li class="what-see-tab col-sm-6">
+													 <a href="#form[wpv-post-id]" data-toggle="tab" role="tab">What Do You See?</a>
+													 </li>       
+											   </ul>
+											</div><!-- end col-sm-12 -->
+									  </div><!-- end row -->
+									  
+									   <div class="row">
+										  <div class="col-sm-12">
+											  <div class="tab-content"> 
+												  <div class="tab-pane active" id="cloud[wpv-post-id]">
+													[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
+												  </div>
+												  <div class="tab-pane" id="form[wpv-post-id]">
+												  [cred_form form="Tag This Piece"]
+												  </div>
+											  </div><!-- end tab content -->
+										  </div><!-- end col-sm-12 -->
+									  </div><!-- end row -->
+									  
+									</div><!-- end col-sm-9 -->
+								  
+								  
+								<div class="artist-sidebar col-sm-3">
+									<div class="row artist-meta">
+									[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids='[wpv-post-id id="$artists"]']
+									</div>
+									<div class="row">   
+										<div class="col-sm-12 art-title">
+										[wpv-post-title id="[wpv-post-id]"]
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 medium">
+										 [types field="medium" id="[wpv-post-id]"][/types]
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 art-description">
+										[types field="description" id="[wpv-post-id]"][/types]
+										</div>
+									</div>
+									<div class="row">  
+										<div class="col-sm-12 inspiration-piece">
+										[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chains"]"]
+										</div>
+									</div>
+								</div>
+								  
+						</div><!-- end top row -->
+					</div><!-- end modal body -->
+				</div><!-- end modal content -->
+			</div><!-- end modal dialog -->
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- end modal fade single-art-modal -->
+
+
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!------------ CHAIN SINGLE | ART MODAL | ARTIST META ---------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="modal-sidebar">
+	[types field="profile-img" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+	<p><span class="red-bold">[wpv-post-title]</span> [occupation]</p>
+	<p>[location]</p>
+	<p>[types field="website" target="_blank"][/types]</p>
+	<ul class="artist-socials">
+		<li class="facebook"><a href="[types field="facebook" output="raw"][/types]" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+		<li class="twitter"><a href="[types field="twitter" output="raw"][/types]" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+		<li class="instagram"><a href="[types field="instagram" output="raw"][/types]" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!----------- CHAIN | ARCHIVE -------------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+	<div class="row">
+		<wpv-loop>
+	<div class="col-sm-4 chain-container">
+      <a href="[wpv-post-url]">
+		[wpv-view name="CHAIN ARCHIVE | TOP OF CHAIN" wpvprchildof='[wpv-post-id]']
+      </a>
+	</div>
+         </wpv-loop>
+	</div>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No posts found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!-----------CHAIN ARCHIVE | TOP OF CHAIN---------------------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="img-container">
+		[types field="art-image" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+		</div>
+		<div class="row grey">
+			<div class="col-sm-12">
+			[wpv-if evaluate="has_term('Collage', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Dance', 'medium', null) = '1'"]
+			<i class="fa fa-random"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Film', 'medium', null) = '1'"]
+			<i class="fa fa-film"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Food & Spice', 'medium', null) = '1'"]
+			<i class="fa fa-cutlery"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Glass Sculptor', 'medium', null) = '1'"]
+			<i class="fa fa-glass"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Music', 'medium', null) = '1'"]
+			<i class="fa fa-music"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Paint', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Painting', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Perfume', 'medium', null) = '1'"]
+			<i class="fa fa-flask"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Photograph', 'medium', null) = '1'"]
+			<i class="fa fa-camera-retro"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Poem', 'medium', null) = '1'"]
+			<i class="fa fa-align-center"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Sculpture', 'medium', null) = '1'"]
+			<i class="icomoon icon-hammer-2"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Song', 'medium', null) = '1'"]
+			<i class="fa fa-music"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-cube"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-leaf"></i>
+			[/wpv-if]
+
+	<span class="chain-title">[wpv-post-title]</span> | [wpv-post-title id='$artist']
+				</div>
+			</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+
+<!--------------------- CHAIN ARCHIVE | ART ---------------- -->
+
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+<div class="col-sm-4 chain-padding">
+	<div class="img-container">
+	[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
+      [types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+    [/wpv-if]
+    [wpv-if art="wpcf-art-image" evaluate="empty($art)"]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate="!empty($thumb)"]
+    		[wpv-post-featured-image size='thumbnail']
+    	[/wpv-if]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
+    		[wpv-if music='wpcf-audio-file' evaluate='!empty($music)']
+    		<img src="/wp-content/themes/consenses/assets/img/music-placeholder.jpg">
+    		[/wpv-if]
+    		[wpv-if music='wpcf-audio-file' evaluate='empty($music)']
+    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg">
+    		[/wpv-if]
+		[/wpv-if]
+	[/wpv-if]
+	</div>
+</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+
+<!----------------- ARTIST SINGLE ------------------>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="img-cont">
+			[wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
+				[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+			[/wpv-if]
+			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"]
+				<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg">
+			[/wpv-if]
+		</div>
+		<!--Business Card-->
+		<div class="row biz-card">
+			
+			<!--Information Section-->
+			<div class="col-sm-9 col-sm-push-3">
+				<div class="row">
+					<div class="col-sm-8">
+						[wpv-post-title]
+					</div>
+					<div class="col-sm-4">
+                      [wpv-post-taxonomy type="post_tag" separator="/" format="link" show="name" order="asc"]
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						[types field="email"][/types] // [types field="website" target="_blank"][/types]
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<ul class="artist-socials">
+							<li><i class="fa fa-twitter"></i> [types field="twitter" target="_blank"][/types]</li>
+							<li><i class="fa fa-facebook"></i> [types field="facebook" target="_blank"][/types]</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+                      <img src="/wp-content/themes/consenses/assets/img/logo-top.png" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-sm-pull-9">
+				[wpv-view name="ARTIST SINGLE | BUSINESS CARD | ART" wpvrchildof="[wpv-post-id]"]
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p> I would like this artist's info emailed to me: [form stuff]</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+	<h1>[wpv-post-title]</h1>
+	<h3>[wpv-post-taxonomy type="post_tag" separator="/" format="link" show="name" order="asc"]</h3>
+		[types field="bio"][/types]
+	</div>
+</div>
+<div class="row">
+	[wpv-view name="ARTIST SINGLE | ART" wpvprchildof="[wpv-post-id]"]
+</div>
+[wpv-view name="CHAIN SINGLE | ART MODAL"]
+
+<!-------------- ARTIST SINGLE | ART -------------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="col-md-3 col-sm-6">
+	<div class="img-container">
+	<a class="modal-link" data-toggle="modal" data-target="#[wpv-post-id]">
+		[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
+		[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
+		[wpv-post-featured-image]
+		[/wpv-if]
+		</a>
+	</div>
+</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!-------------- ARTIST SINGLE | ART -------------------->
+<div class="row">
+	<div class="col-sm-4">
+		<div class="img-container">
+			[wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
+				<img src="profile img">
+			[/wpv-if]
+			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"]
+				<img src="wp-content/themes/consenses/assets/img/placeholder.jpg">
+			[/wpv-if]
+		</div>
+	</div>
+	<div class="col-sm-8">
+		<div class="row">
+			<div class="col-sm-8">
+				[wpv-post-title]
+			</div>
+			<div class="col-sm-4">
+				[medium stuff]
+			</div>
+		</div>
+		<div class="row">
+
+
+
+
+
+
+
+<!--------------------------- NEWS ARCHIVE ---------------------------->
+<div class="row">
+	<div class="col-sm-4">
+		<div class="img-container">
+		[featured-image]
+		</div>
+		[wpv-post-title]
+	</div>
+</div>
+
+
+<!--------------------- DONORS | SPONSORS ---------------------------------------------->
+<div class="row grey">
+	<div class="col-sm-12">
+		<h3>Sponsors</h3>
+		<ul class="sponsor-list">
+			<li><a href='sponsor-link'><img src="logo"></a></li>
+		</ul>
+	</div>
+</div>
+
+<!--------------------- DONORS | 20k ---------------------------------------------->
+<div class="row">
+	<div class="col-sm-12">
+		<h3>$20000 Donors</h3>
+		<ul class="20k-list">
+			<li>[wpv-post-title]</li>
+		</ul>
+	</div>
+</div>
+
+<!--------------------- DONORS | 10k ---------------------------------------------->
+<div class="row">
+	<div class="col-sm-12">
+		<h3>$10000 Donors</h3>
+		<ul class="10k-list">
+			<li>[wpv-post-title]</li>
+		</ul>
+	</div>
+</div>
+
+<!--------------------- DONORS | 5k ---------------------------------------------->
+<div class="row">
+	<div class="col-sm-12">
+		<h3>$5000 Donors</h3>
+		<ul class="5k-list">
+			<li>[wpv-post-title]</li>
+		</ul>
+	</div>
+</div>
+
+<!--------------------- DONORS | 1k ---------------------------------------------->
+<div class="row">
+	<div class="col-sm-12">
+		<h3>$1000 Donors</h3>
+		<ul class="1k-list">
+			<li>[wpv-post-title]</li>
+		</ul>
+	</div>
+</div>
+
+<!------------------ ARTISTS | PAGE ------------------ -->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+   <div class="artist">
+          <div class="row artist-header">
+	<div class="col-sm-2">
+		<a href="[wpv-post-url]">
+		<div class="img-container"> 
+	[wpv-if imag='wpcf-profile-img' evaluate="!empty($imag)"]
+		<img src='[types field="profile-img" size="thumbnail" url="true" resize="proportional"][/types]' class='img-responsive'/>
+	[/wpv-if]
+	[wpv-if imag='wpcf-profile-img' evaluate='empty($imag)']
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive">
+      [/wpv-if]
+      </div>
+      </a>
+	</div>
+	<div class="col-sm-10">
+		<div class="row">
+			<div class="col-sm-6">
+		  <a href="[wpv-post-url]"><h3>[wpv-post-title]</h3></a>
+			</div>
+			<div class="col-sm-6">
+		      <h3>[wpv-post-taxonomy type="medium" separator=", " format="link" show="name" order="asc"]</h3>
+		     </div>
+	     </div>
+		        <div class="row">
+		         <div class="col-sm-12">
+		           [types field="bio"][/types]
+		         </div>
+		     </div>
+		</div>
+	</div>
+<div class="row photos">
+	<div class="col-sm-2">
+	</div>
+	[wpv-view name="ARTISTS | ART" wpvprchildof="[wpv-post-id]"]
+</div>
+          </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No posts found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!------------------ ARTISTS | ART -------------------->
+<div class="col-sm-2">
+	<a href="[wpv-post-url]">
+	<div class="img-container">
+		<img src="artimgagefdafda" class="img-responsive">
+	</div>
+	</a>
+</div>
+
+<!------ ARTIST EMAIL ---------->
+<div class="row">
+	<div class="col-sm-12">
+		<h3> Thanks for requesting more information about [wpv-post-title]!</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<ul>
+			<li> Email: [email]</li>
+			<li>Website</li>
+			<li>Twitter:</li>
+			<li>Facebook:</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		[bio]
+	</div>
+</div>
+
+<!--------------- CREATE | CHAIN ---------------->
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+          <div class="row">
+	<div class="col-sm-6">
+	<h1>[wpv-post-title]</h1>
+		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
+      [types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
+    [/wpv-if]
+    [wpv-if art="wpcf-art-image" evaluate="empty($art)"]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate="!empty($thumb)"]
+    		[wpv-post-featured-image size='thumbnail']
+    	[/wpv-if]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
+    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
+		[/wpv-if]
+	[/wpv-if]
+	</div>
+	<div class="col-sm-6">
+		[wpv-view name='CREATE | ART' wpvprchildof='[wpv-post-id]']
+		<div class="row create-buttons">
+		<div class="col-sm-6">
+        	<p>What does this image mean to you? Sum it up in one word.</p>
+        	</div>
+			<div class="col-sm-6">
+			[cred_form form="Tag Chain"]
+			</div>
+	</div>
+</div>
+          </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+
+
+<!----------- CREATE | ART ------------>
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>[wpv-post-title]</h4>
+				[wpv-if evaluate="has_term('Collage', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Dance', 'medium', null) = '1'"]
+			<i class="fa fa-random"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Film', 'medium', null) = '1'"]
+			<i class="fa fa-film"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Food & Spice', 'medium', null) = '1'"]
+			<i class="fa fa-cutlery"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Glass Sculptor', 'medium', null) = '1'"]
+			<i class="fa fa-glass"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Music', 'medium', null) = '1'"]
+			<i class="fa fa-music"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Paint', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Painting', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Perfume', 'medium', null) = '1'"]
+			<i class="fa fa-flask"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Photograph', 'medium', null) = '1'"]
+			<i class="fa fa-camera-retro"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Poem', 'medium', null) = '1'"]
+			<i class="fa fa-align-center"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Sculpture', 'medium', null) = '1'"]
+			<i class="icomoon icon-hammer-2"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Song', 'medium', null) = '1'"]
+			<i class="fa fa-music"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-cube"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-pencil"></i>
+			[/wpv-if]
+			[wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]
+			<i class="fa fa-leaf"></i>
+			[/wpv-if]
+			[wpv-post-taxononmy-stuff-medium-fill me in you son of a bitch]
+			</div>
+		</div>
+		<div class="row">
+          [wpv-view name="create-artist" ids="[wpv-post-id id='$artists']"]
+        </div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+
+<!----------- CREATE | ARTISTS ------------>
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+	<div class="col-sm-6">
+			[wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
+				[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive artist-profile"][/types]
+			[/wpv-if]
+			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"]
+				<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="artist-profile">
+			[/wpv-if]
+			<a href="[wpv-post-url]"><h3>[wpv-post-title]</h3></a>
+			<wpv-post-taxonomy-shit>
+			<artist website>
+			<a href="twitter"><i class="fa fa-twitter"></i></a>
+			<a href="facebook"><i class="fa fa-facebook"></i></a>
+	</div>
+	<div class="col-sm-6">
+		[wpv-view name="CREATE | SUBMIT BUTTON" IDS='[wpv-post-id]']
+	</div>
+		</wpv-loop>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
+
+<!----------------- CREATE | SUBMIT BUTTON ---------------------->
+<button class="btn create-btn" href='[wpv-post-url]#submit-modal'>Submit <span class='small'>your interpretation</span></button>
