@@ -1363,7 +1363,7 @@ font-family: 'proxima-nova';
 font-weight: 300;
 font-size: 18px;
 }
-.contact .home-events {
+.contact .home-events, .about .home-events {
 margin: 0 auto;
 }
 body.contact fieldset input[type=text], 
