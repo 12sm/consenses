@@ -1548,7 +1548,10 @@ padding: 20px 8px;
 
 .week-header .btn-container {width:auto;}
 
-.home-events .btn-default {font-size: 41px;}
+.home-events .btn-default {
+font-size: 30px;
+}
+
 .week-header .btn-container {width:48.5%;}
 
 .welcome-box h2 {font-size: 60px;}
@@ -1565,7 +1568,7 @@ padding: 20px 8px;
 .home-top{
    padding-bottom: 20%;
 }
-
+.home-events .btn-default {font-size: 41px;}
 .row.footer-nav {
 height: 35px;
 }
