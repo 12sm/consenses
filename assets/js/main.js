@@ -48,9 +48,7 @@ var Roots = {
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
       setTimeout(function(){
-		  $('#cred_form_661_1').submit();
-      $('#cred_form_504_5').submit();
-      $(this).parent().parent().html('selected');
+		  $(this).parents('.cred-form').submit();
     }, 800);
 	  });
 
