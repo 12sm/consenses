@@ -84,6 +84,8 @@ filter: brightness(115%);
 
 /* All Modals */
 
+.modal {margin:0px auto;}
+
 .modal-content {
 margin-top:5%;
 box-shadow: 0 0 3px 3px rgba(48, 48, 48, .2);
