@@ -510,7 +510,7 @@ margin-top: 5%;
 .chain-info {font-size: 18px;}
 body.single-chains .col-sm-6.col-sm-offset-3 {text-align: center;}
 
-body.single-chains h4 {
+.tag-and-view h4{
 font-weight: 100!important;
 font-size: 23px!important;
 color: #fff!important;
@@ -522,6 +522,10 @@ font-weight: 100!important;
 font-size: 18px!important;
 color: #000!important;
 margin: 0px;
+}
+
+#submit-panel .panel-heading {
+color: #fff;
 }
 
 body.single-chains button.btn.btn-view {
