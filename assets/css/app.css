@@ -336,6 +336,9 @@ background-color: #C0202B;
 border-color: #C0202B;
 }
 
+.home .tag-btn {
+padding:0px;
+}
 
 /* REMOVE AFTER AUGUST 20TH */
 .submissions-closed {
