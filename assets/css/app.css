@@ -954,9 +954,10 @@ width: 80%;
 margin: 0 auto;
 }
 
-.row.email-col {
-min-height: 100px;
-}
+/*.row.email-col {
+height: 100px;
+overflow: hidden;
+}*/
 
 .row.email-col p {
 font-size: 13px;
