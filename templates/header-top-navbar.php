@@ -17,7 +17,7 @@
         endif;
       ?>
 	  
-	  <form class="navbar-form navbar-left" role="search" method="get" action="#">
+	  <form class="navbar-form navbar-left" role="search" method="get" action="">
 		  <div class="form-group">
 			 <input type="search" name="s" class="search-field form-control" placeholder="Search">
 		  </div>
