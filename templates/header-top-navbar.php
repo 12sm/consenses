@@ -17,11 +17,11 @@
         endif;
       ?>
 	  
-	  <form class="navbar-form navbar-left" role="search">
+	  <form class="navbar-form navbar-left" role="search" method="get" action="#">
 		  <div class="form-group">
-			 <input type="text" class="form-control" placeholder="Search">
+			 <input type="search" name="s" class="search-field form-control" placeholder="Search">
 		  </div>
-		  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+		  <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
 	  </form>
 	  
     </nav>

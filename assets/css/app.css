@@ -106,7 +106,7 @@ z-index: -1;
 }
 .panel-body>form {
 margin: 0 auto;
-width: 50%;
+width: 100%;
 }
 /* ==========================================================================
    Header
@@ -340,7 +340,14 @@ border-color: #C0202B;
    background: #B7B7B7;
 }
 
-.myzebra-recaptcha {width:320px; margin:0px auto;}
+.myzebra-recaptcha {width:320px; margin:0px auto!important;}
+
+.recaptcha_only_if_privacy {
+text-align: right;
+display: none;
+}
+
+.cred-taxonomy {margin-bottom:15px;}
 
 
 /* REMOVE AFTER AUGUST 20TH */
