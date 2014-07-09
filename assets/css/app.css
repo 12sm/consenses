@@ -330,9 +330,6 @@ background-color: #C0202B;
 border-color: #C0202B;
 }
 
-/* Weekly Challenge Home Page Modal */
-body.home .modal-dialog {width: 55%;}
-body.home .modal-footer {display:none;}
 
 /* REMOVE AFTER AUGUST 20TH */
 .submissions-closed {
@@ -505,8 +502,7 @@ body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 /* ==========================================================================
    CHAIN SINGLE
    ========================================================================== */
-
-.modal-dialog {width: 75%;}
+   
 .vid-container > img {margin: 0 auto;}
 .chain-info {text-align: center;}
 body.single-chains .date {display: none;}
