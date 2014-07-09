@@ -1072,6 +1072,16 @@ body.post-type-archive-chains .img-container {background-size: 115%!important;pa
    CREATE
    ========================================================================== */
 
+.kill-row {
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.kill-row .submit-panel-btn {
+padding: 0px;
+width: 100%;
+}
+
 .create-opening {
 text-align: center;
 margin-top: 3%;
@@ -1565,6 +1575,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+.kill-row {
+margin-left: 15px;
+margin-right: 15px;
+}
 
 #menu-primary-navigation-1 {padding: 0px;}
 .col {max-width:100%; margin:0px auto;}
