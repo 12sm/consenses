@@ -1175,6 +1175,7 @@ padding: 0;
 }
 .create #submit-panel, .submit-panel, .submit-panel-btn{
    padding: 4px 2px;
+   width:100%;
 }
 .create-artist-details h3 {
 color: #BF222B;
@@ -1611,7 +1612,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 header>.container {
 background: #f8f8f8;
-width: 100%;
+width: 768px;
 }
 
 #menu-primary-navigation li a {
@@ -1631,6 +1632,9 @@ margin-right: -15px;
 .socials{
    width: initial;
 }
+
+.welcome-box {min-width: 650px;}
+
 ul.additional-list {
 font-size: 16px;
 }
@@ -1687,6 +1691,11 @@ font-size: 20px;
    height: 330px;
 }
 
+header>.container {
+width: 957px;
+margin: 0px auto;
+}
+
 #menu-primary-navigation li a {
 padding: 25px 7px;
 }
@@ -1731,6 +1740,11 @@ font-size: 30px;
 
 .artists .artist .artist-info{opacity: 0;}
 .home-events .btn-default {font-size: 36px;}
+
+header>.container {
+width: 1080px;
+margin: 0px auto;
+}
 
 #menu-primary-navigation li a {
 padding: 25px 15px;
