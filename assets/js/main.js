@@ -60,6 +60,10 @@ var Roots = {
 	if(getQueryVariable('_success_message')){
 		$('.thank-you').modal('toggle')
 	}
+	
+	$('.sumbit-panel').click(function() {
+		$('.myzebra-captcha_show').click();
+	});
 
 
     }
