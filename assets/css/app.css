@@ -270,8 +270,7 @@ display: inline-block;
 
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form select, .MyZebra_Form textarea {
 padding: 6px 5px 5px 5px;
-border: none!important
-;
+border: none!important;
 }
 .myzebra-terms{
    display: none!important;
@@ -287,7 +286,6 @@ display: inline-block;
 }
 input.myzebra-text {
 width: 200px!important;
-float: left;
 }
 #submit-panel,.submit-panel, .submit-panel-btn {
 background-color: #F37717;
@@ -305,7 +303,7 @@ text-align: center;
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
 height: 25px;
 border-radius: 5px;
-background: #F69143;
+background: #fff;
 margin-top: 3px;
 }
 
@@ -342,6 +340,9 @@ border-color: #C0202B;
    background: #B7B7B7;
 }
 
+.myzebra-recaptcha {width:320px; margin:0px auto;}
+
+
 /* REMOVE AFTER AUGUST 20TH */
 .submissions-closed {
 padding: 5px;
@@ -363,7 +364,6 @@ margin-top: 3px;
 font-size: 14px!important;
 padding: 5px 10px!important;
 margin-left: 3px;
-float: left;
 display: inline-block;
 }
 
