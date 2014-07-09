@@ -8,6 +8,6 @@
 		</div>
 	</div>
 	
-	<?php echo do_shortcode('[wpv-view name="CREATE | CHAIN"]'); ?>
+	<?php echo do_shortcode('[wpv-view name="CREATE | ART | PARENT"]'); ?>
 
 </div>

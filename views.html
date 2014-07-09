@@ -351,8 +351,8 @@ return weight;
 	[wpv-items-found]
 	<!-- wpv-loop-start -->
 		<wpv-loop>
-          <div class="modal fade single-art-modal" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
+          <div class="modal fade single-art-modal modal-lg" id="[wpv-post-id]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-container">
 				<div class="modal-content">
 							  <div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -360,35 +360,365 @@ return weight;
 							  <div class="modal-body">
 								<div class="row">
 									
-									<div class="col-sm-9">
+									<div class="col-sm-12 col-md-7 col-lg-6">
 									  <div class="img-video-tab" id="img[wpv-post-id]">
-										[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
-										<div class="listen-player">
-                                          <h3>Listen to song:   
-                                          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
-                                             <i class='fa fa-play'></i>
-                                          </a>
-                                            </h3>
-                                        </div>
-										[/wpv-if]
-										[wpv-if video="wpcf-video-embed" evaluate="empty($video)"]
-										[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
-										[types field="art-image" size="thumbnail" align="none" resize="proportional" class="img-responsive"][/types]
-										[/wpv-if]
-										[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
-										<img src='[wpv-post-featured-image size='medium' raw="true"]' class="img-responsive" height="auto" width="100%" />
-										[/wpv-if]
-										[/wpv-if]
-										[wpv-if video="wpcf-video-embed" evaluate="!empty($video)"]
-										[types field="video-embed"][/types]
-										[/wpv-if]
-										[wpv-if document='wpcf-document-upload' evaluate='!empty($document)']
-										[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
-										[/wpv-if]
+										
+      <!--Character&Plot-->
+[wpv-if evaluate="has_term('character-plot', 'medium', null) = '1'"]
+	<h1>Character & Plot</h1>
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='empty($doc)']
+	
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+			[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Collage-->
+[wpv-if evaluate="has_term('collage', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Dance-->
+[wpv-if evaluate="has_term('dance', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+			[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Film-->
+[wpv-if evaluate="has_term('film', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+			[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Film Directing-->
+[wpv-if evaluate="has_term('film-directing', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Glass Sculptor-->
+[wpv-if evaluate="has_term('glass-sculptor', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Jewelry Design-->
+[wpv-if evaluate="has_term('jewelry-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+                                        <!--Music-->
+                                        [wpv-if evaluate="has_term('music', 'medium', null) = '1'"]
+	[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
+		<div class="listen-player">
+          <h3>Listen to song:   
+          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
+             <i class='fa fa-play'></i>
+          </a>
+            </h3>
+        </div>
+	[/wpv-if]
+	[wpv-if music="wpcf-audio-file" evaluate="empty($music)"]
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+                                      
+                                        <!--Paint-->
+[wpv-if evaluate="has_term('paint', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Painting-->
+[wpv-if evaluate="has_term('painting', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                       <!--Perfume-->
+[wpv-if evaluate="has_term('perfume', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Photograph-->
+[wpv-if evaluate="has_term('photograph', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if] 
+                       
+                                        <!--Poem-->
+[wpv-if evaluate="has_term('poem', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Poem-->
+[wpv-if evaluate="has_term('poem', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Quilt Design-->
+[wpv-if evaluate="has_term('quilt-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Screenplay-->
+[wpv-if evaluate="has_term('screenplay', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+                                        
+<!--Sculpture-->
+[wpv-if evaluate="has_term('sculpture', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Song-->
+[wpv-if evaluate="has_term('song', 'medium', null) = '1'"]
+	[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
+		<div class="listen-player">
+          <h3>Listen to song:   
+          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
+             <i class='fa fa-play'></i>
+          </a>
+            </h3>
+        </div>
+	[/wpv-if]
+	[wpv-if music="wpcf-audio-file" evaluate="empty($music)"]
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        
+<!--Spacial Design-->
+[wpv-if evaluate="has_term('spacial-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+
+<!--Tapestry-->
+[wpv-if evaluate="has_term('tapestry', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        <!--Tea-->
+[wpv-if evaluate="has_term('tea', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+                                        
+                                        
+                   <!--Theatre-->
+[wpv-if evaluate="has_term('theatre', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]                                         
+                                    
 									  </div> 
 											<div class="row tag-and-view">
 												<div class="col-sm-8 tag-chain aligncenter">		
-											      <div class="row">
+											      <div class="row kill-row">
 													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion">
 											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
 											          <h5>Submit your interpretation.</h5>
@@ -403,13 +733,14 @@ return weight;
 												</div>
 											</div>
 											<div class="row">
+											<div class="col-sm-12">
 											<div class="panel-group" id="accordion">
 											<div class="panel panel-default">  
 														<div id="submit-panel[wpv-post-id]" class="submit-panel panel-collapse collapse">
 															<div class="panel-heading">
 															</div>
 																<div class="panel-body">
-											          			[cred_form form="Tag Chain" post='[wpv-post-id]']
+											          			[cred_form form="Tag This Piece"]
 														    </div>
 													    </div>  
 													</div>       
@@ -427,24 +758,14 @@ return weight;
 											</div>
 											</div>
 											</div>
+											</div>
 									  
-									   <div class="row">
-										  <div class="col-sm-12">
-											  <div class="tab-content"> 
-												  <div class="tab-pane active" id="cloud[wpv-post-id]">
-													[wpv-view name="WORD CLOUD" ids="[wpv-post-id]"]
-												  </div>
-												  <div class="tab-pane" id="form[wpv-post-id]">
-												  [cred_form form="Tag This Piece" post='[wpv-post-id]']
-												  </div>
-											  </div>
-										  </div>
-									  </div>
+									
 									  
 									</div>
 								  
 								  
-								<div class="artist-sidebar col-sm-3">
+								<div class="artist-sidebar col-sm-12 col-md-5 col-lg-6">
 									<div class="row artist-meta">
 									[wpv-view name="CHAIN SINGLE | ART MODAL | ARTIST META" ids='[wpv-post-id id="$artists"]']
 									</div>
@@ -455,7 +776,7 @@ return weight;
 									</div>
 									<div class="row">
 										<div class="col-sm-12 medium">
-										 [types field="medium" id="[wpv-post-id]"][/types]
+										 [wpv-post-taxonomy type="medium" separator=", " format="text" show="name" order="asc"]
 										</div>
 									</div>
 									<div class="row">
@@ -468,8 +789,7 @@ return weight;
 										[wpv-view name="CHAIN SINGLE | ART MODAL| INSPIRATION PIECE" wpvprchildof="[wpv-post-id id="$chains"]"]
 										</div>
 									</div>
-								</div>
-								  
+								</div>	  
 						</div><!-- end top row -->
 					</div><!-- end modal body -->
 				</div><!-- end modal content -->
@@ -930,6 +1250,119 @@ return weight;
           </div>
 		</wpv-loop>
 	<!-- wpv-loop-end -->
+<!----------------------CREATE | ART | PARENT------------>
+
+
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+<div class='row'>
+<div class='scroll col-sm-12'>
+		<wpv-loop>
+          <div class="row piece create-background-row">
+	<div class="col-sm-6 create-artwork img-container">
+		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
+      [types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+    [/wpv-if]
+    [wpv-if art="wpcf-art-image" evaluate="empty($art)"]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate="!empty($thumb)"]
+    		[wpv-post-featured-image size='large']
+    	[/wpv-if]
+    	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
+    		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
+		[/wpv-if]
+	[/wpv-if]
+	</div>
+	<div class="col-sm-6 create-details">
+      <h1>[wpv-post-title]</h1>
+		[wpv-view name='CREATE | ART' ids='[wpv-post-id]']
+      <div class="col-sm-6 border-top submit-col">
+		[wpv-view name="CREATE | SUBMIT BUTTON" ids='[wpv-post-id]']
+	</div>
+		<div class="row tag-and-view">
+												<div class="col-sm-6 tag-chain aligncenter">		
+											      <div class="row kill-row">
+													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion">
+											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
+											          <h5>Submit your interpretation.</h5>
+											          </button>
+											      </div>
+											  </div>
+												<div class="col-sm-6 tag-btn">
+												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]" data-parent="#accordion">
+											      <h4><i class="fa fa-tags"></i> What do others see?</h4>
+											      <h5>View the Consenses.</h5>
+													</button>
+												</div>
+											</div>
+											<div class="row">
+											<div class="panel-group" id="accordion">
+											<div class="panel panel-default">  
+														<div id="submit-panel[wpv-post-id]" class="submit-panel panel-collapse collapse">
+															<div class="panel-heading">
+															</div>
+																<div class="panel-body">
+											          			[cred_form form="Tag This Piece" post='[wpv-post-id]']
+														    </div>
+													    </div>  
+													</div>       
+											<div class="panel panel-default">
+											      
+											    <div id="wordCloud[wpv-post-id]" class="panel-collapse collapse">
+											    <div class="panel-heading">
+											      <i class="fa fa-tags"></i> The Consenses
+											    </div>
+											      <div class="panel-body">
+											        [wpv-view name="word-cloud" ids="[wpv-post-id]"]
+											      </div>
+											    </div>
+											  
+											</div>
+											</div>
+											</div>
+</div>
+            <div class='hide' id='createID[wpv-post-id]'>[wpv-post-id id='$chains']</div>
+            <div class='hide' id='Createpost[wpv-post-id]'>[wpv-post-id]</div>
+          <script>
+            $('#[wpv-post-id]').click(function(){
+  var chainID = $('#createID[wpv-post-id]').text(); //gets chain id
+  $('#field_7zp7h4').val(chainID);
+           
+  			var postID = $('#createpost[wpv-post-id]').text(); //gets composition id
+  $('#field_4jyp5i').val(postID);
+
+          var artID = $('#artist-content').text(); //gets artist id
+      $('#field_rk2uay').val(artID);
+
+      }); //puts it in the form
+          </script>
+          </div>
+          
+          
+		</wpv-loop>
+  </div>
+</div>
+<div class="modal fade modal-lg" id="submit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Submit Your Interpretation</h4>
+      </div>
+      <div class="modal-body">
+      [formidable id=10]
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- wpv-loop-end -->
+
+[wpv-filter-start hide="false"]
+[wpv-filter-controls][wpv-pager-prev-page][wpml-string context="wpv-views"]Previous[/wpml-string][/wpv-pager-prev-page][wpv-pager-next-page][wpml-string context="wpv-views"]Next[/wpml-string][/wpv-pager-next-page][/wpv-filter-controls]
+[wpv-filter-end]
 
 
 <!----------- CREATE | ART ------------>
@@ -1034,3 +1467,365 @@ return weight;
 
 <!----------------- CREATE | SUBMIT BUTTON ---------------------->
 <button class="btn create-btn" href='[wpv-post-url]#submit-modal'>Submit <span class='small'>your interpretation</span></button>
+
+
+<!--Character&Plot-->
+[wpv-if evaluate="has_term('character-plot', 'medium', null) = '1'"]
+	<h1>Character & Plot</h1>
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	<h1>doc</h1>
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='empty($doc)']
+	<h1>no doc</h1>
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+			[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			<h1>placeholder</h1>
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Collage-->
+[wpv-if evaluate="has_term('collage', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Dance-->
+[wpv-if evaluate="has_term('dance', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	<h1>Video</h1>
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+			[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Film-->
+[wpv-if evaluate="has_term('film', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	<h1>Video</h1>
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+			[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			<h1>placeholder</h1>
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Film Directing-->
+[wpv-if evaluate="has_term('film-directing', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	<h1>Video</h1>
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			<h1>placeholder</h1>
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Food & Spice-->
+
+[wpv-if evaluate="has_term('food-spice', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+
+<!--Glass Sculptor-->
+[wpv-if evaluate="has_term('glass-sculptor', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Jewelry Design-->
+[wpv-if evaluate="has_term('jewelry-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Music-->
+[wpv-if evaluate="has_term('music', 'medium', null) = '1'"]
+	[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
+		<div class="listen-player">
+          <h3>Listen to song:   
+          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
+             <i class='fa fa-play'></i>
+          </a>
+            </h3>
+        </div>
+	[/wpv-if]
+	[wpv-if music="wpcf-audio-file" evaluate="empty($music)"]
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			<h1>placeholder</h1>
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Paint-->
+[wpv-if evaluate="has_term('paint', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Painting-->
+[wpv-if evaluate="has_term('painting', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Perfume-->
+[wpv-if evaluate="has_term('perfume', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Photograph-->
+[wpv-if evaluate="has_term('photograph', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Poem-->
+[wpv-if evaluate="has_term('poem', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	<h1>doc</h1>
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Quilt Design-->
+[wpv-if evaluate="has_term('quilt-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Screenplay-->
+[wpv-if evaluate="has_term('screenplay', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	<h1>doc</h1>
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Quilt Design-->
+[wpv-if evaluate="has_term('quilt-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Sculpture-->
+[wpv-if evaluate="has_term('sculpture', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Song-->
+[wpv-if evaluate="has_term('song', 'medium', null) = '1'"]
+	[wpv-if music="wpcf-audio-file" evaluate="!empty($music)"]
+		<div class="listen-player">
+          <h3>Listen to song:   
+          <a href="[types field="audio-file" link="true" output="raw"][/types]" class="inline-playable sm2_link">
+             <i class='fa fa-play'></i>
+          </a>
+            </h3>
+        </div>
+	[/wpv-if]
+	[wpv-if music="wpcf-audio-file" evaluate="empty($music)"]
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			<h1>placeholder</h1>
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	<h1>doc</h1>
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Spacial Design-->
+[wpv-if evaluate="has_term('spacial-design', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+
+<!--Tapestry-->
+[wpv-if evaluate="has_term('tapestry', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+[/wpv-if]
+
+<!--Tea-->
+[wpv-if evaluate="has_term('tea', 'medium', null) = '1'"]
+	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+		<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+	[/wpv-if]
+	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+		<h1>placeholder</h1>
+		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	<h1>doc</h1>
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
+
+<!--Theatre-->
+[wpv-if evaluate="has_term('theatre', 'medium', null) = '1'"]
+	[wpv-if video='wpcf-video-embed' evaluate='!empty($video)']
+	<h1>Video</h1>
+		<div class='vid-container'>
+			[types field="video-embed"][/types]
+		</div>
+	[/wpv-if]
+	[wpv-if video='wpcf-video-embed' evaluate='empty($video)']
+		[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
+			<h1>art image</h1>
+		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
+		[/wpv-if]
+		[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
+			<h1>placeholder</h1>
+			<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
+		[/wpv-if]
+	[/wpv-if]
+	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
+	<h1>doc</h1>
+		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
+	[/wpv-if]
+[/wpv-if]
