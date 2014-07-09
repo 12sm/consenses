@@ -18,11 +18,13 @@ function create_form_parent($entry_id, $form_id){
   if($form_id == 9){ //select form id
   	global $frm_entry;
   	$artist_id = $_POST['item_meta'][112];
+    $comp_id = $_POST['item_meta'][134];
     $entry = $frm_entry->getOne($entry_id);
     $post_id = $entry->post_id; //gets id of child post (not working)
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
     update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
     add_post_meta($post_id,'_wpcf_belongs_artists_id', $artist_id);
+    add_post_meta($post_id,'_wpcf_belongs_composition_id', $comp_id);
   }
 }
 
