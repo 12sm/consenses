@@ -49,7 +49,7 @@
   </div>
 </footer>
 
-<div class="modal fade thank-you modal-lg aligncenter" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="thankyou" aria-hidden="true">
+<div class="modal fade thank-you modal-lg" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="thankyou" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
