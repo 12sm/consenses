@@ -300,6 +300,11 @@ text-align: center;
    border: 0px;
    border-radius: 0px!important;
 }
+
+.panel-group .panel+.panel {
+margin-top: 0px;
+}
+
 .MyZebra_Form input.myzebra-password, .MyZebra_Form input.myzebra-text, .MyZebra_Form input[type="text"] {
 height: 25px;
 border-radius: 5px;
@@ -673,7 +678,7 @@ padding: 15px;
 border-radius: 50px;
 }
 
-.word-panel {background: rgb(183, 183, 183);}
+.word-panel {background:#C0202B;}
 	
 /*.item img {width: 100%;}
 .item {width: 24.555%;}
@@ -1205,6 +1210,8 @@ background-position: -50px -50px!important;
 */
 
 .tag-btn .btn-primary {height: 100px;}
+.tag-btn .btn-primary {background:#C0202B;}
+.tag-btn .btn-primary.collapsed {background:#B7B7B7}
 .row.tag-row {padding: 0px 10px 10px 10px;}
 .tag-row .tag-chain {background-color:transparent;border-right: 1px solid #D8D8D8;padding-right: 2%;}
 .tag-row .tag-chain p {color: #202020;}
