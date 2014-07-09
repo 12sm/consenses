@@ -104,6 +104,10 @@ overflow: hidden;
 .modal-backdrop.fade.in {
 z-index: -1;
 }
+.panel-body>form {
+margin: 0 auto;
+width: 50%;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -733,7 +737,7 @@ display: none; /* REMOVE AFTER AUGUST 20TH */
 
 
 /* Makes artwork in modal nice and big */
-.img-video-tab img.attachment-thumbnail.img-responsive {
+.img-video-tab img.attachment-large.img-responsive {
 width: 100%;
 height: auto;
 }
