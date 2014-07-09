@@ -326,7 +326,7 @@ width: 240px!important;
 .tag-chain p {
 color: #fff;
 margin-bottom: 0px;
-padding: 6px;
+padding-left: 0px;
 }
 
 .tag-chain i{
@@ -530,8 +530,7 @@ color: #fff!important;
 margin: 0px;
 }
 .modal .tag-and-view {
-margin-top: 0px!important;
-padding-right: 5px;
+
 }
 body.single-chains h5 {
 font-weight: 100!important;
@@ -1580,8 +1579,12 @@ ul.sponsor-list > li {
 width: 15%;
 }
 
+.tag-chain {
+padding-right:0px;	
+}
+
 .tag-btn {
-padding:0px;
+padding-left:0px;
 }
 
 .tag-btn:hover {
