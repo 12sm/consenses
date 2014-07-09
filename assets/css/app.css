@@ -737,7 +737,7 @@ display: none; /* REMOVE AFTER AUGUST 20TH */
 
 
 /* Makes artwork in modal nice and big */
-.img-video-tab img.attachment-thumbnail.img-responsive {
+.img-video-tab img.attachment-large.img-responsive {
 width: 100%;
 height: auto;
 }
