@@ -57,6 +57,11 @@ var Roots = {
     }, 800);
 	  });
 
+	if(getQueryVariable('_success_message')){
+		$('.thank-you').modal('toggle')
+	}
+
+
     }
   },
   
