@@ -445,7 +445,7 @@ text-transform: uppercase;
 
 .home-news .col-sm-4 .img-container {padding-bottom: 100%;} /* Featured post */
 .home-news .news-item .img-container {padding:25%; }
-
+.thank-you {text-align: center; margin:0px auto;}
 /* ==========================================================================
    ABOUT
    ========================================================================== */
