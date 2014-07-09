@@ -26,7 +26,7 @@ var Roots = {
       $('.img-container').imgLiquid();
       $('.img-video-tab > .entry-content-asset').fitVids();
       $('.vid-container').fitVids();
-
+      $('.myzebra-prime-name-post_tag').attr("placeholder", "Sum it up in one word.");
       //jquery to pull artist id 
 
       var artID = $('#artist-content').text(); //gets the id
@@ -44,6 +44,8 @@ var Roots = {
 		  inlinePlayer = new InlinePlayer();
 	  }); 
 
+
+
       //Make forms submit and add in one click
 	  $('.myzebra-add-new-term').text('Submit');
 	  $('.myzebra-add-new-term').click(function() {
@@ -58,7 +60,7 @@ var Roots = {
   },
   
   //single chains
-/*  single_chains: {
+  single_chains: {
     init: function(){
 	    
 	    //Open submit modal on open of page
@@ -76,9 +78,9 @@ var Roots = {
 	        	gutter: 5
 	        });
 	    });
-	    $('.myzebra-text').attr("placeholder", "Sum it up in one word.");
+
     }
-  }, */
+  }, 
   
   // Home page
   home: {
