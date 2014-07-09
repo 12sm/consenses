@@ -20,13 +20,13 @@
 		</div>
 	</div>
 </div>
+<div class="row home-events">
+	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
+</div>
 <div class="row home-bottom col weekly-challenge" id="weekly-challenge">
 			<div class="col-sm-12">
 				<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
 			</div>
-</div>
-<div class="row home-events">
-	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
 </div>
 <div class="row home-news-main col">
 	<div class="col-sm-12">
