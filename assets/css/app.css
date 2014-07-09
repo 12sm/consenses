@@ -888,7 +888,7 @@ padding-bottom: 100%;
 background-position: 50% 0px!important;
 }
 
-.biz-card {height: 174px;border-bottom: 1px solid #CCC;margin-bottom:20px;}
+.biz-card {height: 174px;overflow: hidden;border-bottom: 1px solid #CCC;margin-bottom:20px;}
 
 .single-artists .myzebra-form-message {
 display: none;
@@ -955,7 +955,8 @@ margin: 0 auto;
 }
 
 .row.email-col {
-min-height: 100px;
+height: 100px;
+overflow: hidden;
 }
 
 .row.email-col p {
@@ -966,7 +967,7 @@ margin: 2px;
 form#cred_form_856_1 {
 width: 90%;
 margin: 0 auto;
-margin-top: 3px;
+margin-top: -3px;
 }
 
 input#cred_form_856_1_email {
