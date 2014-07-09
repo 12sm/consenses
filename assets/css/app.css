@@ -330,12 +330,14 @@ padding: 8px 0px 0px 10px;
 color: #fff;
 }
 
-.tag-btn .btn-primary:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+.home .tag-btn, .tag-btn .btn-primary:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
 color: #fff;
 background-color: #C0202B;
 border-color: #C0202B;
 }
-
+.home .tag-btn{
+   background: #B7B7B7;
+}
 
 /* REMOVE AFTER AUGUST 20TH */
 .submissions-closed {
