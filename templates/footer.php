@@ -49,7 +49,7 @@
   </div>
 </footer>
 
-<div class="modal fade thank-you modal-lg aligncenter">
+<div class="modal fade thank-you modal-lg aligncenter hide">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
