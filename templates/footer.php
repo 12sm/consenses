@@ -49,7 +49,7 @@
   </div>
 </footer>
 
-<div class="modal fade thank-you">
+<div class="modal fade thank-you modal-lg aligncenter">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -58,6 +58,7 @@
       </div>
       <div class="modal-body">
         <p>Your post will be made live shortly live pending Consenses.org review.</p>
+        <img src="http://stage.consenses.org/wp-content/themes/consenses/assets/img/logo-top.png" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
