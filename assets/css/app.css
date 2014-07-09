@@ -291,7 +291,6 @@ float: left;
 }
 #submit-panel,.submit-panel, .submit-panel-btn {
 background-color: #F37717;
-padding: 5px 0;
 min-height: 100px;
 border: 0px;
 outline: none!important;
@@ -532,6 +531,7 @@ margin: 0px;
 .modal .tag-and-view {
 
 }
+
 body.single-chains h5 {
 font-weight: 100!important;
 font-size: 18px!important;
@@ -1579,17 +1579,21 @@ ul.sponsor-list > li {
 width: 15%;
 }
 
-.tag-chain {
-margin-left: 15px;	
-}
-
 .tag-btn {
-margin-left: -15px;
-padding-left: 0px;
+padding:0px;
 }
 
 .tag-btn:hover {
 background: #C0202B;
+}
+
+.modal .tag-chain {
+margin-left: 15px;	
+}
+
+.modal .tag-btn {
+margin-left: -15px;
+padding-left: 0px;
 }
 
 .artist-sidebar {
