@@ -1220,6 +1220,9 @@ margin-bottom: 0px;
 font-size: 13px;
 }
 
+body.create .tag-btn {background:#B7B7B7;}
+body.create .tag-btn:hover button {background:#C0202B;}
+
 body.create .tag-btn button {
 padding: 10px 0;
 }
