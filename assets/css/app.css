@@ -1580,11 +1580,12 @@ width: 15%;
 }
 
 .tag-chain {
-padding-right:0px;	
+margin-left: 15px;	
 }
 
 .tag-btn {
-padding-left:0px;
+margin-left: -15px;
+padding-left: 0px;
 }
 
 .tag-btn:hover {
