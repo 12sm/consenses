@@ -1140,7 +1140,9 @@ font-size: 13px;
 margin-bottom: 0;
 padding: 0;
 }
-
+.create #submit-panel, .submit-panel, .submit-panel-btn{
+   padding: 4px 2px;
+}
 .create-artist-details h3 {
 color: #BF222B;
 font-size: 16px;
