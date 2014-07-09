@@ -28,6 +28,7 @@
 				<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
 			</div>
 </div>
+<hr />
 <div class="row home-news-main col">
 	<div class="col-sm-12">
 		<div class="row home-news">
