@@ -910,7 +910,7 @@ padding-bottom: 100%;
 background-position: 50% 0px!important;
 }
 
-.biz-card {height: 185px;overflow: hidden;border-bottom: 1px solid #CCC;margin-bottom:20px;}
+.biz-card {overflow: hidden;border-bottom: 1px solid #CCC;margin-bottom:20px;}
 
 .single-artists .myzebra-form-message {
 display: none;
@@ -1698,6 +1698,8 @@ header>.container {
 background: #f8f8f8;
 width: 768px;
 }
+
+.biz-card {height: 185px;}
 
 #menu-primary-navigation li a {
 padding: 25px 10px;
