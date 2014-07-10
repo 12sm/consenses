@@ -26,7 +26,7 @@ body {
 	line-height: 1.4em;
 }
 
-a {transition:color .3s ease, background-color .3s ease, opacity .3s ease;}
+a {transition:color .3s ease, background-color .3s ease, opacity .3s ease; cursor: pointer;}
 a:hover, a:focus {text-decoration: none!important;}
 
 .wrap {
