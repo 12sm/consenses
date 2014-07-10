@@ -1660,6 +1660,14 @@ height: auto;
 display: block;
 }
 
+body.single-artists h2 {
+text-align: center;
+}
+
+body.single-artists h1, body.single-artists .location, body.single-artists .mediums {
+text-align: center;
+}
+
 /* FOOTER */
 footer form.navbar-form.navbar-left {
 width: 80%;
