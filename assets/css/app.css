@@ -1144,7 +1144,7 @@ overflow: hidden;
 }
 
 .create-details h1 {font-size: 26px;margin-bottom:0;}
-p.mediums .fa {color: #BCBCBC;font-size: 16px;}
+p.mediums .fa, p.mediums .glyphicon {color: #BCBCBC;font-size: 16px;}
 p.mediums a {color: #A3A3A3;font-weight: 500;font-size: 16px;}
 
 .artist-circle {
@@ -1188,7 +1188,10 @@ margin:0;
 }
 
 .create-details a {color: #BF222B;}
-.col-sm-9.create-artist-details {border-right: 1px solid #D8D8D8;word-break: break-all;}
+.col-sm-9.create-artist-details {
+border-right: 1px solid #D8D8D8;
+min-height: 75px;
+}
 
 .btn.create-btn-create {
 background-color: #F88A28;
