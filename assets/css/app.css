@@ -1679,13 +1679,16 @@ font-size: 20px;
 
 .welcome-box h2 {font-size: 60px;}
 
+.create .img-container {
+height: 330px;
+background-position: 50% 0px!important;
+}
+
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-.create .img-container{
-   height: 330px;
-}
 
 header>.container {
 width: 957px;
