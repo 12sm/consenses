@@ -937,6 +937,16 @@ overflow: scroll;
 line-height: 1.1;
 }
 
+.biz-card .col-sm-8.social-col {
+font-weight: 600;
+color: #434343;
+border-right: 1px solid #CCC;
+border-bottom: 1px solid #CCC;
+height: 45px;
+overflow: scroll;
+line-height: 1.1;
+}
+
 body.single-artists span.email {
 font-size: 12px;
 font-weight: 100;
