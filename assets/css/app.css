@@ -1701,6 +1701,9 @@ text-align: center;
 margin: 0 auto;
 width: 80%;
 }
+.artist-card-title {
+margin-top: 15px;
+}
 
 }
 
@@ -1711,6 +1714,10 @@ width: 80%;
 header>.container {
 background: #f8f8f8;
 width: 768px;
+}
+
+.artist-card-title {
+margin-top: initial;
 }
 
 .biz-card {height: 185px;}
