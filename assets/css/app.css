@@ -873,6 +873,7 @@ list-style: none;
 padding-left: 0px;
 border-right: 1px solid #CCC;
 margin-bottom: 0;
+font-size:13px;
 }
    
 body.single-artists h1 {
@@ -976,7 +977,6 @@ overflow: auto;
 line-height: 1;
 }
 
-ul.artist-socials li:nth-child(1) {border-bottom: 1px solid #CCC;}
 .biz-card-website .col-sm-8 {border-left: 1px solid #CCC;}
 .social-col {padding:0;}
 .border-bottom {border-bottom:1px solid #CCC;}
