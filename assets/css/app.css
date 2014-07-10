@@ -883,9 +883,7 @@ font-weight: 600;
 color:#7b7b7b;
 margin:0px 0px 4% 0px;
 }
-.single-artists .artist-meta {
-display: none;
-}
+
 body.single-artists article p {
 font-size: 16px;
 color: #404040;
@@ -1631,6 +1629,7 @@ margin-top: 10px;
 body.create .col-sm-9.create-artist-details {
 text-align: center;
 margin-top: 10px;
+margin-bottom: 10px;
 }
 
 }
