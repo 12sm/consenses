@@ -937,6 +937,12 @@ overflow: scroll;
 line-height: 1.1;
 }
 
+body.single-artists span.email {
+padding-left: 15px;
+font-size: 12px;
+font-weight: 100;
+}
+
 ul.artist-socials a {
 font-size: 13px;
 padding: 1%;
