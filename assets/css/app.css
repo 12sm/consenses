@@ -995,7 +995,6 @@ margin: 0 auto;
 }
 
 .row.email-col {
-height: 100px;
 overflow: hidden;
 }
 
@@ -1652,6 +1651,10 @@ body.create .col-sm-9.create-artist-details {
 text-align: center;
 margin-top: 10px;
 margin-bottom: 10px;
+}
+
+.row.email-col {
+height: 100px;
 }
 
 /* DONORS PAGE */
