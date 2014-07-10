@@ -943,7 +943,7 @@ color: #434343;
 border-right: 1px solid #CCC;
 border-bottom: 1px solid #CCC;
 height: 45px;
-overflow: scroll;
+overflow: auto;
 line-height: 1.1;
 }
 
