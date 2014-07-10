@@ -1260,7 +1260,7 @@ return weight;
 <div class='scroll col-sm-12'>
 		<wpv-loop>
           <div class="row piece create-background-row">
-	<div class="col-sm-6 create-artwork img-container">
+	<div class="col-sm-6 create-artwork img-container" data-toggle="modal" data-target="#[wpv-post-id]" >
 		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
       [types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
     [/wpv-if]
@@ -1281,18 +1281,19 @@ return weight;
 	</div>
 		<div class="row tag-and-view">
 												<div class="col-sm-6 tag-chain aligncenter">		
-											      <div class="row kill-row">
+											      <div class="row">
 													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion">
 											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
-											          <h5>Submit your interpretation.</h5>
+											          <h5>Sum it up on one word.</h5>
 											          </button>
 											      </div>
 											  </div>
 												<div class="col-sm-6 tag-btn">
+                                                  <div class="row">
 												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]" data-parent="#accordion">
 											      <h4><i class="fa fa-tags"></i> What do others see?</h4>
 											      <h5>View the Consenses.</h5>
-													</button>
+                                                    </button></div>
 												</div>
 											</div>
 											<div class="row">
@@ -1360,9 +1361,12 @@ return weight;
 </div>
 	<!-- wpv-loop-end -->
 
+[wpv-view name="CHAIN SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
+
 [wpv-filter-start hide="false"]
 [wpv-filter-controls][wpv-pager-prev-page][wpml-string context="wpv-views"]Previous[/wpml-string][/wpv-pager-prev-page][wpv-pager-next-page][wpml-string context="wpv-views"]Next[/wpml-string][/wpv-pager-next-page][/wpv-filter-controls]
 [wpv-filter-end]
+
 
 
 <!----------- CREATE | ART ------------>
