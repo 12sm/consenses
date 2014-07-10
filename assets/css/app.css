@@ -97,13 +97,13 @@ border-radius:0!important;
 }
 
 .modal-dialog {margin-top:5%;}
-.thank-you {
+/*.thank-you {
 z-index: 0;
 overflow: hidden;
 }
 .modal-backdrop.fade.in {
 z-index: -1;
-}
+}*/
 .panel-body>form {
 margin: 0 auto;
 width: 100%;
