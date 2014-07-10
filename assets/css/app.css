@@ -639,7 +639,7 @@ font-size: 42px;
 .modal-sidebar .artist-circle {margin-left:10px;}
 .modal-sidebar .artist-circle img {height:100%;width:100%;}
 
-.single-art-modal {width: 100%;}
+
 .single-art-modal .nav-tabs {border-bottom:none;height: 40px;}
 .single-art-modal .modal-header {padding: 0px;border-bottom:none!important;min-height: 20px;}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {color: #555;background-color: #CCC;border-bottom-color: transparent;cursor: default;color:#FFF;height: 40px;}
@@ -1704,7 +1704,6 @@ margin-right: -15px;
 
 #menu-primary-navigation-1 {padding: 0px;}
 .col {max-width:100%; margin:0px auto;}
-.single-art-modal {width: 80%;}
 .socials{
    width: initial;
 }
