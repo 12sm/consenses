@@ -1651,6 +1651,15 @@ column-gap: 30px;
 column-break-inside: avoid;
 }
 
+/* ARTIST PROFILE */
+body.single-artists .artist-artwork .item {
+padding: 34%;
+margin-bottom: 10px;
+width: 100%;
+height: auto;
+display: block;
+}
+
 /* FOOTER */
 footer form.navbar-form.navbar-left {
 width: 80%;
