@@ -1226,7 +1226,7 @@ display: block;
 line-height: 1;
 }
 
-.music-img-container {
+.create .img-container.music-img-container {
 background-position-y: 100%!important;
 }
 
