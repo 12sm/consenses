@@ -2054,22 +2054,6 @@ return weight;
 	[/wpv-if]
 [/wpv-if]
                                         
-                                        <!--Poem-->
-[wpv-if evaluate="has_term('poem', 'medium', null) = '1'"]
-	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
-		
-		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
-	[/wpv-if]
-	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
-		
-		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
-	[/wpv-if]
-	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
-	
-		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
-	[/wpv-if]
-[/wpv-if]
-                                        
                                         <!--Quilt Design-->
 [wpv-if evaluate="has_term('quilt-design', 'medium', null) = '1'"]
 	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
