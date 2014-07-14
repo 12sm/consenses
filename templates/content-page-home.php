@@ -11,7 +11,7 @@
 				</div></a>
 			</div>
 			<div class="col-md-6 col-lg-4">
-			<a href="#weekly-challenge">
+			<a href="/create/">
 				<div class="create">
 					<h3>+ Create</h3>
 				</div>
