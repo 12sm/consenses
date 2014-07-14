@@ -962,64 +962,89 @@ return weight;
 <!----------------- ARTIST SINGLE ------------------>
 <div class="row">
 	<div class="col-sm-6">
-		<div class="img-cont">
-			[wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
-				[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
+		<div class="row profile-pic">
+      	<div class="img-cont img-container col-sm-12"> 
+		    [wpv-if imag="wpcf-profile-img" evaluate="!empty($imag)"]
+			[types field="profile-img" size="medium" align="none" resize="proportional" class="img-responsive"][/types]
 			[/wpv-if]
-			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"]
-				<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg">
-			[/wpv-if]
+			[wpv-if imag="wpcf-profile-img" evaluate="empty($imag)"] <img src="/wp-content/themes/consenses/assets/img/placeholder.jpg"> 
+			[/wpv-if] 
 		</div>
-		<!--Business Card-->
-		<div class="row biz-card">
-			
-			<!--Information Section-->
-			<div class="col-sm-9 col-sm-push-3">
-				<div class="row">
-					<div class="col-sm-8">
-						[wpv-post-title]
-					</div>
-					<div class="col-sm-4">
-                      [wpv-post-taxonomy type="post_tag" separator="/" format="link" show="name" order="asc"]
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						[types field="email"][/types] // [types field="website" target="_blank"][/types]
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<ul class="artist-socials">
-							<li><i class="fa fa-twitter"></i> [types field="twitter" target="_blank"][/types]</li>
-							<li><i class="fa fa-facebook"></i> [types field="facebook" target="_blank"][/types]</li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-                      <img src="/wp-content/themes/consenses/assets/img/logo-top.png" class="img-responsive">
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-sm-pull-9">
-				[wpv-view name="ARTIST SINGLE | BUSINESS CARD | ART" wpvrchildof="[wpv-post-id]"]
-			</div>
-		</div>
+      	</div>
+      	<div class="row">
+      		<div class="col-sm-12">
+      			<p>[wphotocred]</p>
+      		</div>
+      	</div> 
 		<div class="row">
 			<div class="col-sm-12">
-				<p> I would like this artist's info emailed to me: [form stuff]</p>
+				<div class="row biz-card"> 
+				<!--Information Section-->
+				<div class="col-sm-3 thumbnail-art-img img-container"> 
+				[wpv-view name="ARTIST SINGLE | BUSINESS CARD | ART" wpvprchildof="[wpv-post-id]"] 
+				</div>
+				
+				<div class="col-sm-9 biz-card-information">
+					<div class="row">
+						<div class="col-sm-12"> 
+                          <span class='artist-card-title'>[wpv-post-title]</span>
+                          <span class="location"><p>Location: [types field="location"][/types]</p></span>
+						</div>
+					</div>
+					<div class="row biz-card-website">
+                      <div class="col-sm-12"><span class="email">email: </span>[types field="email"][/types]</div> 
+						<div class="col-sm-12"><span class="website">web: </span>[types field="website" target="_blank" style="float:right"][/types]
+						</div>
+					</div>
+					
+					<div class="row socials-logo-row">
+						<div class="col-sm-8 social-col">
+							<ul class="artist-socials">
+								<li><i class="fa fa-twitter"></i> [types field="twitter" target="_blank"][/types]</li>
+								<li><i class="fa fa-facebook"></i> [types field="facebook" target="_blank"][/types]</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 social-img"> <img src="/wp-content/themes/consenses/assets/img/logo-top.png" class="img-responsive"> 
+						</div>
+					</div>
+							
+							
+					<div class="row email-col"><!--Email form-->
+						<div class="col-sm-12 email-me-please">
+                          <p>I would like this artist's info emailed to me:</p>
+                      </div> 
+                      <div class="row form-col">
+                        <div class="col-sm-12">[cred_form form="Email Business Card"]
+                        </div>
+                      </div>
+						</div>
+                  
+                  
+                  
+                  
+					</div>
+					
+					</div>
+										
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="col-sm-6">
-	<h1>[wpv-post-title]</h1>
-	<h3>[wpv-post-taxonomy type="post_tag" separator="/" format="link" show="name" order="asc"]</h3>
-		[types field="bio"][/types]
-	</div>
-</div>
-<div class="row">
+      
+      <div class="row artist-artwork">
+        <h2>Artist's Work:</h2>
 	[wpv-view name="ARTIST SINGLE | ART" wpvprchildof="[wpv-post-id]"]
 </div>
-[wpv-view name="CHAIN SINGLE | ART MODAL"]
+[wpv-view name="ARTIST SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
+      
+		</div>
+		
+	<div class="col-sm-6">
+		<h1>[wpv-post-title]</h1>
+      <div class="location"><h4>Location:</h4> [types field="location"][/types]</div>
+      <div class="mediums" style="margin-bottom:20px"><h4>Medium:</h4><span class="the-medium">[wpv-if evaluate="has_term('Collage', 'medium', null) = '1'"]<i class="fa fa-pencil"></i> [/wpv-if][wpv-if evaluate="has_term('Dance', 'medium', null) = '1'"]<i class="fa fa-random"></i> [/wpv-if][wpv-if evaluate="has_term('Film', 'medium', null) = '1'"]<i class="fa fa-film"></i> [/wpv-if][wpv-if evaluate="has_term('Food & Spice', 'medium', null) = '1'"]<i class="fa fa-cutlery"></i> [/wpv-if][wpv-if evaluate="has_term('Glass Sculptor', 'medium', null) = '1'"]<i class="fa fa-glass"></i> [/wpv-if][wpv-if evaluate="has_term('Music', 'medium', null) = '1'"]<i class="fa fa-music"></i> [/wpv-if][wpv-if evaluate="has_term('Paint', 'medium', null) = '1'"]<i class="fa fa-pencil"></i> [/wpv-if][wpv-if evaluate="has_term('Painting', 'medium', null) = '1'"]<i class="fa fa-pencil"></i> [/wpv-if][wpv-if evaluate="has_term('Perfume', 'medium', null) = '1'"]<i class="fa fa-flask"></i> [/wpv-if][wpv-if evaluate="has_term('Photograph', 'medium', null) = '1'"]<i class="fa fa-camera-retro"></i> [/wpv-if][wpv-if evaluate="has_term('Poem', 'medium', null) = '1'"]<i class="fa fa-align-center"></i> [/wpv-if][wpv-if evaluate="has_term('Sculpture', 'medium', null) = '1'"]<i class="icomoon icon-hammer-2"></i> [/wpv-if][wpv-if evaluate="has_term('Song', 'medium', null) = '1'"]<i class="fa fa-music"></i> [/wpv-if][wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]<i class="fa fa-cube"></i> [/wpv-if][wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]<i class="fa fa-pencil"></i> [/wpv-if][wpv-if evaluate="has_term('Test', 'medium', null) = '1'"]<i class="fa fa-leaf"></i> [/wpv-if][wpv-post-taxonomy type="medium" separator=", " format="text" show="name" order="asc"]</span></div>
+         [types field="bio"][/types]
+	</div>
+</div>
+
 
 <!-------------- ARTIST SINGLE | ART -------------------->
 [wpv-layout-start]
@@ -1260,19 +1285,29 @@ return weight;
 <div class='scroll col-sm-12'>
 		<wpv-loop>
           <div class="row piece create-background-row">
-	<div class="col-sm-6 create-artwork img-container" data-toggle="modal" data-target="#[wpv-post-id]" >
+	<a class='modal-link' data-toggle="modal" data-target="#cmodal[wpv-post-id]">
 		[wpv-if art="wpcf-art-image" evaluate="!empty($art)"]
+		<div class="col-sm-6 create-artwork img-container"  >
       [types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
     [/wpv-if]
     [wpv-if art="wpcf-art-image" evaluate="empty($art)"]
     	[wpv-if thumb='wpv-post-featured-image' evaluate="!empty($thumb)"]
+    	<div class="col-sm-6 create-artwork img-container"  >
     		[wpv-post-featured-image size='large']
     	[/wpv-if]
     	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
+    		[wpv-if evaluate="has_term('Music', 'medium', null) = '1'"]
+    		<div class="col-sm-6 create-artwork img-container"  >
+    			<img src="/wp-content/themes/consenses/assets/img/music-placeholder.jpg">
+			[/wpv-if]
+			[wpv-if evaluate="!has_term('Music', 'medium', null) = '1'"]
+			<div class="col-sm-6 create-artwork img-container music-img-container"  >
     		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
+    		[/wpv-if]
 		[/wpv-if]
 	[/wpv-if]
 	</div>
+            </a>
 	<div class="col-sm-6 create-details">
       <h1>[wpv-post-title]</h1>
 		[wpv-view name='CREATE | ART' ids='[wpv-post-id]']
@@ -1282,7 +1317,7 @@ return weight;
 		<div class="row tag-and-view">
 												<div class="col-sm-6 tag-chain aligncenter">		
 											      <div class="row">
-													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion">
+													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion[wpv-post-id]">
 											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
 											          <h5>Sum it up on one word.</h5>
 											          </button>
@@ -1290,14 +1325,14 @@ return weight;
 											  </div>
 												<div class="col-sm-6 tag-btn">
                                                   <div class="row">
-												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]" data-parent="#accordion">
+												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]" data-parent="#accordion[wpv-post-id]">
 											      <h4><i class="fa fa-tags"></i> What do others see?</h4>
 											      <h5>View the Consenses.</h5>
                                                     </button></div>
 												</div>
 											</div>
 											<div class="row">
-											<div class="panel-group" id="accordion">
+											<div class="panel-group" id="accordion[wpv-post-id]">
 											<div class="panel panel-default">  
 														<div id="submit-panel[wpv-post-id]" class="submit-panel panel-collapse collapse">
 															<div class="panel-heading">
@@ -1339,7 +1374,7 @@ return weight;
           </script>
           </div>
           
-          
+          [wpv-view name="create-art-modal" ids='[wpv-post-id]']
 		</wpv-loop>
   </div>
 </div>
@@ -1360,8 +1395,6 @@ return weight;
   </div>
 </div>
 	<!-- wpv-loop-end -->
-
-[wpv-view name="CHAIN SINGLE | ART MODAL" wpvprchildof="[wpv-post-id]"]
 
 [wpv-filter-start hide="false"]
 [wpv-filter-controls][wpv-pager-prev-page][wpml-string context="wpv-views"]Previous[/wpml-string][/wpv-pager-prev-page][wpv-pager-next-page][wpml-string context="wpv-views"]Next[/wpml-string][/wpv-pager-next-page][/wpv-filter-controls]
@@ -2038,22 +2071,6 @@ return weight;
 	[/wpv-if]
 [/wpv-if] 
                        
-                                        <!--Poem-->
-[wpv-if evaluate="has_term('poem', 'medium', null) = '1'"]
-	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
-		
-		[types field="art-image" size="large" align="none" resize="proportional" class="img-responsive"][/types]
-	[/wpv-if]
-	[wpv-if imag="wpcf-art-image" evaluate="empty($imag)"]
-		
-		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" class="img-responsive" height="auto" width="100%">
-	[/wpv-if]
-	[wpv-if doc='wpcf-document-upload' evaluate='!empty($doc)']
-	
-		[gview file="[types field="document-upload" link="true" output="raw"][/types]"]
-	[/wpv-if]
-[/wpv-if]
-                                        
                                         <!--Poem-->
 [wpv-if evaluate="has_term('poem', 'medium', null) = '1'"]
 	[wpv-if imag="wpcf-art-image" evaluate='!empty($imag)']
