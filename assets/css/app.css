@@ -1785,7 +1785,7 @@ font-size: 20px;
 
 .welcome-box h2 {font-size: 60px;}
 
-.create .img-container {
+.create .img-container, .test .img-container {
 height: 330px;
 background-position: 50% 0px!important;
 }
