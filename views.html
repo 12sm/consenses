@@ -1297,11 +1297,11 @@ return weight;
     	[/wpv-if]
     	[wpv-if thumb='wpv-post-featured-image' evaluate='empty($thumb)']
     		[wpv-if evaluate="has_term('Music', 'medium', null) = '1'"]
-    		<div class="col-sm-6 create-artwork img-container"  >
+    		<div class="col-sm-6 create-artwork img-container music-img-container"  >
     			<img src="/wp-content/themes/consenses/assets/img/music-placeholder.jpg">
 			[/wpv-if]
 			[wpv-if evaluate="!has_term('Music', 'medium', null) = '1'"]
-			<div class="col-sm-6 create-artwork img-container music-img-container"  >
+			<div class="col-sm-6 create-artwork img-container "  >
     		<img src="/wp-content/themes/consenses/assets/img/placeholder.jpg" />
     		[/wpv-if]
 		[/wpv-if]
