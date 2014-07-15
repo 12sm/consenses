@@ -61,7 +61,7 @@ var Roots = {
 		$('.thank-you').modal('toggle')
 	}
 	
-	if($('.myzebra-validation-error').length!=0)){
+	if($('.myzebra-validation-error').length!=0){
 		$('.oops').modal('toggle')
 	}
 	
