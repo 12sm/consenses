@@ -387,10 +387,11 @@ display: inline-block;
 }
 
 .home-events {
-   background: #F0F0F0;
    padding: 25px 10%;
    font-weight: 100;
    color: #000;
+   background: url(../img/event-bg.jpg) no-repeat;
+   background-size: cover;
 }
 
 .home-events p{
