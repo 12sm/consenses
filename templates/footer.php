@@ -67,6 +67,24 @@
   </div><
 </div>
 
+<div class="modal fade oops modal-lg" id="oops" tabindex="-1" role="dialog" aria-labelledby="error" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Oops! Try again, please.</h4>
+      </div>
+      <div class="modal-body">
+        <p>It looks like you have entered the CAPTCHA code incorrectly. Please try again.</p>
+        <img src="http://stage.consenses.org/wp-content/themes/consenses/assets/img/logo-top.png" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div><
+</div>
+
 <?php wp_footer(); ?>
 
 

@@ -61,6 +61,12 @@ var Roots = {
 		$('.thank-you').modal('toggle')
 	}
 	
+	if($('.myzebra-validation-error').length!=0)){
+		$('.oops').modal('toggle')
+	}
+	
+	
+	
 	$('.sumbit-panel').click(function() {
 		$('.myzebra-captcha_show').click();
 	});
