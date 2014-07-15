@@ -198,6 +198,10 @@ transition:background-color .3s ease;
 
 .create>h3:hover {background-color: #F39437;}
 
+span.chain-number-small {
+font-size: 34px;
+}
+
 .home-bottom {
 padding-top: 3%;
 padding-bottom: 3%;
