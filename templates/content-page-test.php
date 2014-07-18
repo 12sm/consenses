@@ -29,7 +29,7 @@
 			</div>
 </div>
 <div class="row">
-	<div class="col-sm-12">
+	<div class="col-sm-6 col-sm-offset-3">
 		<!-- Begin MailChimp Signup Form -->
 		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
