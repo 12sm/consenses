@@ -1876,6 +1876,8 @@ width: 81%!important;
 }
 #mc_embed_signup input.button {
 width: 18%!important;
+font-size: 24px;
+font-weight: 300;
 }
 
 header>.container {
