@@ -362,6 +362,11 @@ display: none;
 .cred-taxonomy {margin-bottom:15px;}
 
 /* MAILCHIMP STYLES*/
+div.row.mail-list {
+background: #ECECEC;
+padding-top: 3%;
+padding-bottom: 3%;
+}
 #mc_embed_signup input {
 border: 0px solid #999!important;
 height: 58px;
