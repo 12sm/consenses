@@ -28,8 +28,8 @@
 				<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
 			</div>
 </div>
-<div class="row">
-	<div class="col-sm-12">
+<div class="row mail-list">
+	<div class="col-sm-6 col-sm-offset-3">
 		<!-- Begin MailChimp Signup Form -->
 		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
