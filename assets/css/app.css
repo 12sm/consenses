@@ -1930,7 +1930,7 @@ font-size: 30px;
 @media (min-width: 1200px) { 
 
 .artists .artist .artist-info{opacity: 0;}
-.home-events .btn-default {font-size: 36px;}
+.home-events .btn-default {font-size: 33px;}
 
 header>.container {
 width: 1080px;
