@@ -366,6 +366,12 @@ div.row.mail-list {
 background: #ECECEC;
 padding-top: 3%;
 padding-bottom: 3%;
+text-align: center;
+}
+.mail-list h4{
+   color: #BF2129;
+font-weight: 100;
+font-size: 35px;
 }
 #mc_embed_signup input {
 border: 0px solid #999!important;
