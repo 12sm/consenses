@@ -30,6 +30,8 @@
 </div>
 <div class="row mail-list">
 	<div class="col-sm-6 col-sm-offset-3">
+	<h4>Stay up to date with the latest Consenses Events and Projects"</h4>
+	<p>Sign up Here</p>
 		<!-- Begin MailChimp Signup Form -->
 		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
