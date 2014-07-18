@@ -489,6 +489,20 @@ padding: 30px 0;
 }
 
 
+/* ----- Email sign up Section ----- */
+
+#mc_embed_signup input.button {
+font-family: 'proxima-nova';
+font-weight: 100;
+}
+
+#mc_embed_signup input.email {
+padding: 15px!important;
+font-family: 'proxima-nova';
+font-weight: 100;
+}
+
+
 /* ----- Home News Section ----- */
 
 .home-news a h4 {
