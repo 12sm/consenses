@@ -1679,6 +1679,8 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (max-width:767px) {
 
+
+
 /* CREATE PAGE */
 .create-opening h1 {font-size: 40px;}
 body.create img.attachment-large.img-responsive {display: initial!important;}
@@ -1759,6 +1761,17 @@ float: left;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+    /*MAILCHIMP*/
+   #read-on input#mce-EMAIL {
+width: 81%!important;
+}
+#read-on #mc_embed_signup input.button{
+    width: 18%!important;
+}
+#mc_embed_signup input.button {
+width: 27%!important;
+}
 
 header>.container {
 background: #f8f8f8;
@@ -1843,6 +1856,13 @@ background-position: 50% 0px!important;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+input#mce-EMAIL {
+width: 81%!important;
+}
+#mc_embed_signup input.button {
+width: 18%!important;
+}
 
 header>.container {
 width: 957px;
