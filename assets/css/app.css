@@ -1809,6 +1809,8 @@ float: left;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+.exhibit .col {max-width:90%; margin:0px auto;}
+
     /*MAILCHIMP*/
    #read-on input#mce-EMAIL {
 width: 81%!important;
@@ -1962,7 +1964,7 @@ white-space: nowrap;
 @media (min-width: 1200px) { 
 
 .artists .artist .artist-info{opacity: 0;}
-.home-events .btn-default {font-size: 33px;}
+.home-events .btn-default {font-size: 27px;}
 
 header>.container {
 width: 1080px;
