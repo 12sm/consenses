@@ -1959,10 +1959,6 @@ font-size: 22px;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-  .home-events .btn-default {
-font-size: 30px;
-}
-
 .artists .artist .artist-info{opacity: 0;}
 .home-events .btn-default {font-size: 33px;}
 
