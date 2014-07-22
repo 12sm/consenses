@@ -1687,6 +1687,22 @@ padding-left: 0px;
 .footer-logo{
    margin: 0 auto;
 }
+
+
+/* ==========================================================================
+   Digital Exhibit
+   ========================================================================== */
+
+.exhibit {}
+
+.exhibit .navbar {display:none;}
+
+.exhibit .exhibit-header {text-align: center; background:#b4231e;}
+
+.digital-exhibit {}
+
+
+
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
