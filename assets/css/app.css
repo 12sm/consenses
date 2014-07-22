@@ -1706,15 +1706,19 @@ padding-left: 0px;
 .exhibit .the-chain .chain-row .icon {text-align:center; font-size:32px; color:#999; padding:15px;}
 .exhibit .the-chain .chain-row .chain-child {text-align:center;}
 
-.one-two .icon,
-.one-three .icon {
+.one-two.branch .icon,
+.one-three.branch .icon,
+.one-two-a.branch .icon,
+.two-two-a.branch .icon {
 transform:rotate(45deg);
 -ms-transform:rotate(45deg); /* IE 9 */
 -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
 }
 
-.two-two .icon,
-.three-three .icon {
+.two-two.branch .icon,
+.three-three.branch .icon,
+.one-two-b.branch .icon,
+.two-two-b.branch .icon {
 transform:rotate(-45deg);
 -ms-transform:rotate(-45deg); /* IE 9 */
 -webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */	
