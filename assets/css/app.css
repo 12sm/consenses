@@ -1704,7 +1704,15 @@ padding-left: 0px;
 .exhibit .the-chain .chain-row {}
 .exhibit .the-chain .chain-row-1 .icon {display:none;}
 .exhibit .the-chain .chain-row .icon {text-align:center; font-size:32px; color:#999; padding:15px;}
-.exhibit .the-chain .chain-row .chain-child {text-align:center;}
+
+.exhibit .the-chain .chain-row .chain-child {
+text-align: center;
+padding-bottom: 50%;
+max-width: 350px;
+margin: 0px auto;
+min-height: 170px;
+border: 5px solid #999;
+}
 
 .one-two.branch .icon,
 .one-three.branch .icon,
