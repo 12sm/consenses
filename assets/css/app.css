@@ -1951,7 +1951,7 @@ transition: all .2s ease-in-out;
 filter: alpha(opacity=0);
 }
 .home-events .btn-default {
-font-size: 30px;
+font-size: 22px;
 }
 
 }
