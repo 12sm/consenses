@@ -1700,6 +1700,8 @@ padding-left: 0px;
 
 .exhibit .exhibit-header {text-align: center; background:#b4231e; color: #fff;}
 
+.exhibit .the-chain .chain-child img {max-width:100%; margin:0px auto;}
+
 .digital-exhibit {}
 
 
