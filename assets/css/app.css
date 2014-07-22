@@ -1701,7 +1701,11 @@ padding-left: 0px;
 .exhibit .exhibit-header {text-align: center; background:#b4231e; color: #fff;}
 
 .exhibit .the-chain .chain-child img {max-width:100%; margin:0px auto;}
+.exhibit .the-chain .chain-row-1 {padding-bottom: 30px; background:transparent url(../img/chain1-bg.png) bottom center scroll no-repeat;}
+.exhibit .the-chain .chain-row-2  {padding-bottom: 30px; background:transparent;}
 
+.exhibit footer .row {display:none;}
+.exhibit footer {height:50px;}
 .digital-exhibit {}
 
 
