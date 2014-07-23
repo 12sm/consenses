@@ -1779,6 +1779,22 @@ height: 650px;
 margin: 0px auto;
 }
 
+.exhibit .flexslider {
+margin: 0 0 60px;
+background: #fff;
+border: 0px;
+position: relative;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+-o-border-radius: 0px;
+border-radius: 0px;
+-webkit-box-shadow: 0 0 0 0;
+-moz-box-shadow: 0 0 0 0;
+-o-box-shadow: 0 0 0 0;
+box-shadow: 0 0 0 0;
+zoom: 1;
+}
+
 .digital-exhibit {}
 
 
