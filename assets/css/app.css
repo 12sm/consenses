@@ -1795,6 +1795,17 @@ box-shadow: 0 0 0 0;
 zoom: 1;
 }
 
+.exhibit .flex-direction-nav a {
+position: absolute;
+bottom: -45px;
+}
+
+.exhibit .flex-control-nav {
+border: 1px solid #ccc;
+padding: 20px 0px 10px 0px;
+bottom: -50px;
+}
+
 .digital-exhibit {}
 
 
