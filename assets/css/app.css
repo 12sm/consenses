@@ -1807,6 +1807,16 @@ padding: 20px 0px 10px 0px;
 bottom: -50px;
 }
 
+.exhibit .slide .thumbnail-art-img {
+background-color: #CCC;
+height: 100%;
+background-position: 50% 0px!important;	
+}
+
+.exhibit .artist-sidebar {
+border-left: 0px;
+}
+
 .digital-exhibit {}
 
 
