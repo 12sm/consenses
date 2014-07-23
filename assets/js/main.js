@@ -144,12 +144,12 @@ var Roots = {
   },
   exhibit: {
 	  init: function() {
-		var mySwiper = new Swiper('.swiper-container',{
+		var mySwiper = $('.swiper-container').swiper({
 			pagination: '.pagination',
 			loop:true,
 			grabCursor: true,
 			paginationClickable: true
-		})
+		});
 		$('.arrow-left').on('click', function(e){
 			e.preventDefault()
 			mySwiper.swipePrev()
