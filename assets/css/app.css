@@ -1766,6 +1766,14 @@ padding: 0px;
 
 .exhibit .single-art-modal .modal-footer button {width:100%;}
 
+.exhibit .carousel-inner {
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 0px;
+padding-bottom: 100%;
+}
+
 .digital-exhibit {}
 
 
