@@ -144,7 +144,7 @@ var Roots = {
   },
   exhibit: {
 	  init: function() {
-		  
+		$('.carousel').carousel();		  
 	  }
   }
 };
