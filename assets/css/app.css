@@ -1773,6 +1773,12 @@ width: 100%;
 height: 1100px;
 }
 
+.exhibit .img-video-tab img.attachment-large.img-responsive {
+width: auto;
+height: 650px;
+margin: 0px auto;
+}
+
 .digital-exhibit {}
 
 
