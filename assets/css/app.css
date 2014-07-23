@@ -1818,7 +1818,17 @@ border-left: 0px;
 }
 
 .digital-exhibit {}
+.exhibit-chain-list {margin:0px; padding:0px;}
+.exhibit-chain-list li a {
+border-bottom: 2px solid #999;
+display: block;
+margin-bottom: 50px;
+background: #ccc;
+padding: 15px;
+height: 100px;	
+}
 
+.exhibit-chain-list li a .col-sm-4 {height:70px;}
 
 
 /* ==========================================================================
