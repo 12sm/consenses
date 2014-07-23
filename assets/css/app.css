@@ -1820,15 +1820,16 @@ border-left: 0px;
 .digital-exhibit {}
 .exhibit-chain-list {margin:0px; padding:0px;}
 .exhibit-chain-list li a {
-border-bottom: 2px solid #999;
+border-bottom: 2px solid #ccc;
 display: block;
-margin-bottom: 50px;
-background: #ccc;
+margin-bottom: 15px;
+background: #C0202B;
 padding: 15px;
-height: 100px;	
+height: 100px;
+color: #fff;
 }
-
 .exhibit-chain-list li a .col-sm-4 {height:70px;}
+.exhibit-chain-list li a .col-sm-4 img {height:100%; width:auto;}
 
 
 /* ==========================================================================
