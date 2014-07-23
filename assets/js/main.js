@@ -144,20 +144,7 @@ var Roots = {
   },
   exhibit: {
 	  init: function() {
-		var mySwiper = $('.swiper-container').swiper({
-			pagination: '.pagination',
-			loop:true,
-			grabCursor: true,
-			paginationClickable: true
-		})
-		$('.arrow-left').on('click', function(e){
-			e.preventDefault()
-			mySwiper.swipePrev()
-		})
-		$('.arrow-right').on('click', function(e){
-			e.preventDefault()
-			mySwiper.swipeNext()
-		})		  
+		  
 	  }
   }
 };
