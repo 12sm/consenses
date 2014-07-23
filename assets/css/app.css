@@ -1797,7 +1797,8 @@ zoom: 1;
 
 .exhibit .flex-direction-nav a {
 position: absolute;
-bottom: -45px;
+bottom: -45px!important;
+top: initial;
 }
 
 .exhibit .flex-control-nav {
