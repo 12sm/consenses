@@ -149,7 +149,7 @@ var Roots = {
 			loop:true,
 			grabCursor: true,
 			paginationClickable: true
-		});
+		})
 		$('.arrow-left').on('click', function(e){
 			e.preventDefault()
 			mySwiper.swipePrev()
