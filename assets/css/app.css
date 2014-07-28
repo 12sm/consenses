@@ -1005,8 +1005,7 @@ color: #434343;
 border-right: 1px solid #CCC;
 padding: .3%;
 padding-left: 3%;
-height: 45px;
-overflow: scroll;
+overflow: hidden;
 line-height: 1.1;
 }
 
