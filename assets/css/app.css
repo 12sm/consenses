@@ -1723,9 +1723,22 @@ font-weight:100;
 text-align: center;
 max-width: 540px;
 margin: 0px auto;
+min-height: 220px;
+height: auto;
+border: 5px solid #999;
+padding-bottom: 80%;
+}
+
+@media (min-width: 992px) {
+.exhibit .the-chain .chain-row .chain-child {
+text-align: center;
+max-width: 540px;
+margin: 0px auto;
 min-height: 170px;
 height: 540px;
+padding-bottom:0px;
 border: 5px solid #999;
+}
 }
 
 .one-two.branch .icon,
