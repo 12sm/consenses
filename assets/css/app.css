@@ -1843,6 +1843,7 @@ color: #fff;
 .exhibit-chain-list li a .col-sm-4 img {height:100%; width:auto;}
 
 .exhibit .description br {display:none;}
+.exhibit .logo-img {background-size:contain!important;}
 
 
 /* ==========================================================================
