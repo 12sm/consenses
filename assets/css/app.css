@@ -1734,6 +1734,7 @@ min-height: 220px;
 height: auto;
 border: 5px solid #999;
 padding-bottom: 80%;
+background-position: 50% 0px!important;
 }
 
 @media (min-width: 992px) {
