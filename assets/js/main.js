@@ -145,10 +145,10 @@ var Roots = {
   exhibit: {
 	  init: function() {
 
-        $(".single-art-modal").modal("show").on("shown", function () {
+        $(".single-art-modal").on("shown.bs.modal", function () {
 	        window.setTimeout(function () {
 		        $(".single-art.modal").modal("hide");
-		    }, 5000);
+		    }, 500);
 		 });
 			  
 	  }
