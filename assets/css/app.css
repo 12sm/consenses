@@ -389,6 +389,10 @@ margin-right: 1%;
 label {
 display: none!important;
 }
+
+.post-password-form label {display:inline-block!important;}
+.post-password-form {text-align:center; padding: 60px;}
+
 #mc-embedded-subscribe {
 float: right;
 clear: none!important;
