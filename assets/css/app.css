@@ -1751,7 +1751,7 @@ border: 5px solid #999;
 .one-two.branch .icon,
 .one-three.branch .icon,
 .one-two-a.branch .icon,
-.two-two-a.branch .icon {
+.one-two-b.branch .icon {
 transform:rotate(45deg);
 -ms-transform:rotate(45deg); /* IE 9 */
 -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
@@ -1759,7 +1759,7 @@ transform:rotate(45deg);
 
 .two-two.branch .icon,
 .three-three.branch .icon,
-.one-two-b.branch .icon,
+.two-two-a.branch .icon,
 .two-two-b.branch .icon {
 transform:rotate(-45deg);
 -ms-transform:rotate(-45deg); /* IE 9 */
