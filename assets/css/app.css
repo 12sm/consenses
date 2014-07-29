@@ -1865,6 +1865,8 @@ color: #fff;
 .exhibit .logo-img {background-size:contain!important;}
 .exhibit .credit {margin-top:15px;}
 
+.exhibit, .exhibit p {font-size: 18px;}
+
 
 /* ==========================================================================
    WordPress Generated Classes

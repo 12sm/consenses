@@ -57,7 +57,7 @@ var Roots = {
     }, 800);
 	  });
 
-	if(getQueryVariable('_success_message')){
+	if(getQueryVariable('_success')){
 		$('.thank-you').modal('toggle')
 	}
 	
@@ -144,12 +144,6 @@ var Roots = {
   },
   exhibit: {
 	  init: function() {
-
-        $(".single-art-modal").on("shown.bs.modal", function () {
-	        window.setTimeout(function () {
-		        $(".single-art.modal").modal("hide");
-		    }, 500);
-		 });
 			  
 	  }
   }
