@@ -144,6 +144,12 @@ var Roots = {
   },
   exhibit: {
 	  init: function() {
+
+        $(".single-art-modal").modal("show").on("shown", function () {
+	        window.setTimeout(function () {
+		        $(".single-art.modal").modal("hide");
+		    }, 5000);
+		 });
 			  
 	  }
   }
