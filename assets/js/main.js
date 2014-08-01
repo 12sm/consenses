@@ -57,7 +57,7 @@ var Roots = {
     }, 800);
 	  });
 
-	if(getQueryVariable('_success_message')){
+	if(getQueryVariable('_success')){
 		$('.thank-you').modal('toggle')
 	}
 	
@@ -141,6 +141,11 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+  exhibit: {
+	  init: function() {
+			  
+	  }
   }
 };
 
