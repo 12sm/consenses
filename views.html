@@ -2315,3 +2315,184 @@ return weight;
 		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
+
+
+<!------------DE-------------------------------------->
+[wpv-layout-start]
+	[wpv-items-found]
+<div class="row exhibit-header">
+  <div class="col-sm-12">
+    <div class="row">
+      <div class="col-sm-12 logo">
+        <a class="logo" data-toggle="collapse" data-target="#desc">
+          <img src="http://consenses.org/assets/img/logo-red.jpg" />
+		</a>
+      </div>
+    </div>
+    <div class="row col">
+    	<div class="col-sm-12 description">
+          <div id="desc" class="collapse"><p><strong>Consensus</strong> engages artists from around the world by asking them to interpret one another's artwork in a create game of "Telephone".  For example: a musician interprets a photograph, a dance interprets their song, a painter interprets the dance, and so on until all five senses are represented.</p>
+          <p>This succession of interpretation creates a <strong>Chain</strong></p>
+          </div>
+      	</div>
+    </div>
+  </div>
+    
+</div>
+
+<article class="col">
+
+	<!-- wpv-loop-start -->
+		<wpv-loop>
+
+<div class="row">
+	<div class="col-sm-12 chain-info">
+		<h1 class="chain-title">"[wpv-post-title]"</h1>
+      	<div class="row video-montage">
+ 			<div class="vid-container">
+				[types field="video-embed"][/types]
+			</div>
+		</div>
+      	<div class="row credit">
+      		<div class="col-sm-12">
+              <h5 class="aligncenter">Video Produced By <a class="img-transparent" data-toggle="modal" data-target="#1855">Ryan Boekenkroeger</a></h5>
+              
+          	</div>
+      </div>
+	</div>
+</div>
+
+         [wpv-view name="DIGITAL EXHIBIT | VIDEO PRODUCER MODAL"] 
+          
+<div class="row tag-and-view">
+	<div class="col-sm-6 tag-chain aligncenter">		
+		<div class="row">
+			<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]" data-parent="#accordion">
+				<h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
+				<h5>Submit your interpretation.</h5>
+			</button>
+		</div>
+	</div>
+	<div class="col-sm-6 tag-btn">
+		<div class="row">	
+      		<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]" data-parent="#accordion">
+				<h4><i class="fa fa-tags"></i> What do others see?</h4>
+				<h5>View the Consenses.</h5>
+			</button>
+		</div>
+ 	</div>
+</div>
+											<div class="row">
+											<div class="panel-group" id="accordion">
+											<div class="panel panel-default">  
+														<div id="submit-panel[wpv-post-id]" class="submit-panel panel-collapse collapse">
+															<div class="panel-heading">
+															</div>
+																<div class="panel-body">
+											          			[cred_form form="Tag Chain - No CAPTCHA" ]
+														    </div>
+													    </div>  
+													</div>       
+											<div class="panel panel-default">
+											      
+											    <div id="wordCloud[wpv-post-id]" class="panel-collapse collapse">
+											    <div class="panel-heading">
+											      <i class="fa fa-tags"></i> The Consenses
+											    </div>
+											      <div class="panel-body">
+											        [wpv-view name="word-cloud" ids="[wpv-post-id]"]
+											      </div>
+											    </div>
+											  
+											</div>
+											</div>
+											</div>
+
+<div class="row the-chain">
+  <h2 class="aligncenter">Explore the Chain</h2>
+  <div class="col-sm-12">
+    <div class="row chain-row-1 chain-row">
+	[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="1"]
+    </div>
+      	<div class="row chain-row-2 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="2"]</div>
+      	<div class="row chain-row-3 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="3"]</div>
+      	<div class="row chain-row-4 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="4"]</div>
+      	<div class="row chain-row-5 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="5"]</div>
+      	<div class="row chain-row-6 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="6"]</div>
+      	<div class="row chain-row-7 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="7"]</div>
+      	<div class="row chain-row-8 chain-row">[wpv-view name="DIGITAL EXHIBIT | CHAIN ROW" wpvprchildof="[wpv-post-id]" chainlevel="8"]</div>
+  </div>
+</div>
+
+<div class="row tag-and-view">
+												<div class="col-sm-6 tag-chain aligncenter">		
+											      <div class="row">
+													<button class="panel-title submit-panel-btn col-sm-12" data-toggle="collapse" data-target="#submit-panel[wpv-post-id]bottom" data-parent="#accordion">
+											          <h4><i class="fa fa-pencil"></i> What does this mean to you?</h4>
+											          <h5>Submit your interpretation.</h5>
+											          </button>
+											      </div>
+											  </div>
+												<div class="col-sm-6 tag-btn">
+                                                  <div class="row">
+												<button class="btn btn-primary panel-title" data-toggle="collapse" data-target="#wordCloud[wpv-post-id]bottom" data-parent="#accordion">
+											      <h4><i class="fa fa-tags"></i> What do others see?</h4>
+											      <h5>View the Consenses.</h5>
+													</button>
+                                                  </div>
+												</div>
+											</div>
+											<div class="row">
+											<div class="panel-group" id="accordion">
+											<div class="panel panel-default">  
+														<div id="submit-panel[wpv-post-id]bottom" class="submit-panel panel-collapse collapse">
+															<div class="panel-heading">
+															</div>
+																<div class="panel-body">
+											          			[cred_form form="Tag Chain"]
+														    </div>
+													    </div>  
+													</div>       
+											<div class="panel panel-default">
+											      
+											    <div id="wordCloud[wpv-post-id]bottom" class="panel-collapse collapse">
+											    <div class="panel-heading">
+											      <i class="fa fa-tags"></i> The Consenses
+											    </div>
+											      <div class="panel-body">
+											        [wpv-view name="word-cloud" ids="[wpv-post-id]"]
+											      </div>
+											    </div>
+											  
+											</div>
+											</div>
+											</div>
+
+[wpv-view name="DIGITAL EXHIBIT | ART MODAL" wpvprchildof="[wpv-post-id]"]
+
+<div class="modal fade" id="submit-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      [formidable id=10]
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
+         </wpv-loop>
+	<!-- wpv-loop-end -->
+  
+</article>  
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No posts found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]

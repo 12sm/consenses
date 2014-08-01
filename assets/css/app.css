@@ -17,7 +17,7 @@ html {
 	font-weight: 100;
 }
 
-body { 
+body {
 	background: #FFF;
 	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
@@ -57,7 +57,9 @@ filter: brightness(115%);
    background: url(../img/top-banner.jpg) no-repeat;
    background-size: cover;
 }
-
+.center img {
+width: 100%;
+}
 p {
 font-size: 16px;
 line-height: 1.5em;
@@ -72,11 +74,11 @@ p::selection {color: #FFFFFF;background-color: #bf2129;}
    background: #F0F0F0;
 }
 
-.btn-default:hover, 
-.btn-default:focus, 
-.btn-default:active, 
-.btn-default.active, 
-.open 
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open
 .dropdown-toggle.btn-default {
 filter: brightness(115%);
 -moz-filter: brightness(115%);
@@ -121,8 +123,8 @@ width: 100%;
 .navbar {min-height:60px;}
 .navbar-collapse {max-height: 500px;}
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
 color: #FFF!important;background-color: rgba(191, 33, 41, 1);}
 .navbar-default {background-color: #f8f8f8!important;}
@@ -134,7 +136,7 @@ border-top-left-radius: 0;
 background-color: #BF2129;
 }
 
-.navbar-default .navbar-collapse, 
+.navbar-default .navbar-collapse,
 .navbar-default .navbar-form {border-color: transparent;}
 nav.collapse.navbar-collapse {background-color: #f8f8f8;}
 
@@ -546,7 +548,7 @@ text-transform: uppercase;
 .about-body-copy {
 font-size: 15px;
 font-weight: 300;
-line-height: 1.5;	
+line-height: 1.5;
 margin:3% 0;
 }
 
@@ -595,7 +597,7 @@ body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 /* ==========================================================================
    CHAIN SINGLE
    ========================================================================== */
-   
+
 .vid-container > img {margin: 0 auto;}
 .chain-info {text-align: center;}
 body.single-chains .date {display: none;}
@@ -762,7 +764,7 @@ border-radius: 50px;
 }
 
 .word-panel {background:#C0202B;}
-	
+
 /*.item img {width: 100%;}
 .item {width: 24.555%;}
 */
@@ -927,7 +929,7 @@ margin-top: 3px;
 .artists .artist:hover .artist-info {
 opacity: 1;
 -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
-filter: alpha(opacity=1);	
+filter: alpha(opacity=1);
 }
 
 
@@ -950,7 +952,7 @@ margin-bottom: 0;
 font-size:13px;
 padding-top: 5px;
 }
-   
+
 body.single-artists h1 {
 font-size: 48px;
 font-weight: 100;
@@ -1322,8 +1324,8 @@ background-position: -50px -50px!important;
 .border-top {border-top: 1px solid #D8D8D8;padding:2%;}
 .col-sm-6.border-top.submit.col {padding: 1%;}
 
-.tag-row .MyZebra_Form input.myzebra-password, 
-.tag-row .MyZebra_Form input.myzebra-text, 
+.tag-row .MyZebra_Form input.myzebra-password,
+.tag-row .MyZebra_Form input.myzebra-text,
 .tag-row .MyZebra_Form input[type="text"] {
 background: #DDD;
 }
@@ -1486,9 +1488,9 @@ font-weight: 500;
 
 ul.tenk-list li {font-weight: 500;}
 
-.donors ul.twentyk-list, 
-ul.tenk-list, 
-ul.fivek-list, 
+.donors ul.twentyk-list,
+ul.tenk-list,
+ul.fivek-list,
 ul.onek-list,
 ul.fivehunny-list,
 ul.additional-list {
@@ -1534,11 +1536,11 @@ column-gap: 40px;
 -moz-column-break-inside:avoid;
 -o-column-break-inside:avoid;
 -ms-column-break-inside:avoid;
-column-break-inside:avoid;	
+column-break-inside:avoid;
 }
 
 .last-board-member {margin-bottom:100px;}
- 
+
 /* ==========================================================================
    Contact
    ========================================================================== */
@@ -1558,8 +1560,8 @@ font-size: 18px;
 .contact .home-events, .about .home-events {
 margin: 0 auto;
 }
-body.contact fieldset input[type=text], 
-body.contact fieldset input[type=email], 
+body.contact fieldset input[type=text],
+body.contact fieldset input[type=email],
 body.contact fieldset textarea {
 background: #F0F0F0;
 border: none;
@@ -1731,7 +1733,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* CREATE PAGE */
 .create-opening h1 {font-size: 40px;}
 body.create img.attachment-large.img-responsive {display: initial!important;}
-body.create .border-top {padding: 0;}	
+body.create .border-top {padding: 0;}
 body.create .artist-circle {
 border-radius: 50%;
 width: 120px!important;
@@ -1943,7 +1945,7 @@ color: #fff;
 position: absolute;
 height: initial;
 bottom: 0px;
-width: 100%;   
+width: 100%;
 -webkit-transition: all .2s ease-in-out;
 -moz-transition: all .2s ease-in-out;
 -o-transition: all .2s ease-in-out;
@@ -1959,7 +1961,7 @@ white-space: nowrap;
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 .artists .artist .artist-info{opacity: 0;}
 .home-events .btn-default {font-size: 33px;}
