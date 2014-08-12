@@ -1869,6 +1869,7 @@ color: #fff;
 .exhibit .credit {margin-top:15px;}
 
 .exhibit, .exhibit p {font-size: 18px;}
+.exhibit .gde-link {display:none;}
 
 
 /* ==========================================================================
