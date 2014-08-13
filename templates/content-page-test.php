@@ -21,7 +21,7 @@
 	</div>
 </div>
 <div class="row home-events">
-	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
+	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS-TEST"]'); ?>
 </div>
 <div class="row home-bottom col weekly-challenge" id="weekly-challenge">
 			<div class="col-sm-12">
