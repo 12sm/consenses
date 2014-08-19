@@ -38,6 +38,7 @@ a:hover, a:focus {text-decoration: none!important;}
 }
 .single-chains .modal-content {
 max-width: 1170px;
+margin: 0 auto;
 }
 .center {text-align:center;margin:0 auto;}
 
