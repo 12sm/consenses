@@ -36,7 +36,9 @@ a:hover, a:focus {text-decoration: none!important;}
 .single-chains .wrap{
   max-width: 1170px;
 }
-
+.single-chains .modal-content {
+max-width: 1170px;
+}
 .center {text-align:center;margin:0 auto;}
 
 /* For full width backgrounds/divs */
