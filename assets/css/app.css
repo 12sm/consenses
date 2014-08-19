@@ -616,9 +616,7 @@ font-weight: 100;
 margin-bottom: 5%;
 margin-top: 5%;
 }
-.single-chains .alignright, .exhibit .alignright{
-  float: none;
-}
+
 .chain-info {font-size: 18px;}
 body.single-chains .col-sm-6.col-sm-offset-3 {text-align: center;}
 
@@ -1905,7 +1903,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (max-width:767px) {
 
 
-
+.single-chains .alignright, .exhibit .alignright{
+  float: none;
+}
 /* CREATE PAGE */
 .create-opening h1 {font-size: 40px;}
 body.create img.attachment-large.img-responsive {display: initial!important;}
