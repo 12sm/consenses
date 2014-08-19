@@ -624,7 +624,7 @@ margin-bottom: 5%;
 margin-top: 5%;
 }
 .single-chains div.flex-viewport .description {
-max-height: 1800px;
+max-height: 1475px;
 overflow-y: auto!important;
 }
 .chain-info {font-size: 18px;}
@@ -2090,7 +2090,10 @@ font-size: 20px;
 height: 330px;
 background-position: 50% 0px!important;
 }
-
+.single-chains div.flex-viewport .description {
+max-height: 1800px;
+overflow-y: auto!important;
+}
 
 }
 
