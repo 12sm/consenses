@@ -1707,9 +1707,9 @@ padding-left: 0px;
 
 .exhibit .navbar {display:none;}
 
-.exhibit .exhibit-header, .single-chain .exhibit-header  {text-align: center; background:#b4231e; color: #fff;}
+.exhibit .exhibit-header, .single-chains .exhibit-header  {text-align: center; background:#b4231e; color: #fff;}
 
-.exhibit h1 {
+.exhibit h1, .single-chains h1 {
 color: #303030;
 font-size: 62px;
 font-weight: 100;
@@ -1725,12 +1725,12 @@ font-weight:100;
 .exhibit .tag-and-view {margin-top:30px;}
 
 .exhibit .the-chain {margin:80px auto;}
-.exhibit .the-chain .chain-child img, .single-chain .the-chain .chain-child img {max-width:100%; margin:0px auto;}
+.exhibit .the-chain .chain-child img, .single-chains .the-chain .chain-child img {max-width:100%; margin:0px auto;}
 .exhibit .the-chain .chain-row {}
-.exhibit .the-chain .chain-row-1 .icon, .single-chain .the-chain .chain-row-1 .icon {display:none;}
-.exhibit .the-chain .chain-row .icon, .single-chain .the-chain .chain-row .icon {text-align:center; font-size:32px; color:#999; padding:15px;}
+.exhibit .the-chain .chain-row-1 .icon, .single-chains .the-chain .chain-row-1 .icon {display:none;}
+.exhibit .the-chain .chain-row .icon, .single-chains .the-chain .chain-row .icon {text-align:center; font-size:32px; color:#999; padding:15px;}
 
-.exhibit .the-chain .chain-row .chain-child, .single-chain .the-chain .chain-row .chain-child {
+.exhibit .the-chain .chain-row .chain-child, .single-chains .the-chain .chain-row .chain-child {
 text-align: center;
 max-width: 540px;
 margin: 0px auto;
@@ -1742,7 +1742,7 @@ background-position: 50% 0px!important;
 }
 
 @media (min-width: 992px) {
-.exhibit .the-chain .chain-row .chain-child, .single-chain .the-chain .chain-row .chain-child  {
+.exhibit .the-chain .chain-row .chain-child, .single-chains .the-chain .chain-row .chain-child  {
 text-align: center;
 max-width: 540px;
 margin: 0px auto;
@@ -1803,7 +1803,7 @@ height: 650px;
 margin: 0px auto;
 }
 
-.exhibit .flexslider, .single-chain .flexslider {
+.exhibit .flexslider, .single-chains .flexslider {
 margin: 15px 0 0px;
 background: #fff;
 border: 0px;
@@ -1819,7 +1819,7 @@ box-shadow: 0 0 0 0;
 zoom: 1;
 }
 
-.exhibit .flex-direction-nav a, .single-chain .flex-direction-nav a{
+.exhibit .flex-direction-nav a, .single-chains .flex-direction-nav a{
 position: absolute;
 bottom: -45px!important;
 top: initial;
