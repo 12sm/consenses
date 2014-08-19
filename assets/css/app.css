@@ -1065,7 +1065,7 @@ line-height: 1;
 
 .thumbnail-art-img {
 background-color: #CCC;
-height: 205px;
+height: 173px;
 }
 
 .socials-logo-row {
@@ -1850,6 +1850,7 @@ height: 5px;
 
 .exhibit .slide .thumbnail-art-img, .single-chains .slide .thumbnail-art-img {
 background-color: #CCC;
+height: 205px;
 background-position: 50% 0px!important;
 }
 
