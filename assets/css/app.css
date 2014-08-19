@@ -1719,12 +1719,12 @@ font-family:proxima-nova, sans-serif;
 font-weight:100;
 }
 
-.exhibit h2 {font-family:proxima-nova, sans-serif; font-weight:100;color: #303030; text-align: center;}
-.exhibit h3 {color:#999; text-align: center;}
+.exhibit h2, .single-chains h2 {font-family:proxima-nova, sans-serif; font-weight:100;color: #303030; text-align: center;}
+.exhibit h3, .single-chains h3 {color:#999; text-align: center;}
 
-.exhibit .tag-and-view {margin-top:30px;}
+.exhibit .tag-and-view, .single-chains .tag-and-view  {margin-top:30px;}
 
-.exhibit .the-chain {margin:80px auto;}
+.exhibit .the-chain, .single-chains .the-chain {margin:80px auto;}
 .exhibit .the-chain .chain-child img, .single-chains .the-chain .chain-child img {max-width:100%; margin:0px auto;}
 .exhibit .the-chain .chain-row {}
 .exhibit .the-chain .chain-row-1 .icon, .single-chains .the-chain .chain-row-1 .icon {display:none;}
@@ -1776,10 +1776,10 @@ transform:rotate(-45deg);
 .exhibit footer {height:50px;}
 
 .exhibit .modal {}
-.exhibit .modal-dialog {margin:0px; width:100%; background:#fff;}
-.exhibit .single-art-modal .modal-header {min-height: 60px;}
-.exhibit .single-art-modal .modal-content{margin-top:0px;box-shadow:0 0 0 0;-webkit-box-shadow: 0 0 0 0;-moz-box-shadow: 0 0 0 0;border:0px!important;}
-.exhibit .single-art-modal .modal-footer {
+.exhibit .modal-dialog, .single-chains .modal-dialog {margin:0px; width:100%; background:#fff;}
+.exhibit .single-art-modal .modal-header, .single-chains .single-art-modal .modal-header {min-height: 60px;}
+.exhibit .single-art-modal .modal-content, .single-chains .single-art-modal .modal-content {margin-top:0px;box-shadow:0 0 0 0;-webkit-box-shadow: 0 0 0 0;-moz-box-shadow: 0 0 0 0;border:0px!important;}
+.exhibit .single-art-modal .modal-footer, .single-chains .single-art-modal .modal-footer {
 display: block;
 background: #fff;
 margin-top: 0px;
@@ -1788,16 +1788,18 @@ padding: 0px;
 }
 
 .exhibit .single-art-modal .modal-footer button,
-.exhibit .single-art-modal .modal-header button {width:100%;}
+.exhibit .single-art-modal .modal-header button,
+.single-chains .single-art-modal .modal-footer button,
+.single-chains .single-art-modal .modal-header button  {width:100%;}
 
-.exhibit .carousel-inner {
+.exhibit .carousel-inner, .single-chains .carousel-inner {
 position: relative;
 overflow-y: scroll;
 width: 100%;
 height: 1100px;
 }
 
-.exhibit .img-video-tab img.attachment-large.img-responsive, .single-chain .img-video-tab img.attachment-large.img-responsive {
+.exhibit .img-video-tab img.attachment-large.img-responsive, .single-chains .img-video-tab img.attachment-large.img-responsive {
 width: auto;
 height: 650px;
 margin: 0px auto;
@@ -1825,7 +1827,7 @@ bottom: -45px!important;
 top: initial;
 }
 
-.exhibit .flex-control-nav {
+.exhibit .flex-control-nav, .single-chains .flex-control-nav {
 border: 1px solid #ccc;
 padding: 20px 0px 10px 0px;
 top: -63px;
@@ -1835,25 +1837,25 @@ margin: 0px;
 left: 0px;
 }
 
-.exhibit .flex-direction-nav {
+.exhibit .flex-direction-nav, .single-chains .flex-direction-nav {
 position: absolute;
 top: -64px;
 width: 100%;
 height: 5px;
 }
 
-.exhibit .slide .thumbnail-art-img, .single-chain .slide .thumbnail-art-img {
+.exhibit .slide .thumbnail-art-img, .single-chains .slide .thumbnail-art-img {
 background-color: #CCC;
 height: 100%;
 background-position: 50% 0px!important;
 }
 
-.exhibit .artist-sidebar, .single-chain .artist-sidebar {
+.exhibit .artist-sidebar, .single-chains .artist-sidebar {
 border-left: 0px;
 }
 
 .digital-exhibit {}
-.exhibit-chain-list {margin:0px; padding:0px;}
+.exhibit-chain-list  {margin:0px; padding:0px;}
 .exhibit-chain-list li a {
 border-bottom: 2px solid #ccc;
 display: block;
@@ -1866,12 +1868,12 @@ color: #fff;
 .exhibit-chain-list li a .col-sm-4 {height:70px;}
 .exhibit-chain-list li a .col-sm-4 img {height:100%; width:auto;}
 
-.exhibit .description br {display:none;}
-.exhibit .logo-img {background-size:contain!important;}
-.exhibit .credit {margin-top:15px;}
+.exhibit .description br, .single-chains .description br {display:none;}
+.exhibit .logo-img, .single-chains .logo-img {background-size:contain!important;}
+.exhibit .credit, .single-chains .credit {margin-top:15px;}
 
-.exhibit, .exhibit p {font-size: 18px;}
-.exhibit .gde-link {display:none;}
+.exhibit, .exhibit p, .single-chains p {font-size: 18px;}
+.exhibit .gde-link, .single-chains .gde-link { display:none; }
 
 
 /* ==========================================================================
