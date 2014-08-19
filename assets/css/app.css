@@ -623,7 +623,10 @@ font-weight: 100;
 margin-bottom: 5%;
 margin-top: 5%;
 }
-
+.single-chains div.flex-viewport .description {
+max-height: 1800px;
+overflow-y: auto!important;
+}
 .chain-info {font-size: 18px;}
 body.single-chains .col-sm-6.col-sm-offset-3 {text-align: center;}
 
@@ -1864,7 +1867,10 @@ background-position: 50% 0px!important;
 .exhibit .artist-sidebar, .single-chains .artist-sidebar {
 border-left: 0px;
 }
-
+.single-chains div.flex-viewport .description {
+max-height: 2000px;
+overflow-y: auto!important;
+}
 .digital-exhibit {}
 .exhibit-chain-list  {margin:0px; padding:0px;}
 .exhibit-chain-list li a {
@@ -1987,11 +1993,7 @@ width: 80%;
 margin-top: 17px;
 float: left;
 }
-.single-chains div.flex-viewport .description {
-max-height: 1800px;
-overflow-y: auto!important;
 }
-
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
