@@ -1988,8 +1988,8 @@ margin-top: 17px;
 float: left;
 }
 .single-chains div.flex-viewport .description {
-  max-height: 1800px;
-overflow-y:auto!important;
+max-height: 1800px;
+overflow-y: auto!important;
 }
 
 
