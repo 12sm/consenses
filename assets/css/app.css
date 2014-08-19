@@ -616,7 +616,7 @@ font-weight: 100;
 margin-bottom: 5%;
 margin-top: 5%;
 }
-.chain-single .alignright, .exhibit .alignright{
+.single-chains .alignright, .exhibit .alignright{
   float: none;
 }
 .chain-info {font-size: 18px;}
@@ -1982,7 +1982,7 @@ float: left;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-.chain-single .alignright, .exhibit .alignright{
+.single-chains .alignright, .exhibit .alignright{
   float: right;
 }
 .exhibit .col {max-width:90%; margin:0px auto;}
