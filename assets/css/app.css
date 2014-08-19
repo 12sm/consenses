@@ -1867,10 +1867,7 @@ background-position: 50% 0px!important;
 .exhibit .artist-sidebar, .single-chains .artist-sidebar {
 border-left: 0px;
 }
-.single-chains div.flex-viewport .description {
-max-height: 2000px;
-overflow-y: auto!important;
-}
+
 .digital-exhibit {}
 .exhibit-chain-list  {margin:0px; padding:0px;}
 .exhibit-chain-list li a {
