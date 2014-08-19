@@ -616,7 +616,9 @@ font-weight: 100;
 margin-bottom: 5%;
 margin-top: 5%;
 }
-
+.chain-single .floatright, .exhibit .floatright{
+  float: none;
+}
 .chain-info {font-size: 18px;}
 body.single-chains .col-sm-6.col-sm-offset-3 {text-align: center;}
 
@@ -1980,7 +1982,9 @@ float: left;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+.chain-single .floatright, .exhibit .floatright{
+  float: right;
+}
 .exhibit .col {max-width:90%; margin:0px auto;}
 
     /*MAILCHIMP*/
