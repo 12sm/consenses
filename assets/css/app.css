@@ -1707,7 +1707,7 @@ padding-left: 0px;
 
 .exhibit .navbar {display:none;}
 
-.exhibit .exhibit-header {text-align: center; background:#b4231e; color: #fff;}
+.exhibit .exhibit-header, .single-chain .exhibit-header  {text-align: center; background:#b4231e; color: #fff;}
 
 .exhibit h1 {
 color: #303030;
@@ -1742,7 +1742,7 @@ background-position: 50% 0px!important;
 }
 
 @media (min-width: 992px) {
-.exhibit .the-chain .chain-row .chain-child {
+.exhibit .the-chain .chain-row .chain-child, .single-chain .the-chain .chain-row .chain-child  {
 text-align: center;
 max-width: 540px;
 margin: 0px auto;
