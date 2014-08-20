@@ -746,6 +746,8 @@ border: 0px;
 border-radius: 0px;
 }
 
+body.single-chains .single-art-modal {max-width:1000px;}
+
 li.word-cloud-tab a {
 background-color: #bf2129;
 color: #FFF;
