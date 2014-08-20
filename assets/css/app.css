@@ -2026,6 +2026,7 @@ margin-top: initial;
 }
 
 .biz-card {height: 185px;}
+.single-chains .biz-card {height:200px;}
 
 #menu-primary-navigation li a {
 padding: 25px 10px;
