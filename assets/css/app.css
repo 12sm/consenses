@@ -715,6 +715,9 @@ body.single-chains button.btn.btn-view:hover {color: #BF2129;}
 body.single-chains .tag-and-view {margin-top: 100px;}
 body.single-chains .video-montage, body.single-chains .the-chain {margin-top: 100px;}
 
+
+body.single-chains .modal {max-width:1000px;}
+
 .video-montage h2.aligncenter,
 .the-chain h2.aligncenter {
 font-weight: 100;
@@ -745,8 +748,6 @@ line-height: 1.428571429;
 border: 0px;
 border-radius: 0px;
 }
-
-.single-chains .modal {max-width:1000px;}
 
 li.word-cloud-tab a {
 background-color: #bf2129;
@@ -2185,7 +2186,8 @@ max-width: 1200px;
 .home-events .btn-default {margin: 10% 0;}
 
 .modal-lg {
-width: 1100px;
+width: 1100px!important;
+margin: 0px auto!important;
 }
 
 
