@@ -1188,7 +1188,8 @@ a.tribe-events-read-more:hover {background-color: rgba(224, 70, 77, .8);}
 .grey {background: #F0F0F0;padding: 2%;}
 .grey > i {float: left;color: #868686;font-size: 18px;}
 .chain-meta {text-align: right;color: #868686;font-weight: 500;}
-body.post-type-archive-chains .img-container {background-size: 115%!important;padding-bottom: 50%;}
+body.post-type-archive-chains .img-container,
+body.explore .img-container {background-size: 115%!important;padding-bottom: 50%;}
 .chain-padding {margin-top: 2%;}
 
 
