@@ -2,10 +2,6 @@
  * Roots 6.5.0
  */
 
-/* KEY */
-/* cmd+F "august 20" to pull up items that need to be changed
-on/after the 21st :) */
-
 
 /* ==========================================================================
    Base
@@ -431,15 +427,6 @@ width: 72%!important;
 /*END MAILCHIMP*/
 
 
-/* REMOVE AFTER AUGUST 20TH */
-.submissions-closed {
-padding: 5px;
-font-size: 15px;
-color: #F3C2C2;
-font-weight: 300;
-line-height: 1.3;
-}
-
 input#cred_form_661_1_form_submit_1,
 #cred_form_504_2_form_submit_2,
 #cred_form_1908_2_form_submit_2,
@@ -854,7 +841,6 @@ color: rgb(60, 60, 60);
 border-top: 1px solid #CCC;
 padding-top: 10px;
 margin-top: 10px;
-display: none; /* REMOVE AFTER AUGUST 20TH */
 }
 
 .single-art-modal .modal-footer {display:none;}
@@ -2116,12 +2102,12 @@ font-weight: 300;
 }
 
 header>.container {
-width: 957px;
+width: 992px;
 margin: 0px auto;
 }
 
 #menu-primary-navigation li a {
-padding: 25px 7px;
+padding: 25px 4px;
 }
 
 .navbar-form {display:block;}
@@ -2176,7 +2162,7 @@ margin: 0px auto;
 }
 
 #menu-primary-navigation li a {
-padding: 25px 15px;
+padding: 25px 9px;
 }
 
 .col {
