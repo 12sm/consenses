@@ -181,7 +181,8 @@ header>.container{
 .welcome-box h2 {font-size: 48px;font-weight: 100;margin:0;}
 .welcome-box h4 {font-weight: 100;font-size: 36px;margin:0;}
 
-.create>h3 {
+.create-but>h3,
+.explore-but>h3 {
 color: #FFF;
 font-weight: 100!important;
 background-color: rgba(242, 117, 20, .9);
@@ -1082,7 +1083,8 @@ input#cred_form_856_1_email {
 background-color: #ECECEC;
 }
 
-.create .myzebra-submit {
+.create .myzebra-submit,
+single-chains .myzebra-submit {
 display: none;
 }
 
