@@ -5,8 +5,8 @@
 			<h4>Art makes <span class="red">sense.</span></h4>
 		</div>
 		<div class="row">
-			<div class="col-md-6 col-lg-4 hidden">
-				<a href="/chains/"><div class="explore">
+			<div class="col-md-6 col-lg-4">
+				<a href="/explore/"><div class="explore">
 					<h3>Explore</h3>
 				</div></a>
 			</div>
