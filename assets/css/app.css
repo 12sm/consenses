@@ -1599,6 +1599,16 @@ body.contact input[type="submit"]:hover,
 body.contact input[type="submit"]:active {background-color: #E2131D;}
 
 
+/* ============
+  Facebook Album
+  ================ */
+  
+.facebook-album-container {
+margin: 0px auto;
+max-width: 1170px;
+}  
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
