@@ -6,13 +6,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-4">
-				<a href="/explore/"><div class="explore">
+				<a href="/explore/">
+				<div class="explore-but">
 					<h3>Explore</h3>
 				</div></a>
 			</div>
 			<div class="col-md-6 col-lg-4">
 			<a href="/create/">
-				<div class="create">
+				<div class="create-but">
 					<h3>+ Create</h3>
 				</div>
 			</a>
