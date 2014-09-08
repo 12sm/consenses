@@ -161,6 +161,7 @@ var Roots = {
   },
   exhibit: {
 	  init: function() {
+	  	$('.fluid-width-video-wrapper iframe').removeAttr('allowfullscreen');
 			  
 	  }
   }
