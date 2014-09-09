@@ -691,7 +691,7 @@ body.single-chains .tag-and-view {margin-top: 100px;}
 body.single-chains .video-montage, body.single-chains .the-chain {margin-top: 100px;}
 
 
-body.single-chains .modal {max-width:1000px;}
+body.single-chains .modal {max-width:740px;}
 
 .video-montage h2.aligncenter,
 .the-chain h2.aligncenter {
@@ -2070,7 +2070,8 @@ padding: 10px 8px 2px 8px;
 }
 
 .chain-btn.btn {
-padding: 20px 8px;
+padding: 24px 8px;
+font-size: 15px;
 }
 
 .week-header .btn-container {width:auto;}
@@ -2096,6 +2097,12 @@ overflow-y: auto!important;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+.chain-btn.btn {
+padding: 20px 8px;
+font-size: 20px;
+}
+
 
 input#mce-EMAIL {
 width: 81%!important;
