@@ -32,6 +32,9 @@ var Roots = {
 
       var artID = $('#artist-content').text(); //gets the id
       $('#field_rk2uay').val(artID); //puts it in the form
+      
+      var currentURL = window.location.pathname;
+      $('#field_ylbzty').val(currentURL);
 
       soundManager.setup({
       	  preferFlash: false,
