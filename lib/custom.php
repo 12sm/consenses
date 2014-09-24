@@ -8,7 +8,7 @@ function create_artists_parent($entry_id, $form_id){
   global $frm_entry;
   $entry = $frm_entry->getOne($entry_id);
   $artist_id = $entry->post_id;
-  $post_id=$_POST['item_meta'][110];
+  $post_id=$_POST['item_meta'][112];
   $parent = $_POST['item_meta'][106];
   echo "<div id='artist-content'>".$artist_id."</div>";
   update_post_meta($artist_id,'_wpcf_belongs_chains_id', $parent);
