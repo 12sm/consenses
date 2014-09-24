@@ -1,4 +1,4 @@
-<?php 
+<?php
 add_filter('frm_after_create_entry', 'create_form_parent', 41, 2);
 add_filter('frm_after_create_entry', 'create_artists_parent', 41, 2);
 //Grab id of 'Artist post'
@@ -8,7 +8,8 @@ function create_artists_parent($entry_id, $form_id){
   global $frm_entry;
   $entry = $frm_entry->getOne($entry_id);
   $artist_id = $entry->post_id;
-  $post_id=$_POST['item_meta'][106];
+  $post_id=$_POST['item_meta'][110];
+  $parent = $_POST['item_meta'][106];
   echo "<div id='artist-content'>".$artist_id."</div>";
   update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
 	}
@@ -23,8 +24,8 @@ function create_form_parent($entry_id, $form_id){
     $post_id = $entry->post_id; //gets id of child post (not working)
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
     update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
-    add_post_meta($post_id,'_wpcf_belongs_artists_id', $artist_id);
-    add_post_meta($post_id,'_wpcf_belongs_composition_id', $comp_id);
+    update_post_meta($post_id,'_wpcf_belongs_artist_id', $artist_id);
+    update_post_meta($post_id,'_wpcf_belongs_composition_id', $comp_id);
   }
 }
 

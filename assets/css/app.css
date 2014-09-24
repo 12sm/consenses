@@ -705,7 +705,7 @@ font-size: 42px;
 font-weight: 100!important;
 font-size: 23px!important;
 color: #fff!important;
-margin: 25px 0px 0px 0px;	
+margin: 25px 0px 0px 0px;
 }
 
    /* =========================
@@ -1596,11 +1596,11 @@ body.contact input[type="submit"]:active {background-color: #E2131D;}
 /* ============
   Facebook Album
   ================ */
-  
+
 .facebook-album-container {
 margin: 0px auto;
 max-width: 1170px;
-}  
+}
 
 
 /* ==========================================================================
@@ -2097,6 +2097,9 @@ overflow-y: auto!important;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body.single-chains .modal {
+max-width: none;
+}
 
 .chain-btn.btn {
 padding: 20px 8px;
