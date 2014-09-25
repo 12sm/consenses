@@ -5,9 +5,10 @@
 			<p>Tag one of the pieces below, or<br />
 			submit your own artwork in response.
 			</p>
+			<?php echo do_shortcode('[wpv-view name="home-weekly-challenge-chain"]'); ?>
 		</div>
 	</div>
-	
+
 	<?php echo do_shortcode('[wpv-view name="CREATE | PUBLISHED CHAINS"]'); ?>
 
 </div>
