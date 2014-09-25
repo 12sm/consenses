@@ -558,6 +558,11 @@ font-weight: 100;
 color: #ac3234;
 }
 
+/* Remove About banner from press kit page */
+body.press-kit-3 img#consenses-about-banner {
+display: none;
+}
+
 /* ==========================================================================
    NEWS (reel)
    ========================================================================== */
