@@ -1,6 +1,7 @@
 <?php
 /*
-Template Name: About Template
+Template Name: Container Template
+Blank template with page content wrapped in container class
 */
 ?>
 
