@@ -117,6 +117,12 @@ z-index: -1;
 margin: 0 auto;
 width: 100%;
 }
+.modal-body .img-video-tab img.attachment-thumbnail.wp-post-image {
+width: initial;
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
