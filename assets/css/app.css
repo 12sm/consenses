@@ -740,6 +740,7 @@ margin: 0 auto;
 text-decoration: none;
 display: block;
 color: #fff;
+margin-top: 50px;
 }
 .overlay .centered {
 text-align: center;
@@ -758,6 +759,10 @@ text-align: center;
 .overlay h3 {
 margin: 5px 0px;
 color: #fff!important;
+}
+.overlay a {
+text-decoration: none;
+color: #000;
 }
    /* =========================
       Artist Modal
