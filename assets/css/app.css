@@ -722,6 +722,7 @@ margin: 25px 0px 0px 0px;
 .overlay:hover{
   opacity: 1;
   transition: opacity .5s ease;
+  pointer-events: cursor;
 }
 .overlay {
 opacity: 0;
@@ -735,7 +736,7 @@ transition: opacity .5s ease;
 padding: 15px;
 }
 a.btn.submit-btn.overlay-btn {
-width: 65%;
+width: 50%;
 margin: 0 auto;
 text-decoration: none;
 display: block;
