@@ -742,6 +742,7 @@ text-decoration: none;
 display: block;
 color: #fff;
 margin-top: 50px;
+max-height: 85px;
 }
 .overlay .centered {
 text-align: center;
