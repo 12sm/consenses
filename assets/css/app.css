@@ -722,7 +722,7 @@ margin: 25px 0px 0px 0px;
 .overlay:hover{
   opacity: 1;
   transition: opacity .5s ease;
-  pointer-events: cursor;
+  cursor: pointer;
 }
 .overlay {
 opacity: 0;
