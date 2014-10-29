@@ -1457,7 +1457,7 @@ transition:background-color .3s ease;
    EXPLORE
    ========================================================================== */
 
-h2.chain-title {
+h2.aligncenter.chain-title a {
   font-weight: 100;
   color: #A2A2A2; 
   margin-bottom:5px;
