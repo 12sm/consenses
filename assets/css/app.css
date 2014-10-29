@@ -1459,7 +1459,7 @@ transition:background-color .3s ease;
 
 h2.aligncenter.chain-title a {
   font-weight: 100;
-  color: #A2A2A2; 
+  color: #A2A2A2!important; 
   margin-bottom:5px;
 }
 
