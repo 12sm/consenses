@@ -1457,7 +1457,11 @@ transition:background-color .3s ease;
    EXPLORE
    ========================================================================== */
 
-
+h2.chain-title {
+  font-weight: 100;
+  color: #A2A2A2; 
+  margin-bottom:5px;
+}
 
 /* ==========================================================================
    Primary Content
