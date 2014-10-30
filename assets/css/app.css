@@ -399,6 +399,12 @@ margin-right: 1%;
 float: right;
 clear: none!important;
 }
+
+/* Removes MailChimp label */
+form#mc-embedded-subscribe-form label {
+display: none;
+}
+
 input#mce-EMAIL {
 float: left;
 clear: none;
