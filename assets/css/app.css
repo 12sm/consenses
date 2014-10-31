@@ -1475,7 +1475,7 @@ h2.aligncenter.chain-title a {
    PAGE TEMPLATE
    ========================================================================== */
 
-body.page {
+body.page .main {
   margin-top:30px; 
 }
 
