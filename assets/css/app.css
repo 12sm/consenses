@@ -1639,6 +1639,9 @@ font-family: 'proxima-nova';
 font-weight: 300;
 font-size: 18px;
 }
+.home-events small.center {
+font-weight: 300;
+}
 .contact .home-events, .about .home-events {
 margin: 0 auto;
 }
