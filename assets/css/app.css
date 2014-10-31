@@ -90,7 +90,8 @@ filter: brightness(115%);
 -webkit-filter: brightness(115%);
 }
 
-.white {font-color:#FFF!important;}
+.white {color:#FFF!important;}
+p.white {font-size:20px;}
 
 /* All Modals */
 
