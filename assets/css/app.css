@@ -90,7 +90,7 @@ filter: brightness(115%);
 -webkit-filter: brightness(115%);
 }
 
-.white {font-color:#FFF;}
+.white {font-color:#FFF!important;}
 
 /* All Modals */
 
