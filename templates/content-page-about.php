@@ -1,8 +1,7 @@
 <div class="row container">
 	<div class="col-sm-12 about-body-copy">
 	
-		<img src="/wp-content/themes/consenses/assets/img/about-banner.jpg" style="width:100%;margin-bottom:3%;" id="consenses-about-banner" />
-		<img src="/wp-content/themes/consenses/assets/img/presskit-banner.jpg" style="width:100%;margin-bottom:3%;" id="consenses-presskit-banner" /> 
+		<img src="http://consenses.org/wp-content/themes/consenses/assets/img/about-banner.jpg" style="width:100%;margin-bottom:3%;" id="consenses-about-banner" />
 		
 		<?php while (have_posts()) : the_post(); ?>
 	 	<?php the_content(); ?>
