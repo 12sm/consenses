@@ -606,9 +606,7 @@ body.single-post {font-size: 16px;line-height: 1.5em;font-weight: 300;}
 /* ==========================================================================
    CHAIN SINGLE
    ========================================================================== */
-.fluid-width-video-wrapper {
-  pointer-events: none;
-}
+
 .vid-container > img {margin: 0 auto;}
 .chain-info {text-align: center;}
 body.single-chains .date {display: none;}
