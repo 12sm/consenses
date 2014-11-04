@@ -111,16 +111,7 @@ var Roots = {
   post_type_archive_artists: {
     init: function() {
       // JavaScript to be fired on the home page
-      $('.artists').infinitescroll({
-	      navSelector  : ".post-nav .pager",            
-          // selector for the paged navigation (it will be hidden)
-          nextSelector : ".post-nav .pager .previous a",    
-          // selector for the NEXT link (to page 2)
-          itemSelector : ".artists .artist"          
-          // selector for all items you'll retrieve
-      }, function() {
-      	$('.img-container').imgLiquid();	
-      });
+      	$('.img-container').imgLiquid();
       
     }
   },
