@@ -2175,7 +2175,9 @@ background-position: 50% 0px!important;
 max-height: 1800px;
 overflow-y: auto!important;
 }
-
+.overlay>p:nth-child(4) {
+display: none;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -2246,6 +2248,9 @@ white-space: nowrap;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .overlay>p:nth-child(4) {
+    display: block;
+  }
 .single-chains .col {
   width: 100%;
   margin: 0px auto;
