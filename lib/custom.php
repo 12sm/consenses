@@ -28,7 +28,18 @@ function create_form_parent($entry_id, $form_id){
     add_post_meta($post_id,'_wpcf_belongs_composition_id', $comp_id);
   }
 }
-
+//check parent image
+function check_parent_image() {
+global $post;   
+$parentpostid = get_post_meta($post->ID, '_wpcf_belongs_artists_id', TRUE);  
+if ( has_post_thumbnail($parentpostid) ) {  
+return 1;
+   }
+else {
+return 0;   
+      }
+  }
+add_action( 'check_parent_image' );
 //Length shortcode
 add_shortcode('trim', 'trim_shortcode');
 function trim_shortcode($atts, $content = '') {
