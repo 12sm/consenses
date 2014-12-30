@@ -27,7 +27,7 @@ var Roots = {
       $('.img-video-tab > .entry-content-asset').fitVids();
       $('.vid-container').fitVids();
       $('.myzebra-prime-name-post_tag > .myzebra-text').attr("placeholder", "Sum it up in one word.");
-
+      $('[data-toggle="tooltip"]').tooltip();
       //jquery to pull artist id 
 
       var artID = $('#artist-content').text(); //gets the id
