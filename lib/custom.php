@@ -24,8 +24,8 @@ function create_form_parent($entry_id, $form_id){
     $post_id = $entry->post_id; //gets id of child post (not working)
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
     $frm_media = $_POST['item_meta'][90];
-    $media_path = get_attached_file( $frm_media, $unfiltered);
-    add_post_meta($post_id,'wpcf-audio-file', $media_path);
+    $media_path = get_attached_file( $frm_media );
+    update_post_meta($post_id,'wpcf-audio-file', $media_path);
     update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
     add_post_meta($post_id,'_wpcf_belongs_artists_id', $artist_id);
     add_post_meta($post_id,'_wpcf_belongs_composition_id', $comp_id);
