@@ -30,11 +30,11 @@ function create_form_parent($entry_id, $form_id){
 }
 
 //pass info to the invite a friend form
-function invite_a_friend($entry_id, $form_id){
+/*function invite_a_friend($entry_id, $form_id){
   if ($form_id == 14) {
     
   }
-}
+}*/
 //check parent image
 function check_parent_image() {
 global $post;   
