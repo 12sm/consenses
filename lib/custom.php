@@ -25,7 +25,8 @@ function create_form_parent($entry_id, $form_id){
     $parent = $_POST['item_meta'][108]; //gets id of parent from form
     $frm_media = $_POST['item_meta'][90];
     $media_path = wp_get_attachment_url( $frm_media );
-    update_post_meta($post_id,'wpcf-audio-file', $media_path);
+    $media_file = str_replace('/var/www/vhosts/12southdev.com/consenses.org','', $media_path);
+    update_post_meta($post_id,'wpcf-audio-file', $media_file);
     update_post_meta($post_id,'_wpcf_belongs_chains_id', $parent);
     add_post_meta($post_id,'_wpcf_belongs_artists_id', $artist_id);
     add_post_meta($post_id,'_wpcf_belongs_composition_id', $comp_id);
