@@ -40,6 +40,7 @@
 		</div>
 	</div>
 </div>
+<<<<<<< HEAD
 <div class="row welcome">
 	<div class="col-sm-12 hidden-md hidden-lg">
 		<?php while (have_posts()) : the_post(); ?>
@@ -47,6 +48,8 @@
 		<?php endwhile; ?>
 	</div>
 </div>
+=======
+>>>>>>> parent of ae30b7b... add page content to home
 <div class="row home-events">
 	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
 </div>
