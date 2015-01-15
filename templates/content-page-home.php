@@ -24,23 +24,8 @@
         <p class="white">An Artistic Game of Telephone</p>
       </div>
     </div>
-		<div class="row">
-			<div class="col-md-12 hidden-sm hidden-xs">
-				<div 	class="row vid-container">
-					<div class="col-sm-6">
-						<h2 class="white">Welcome from Sally Taylor</h2>
-						<div class="entry-content-asset">
-							<iframe width="1140" height="641" src="https://www.youtube.com/embed/zieRX0t6MPU?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
-<<<<<<< HEAD
 <div class="row welcome">
 	<div class="col-sm-12 hidden-md hidden-lg">
 		<?php while (have_posts()) : the_post(); ?>
@@ -48,8 +33,6 @@
 		<?php endwhile; ?>
 	</div>
 </div>
-=======
->>>>>>> parent of ae30b7b... add page content to home
 <div class="row home-events">
 	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
 </div>

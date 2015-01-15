@@ -2220,6 +2220,10 @@ padding: 25px 4px;
 
 .col {max-width:80%; margin:0px auto;}
 
+.home-top{
+   padding-bottom: 20%;
+}
+
 .row.footer-nav {
 height: 35px;
 }
