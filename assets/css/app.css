@@ -1474,7 +1474,7 @@ transition:background-color .3s ease;
 
 h2.aligncenter.chain-title a {
   font-weight: 100;
-  color: #A2A2A2!important; 
+  color: #A2A2A2!important;
   margin-bottom:5px;
 }
 
@@ -1483,7 +1483,7 @@ h2.aligncenter.chain-title a {
    ========================================================================== */
 
 body.page.exhibit .main {
-  margin-top:30px; 
+  margin-top:30px;
   margin-bottom:30px;
 }
 
@@ -2219,10 +2219,6 @@ padding: 25px 4px;
 .navbar-form {display:block;}
 
 .col {max-width:80%; margin:0px auto;}
-
-.home-top{
-   padding-bottom: 20%;
-}
 
 .row.footer-nav {
 height: 35px;
