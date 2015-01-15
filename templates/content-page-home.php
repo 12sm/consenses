@@ -26,9 +26,16 @@
     </div>
 		<div class="row">
 			<div class="col-md-12 hidden-sm hidden-xs">
-				<?php while (have_posts()) : the_post(); ?>
-					<?php the_content(); ?>
-				<?php endwhile; ?>
+				<div 	class="row vid-container">
+					<div class="col-sm-6">
+						<h2 class="white">Welcome from Sally Taylor</h2>
+						<div class="entry-content-asset">
+							<iframe width="1140" height="641" src="https://www.youtube.com/embed/zieRX0t6MPU?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
