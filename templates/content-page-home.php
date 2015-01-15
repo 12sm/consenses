@@ -24,10 +24,17 @@
         <p class="white">An Artistic Game of Telephone</p>
       </div>
     </div>
+		<div class="row">
+			<div class="col-md-12 hidden-sm hidden-xs">
+				<?php while (have_posts()) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; ?>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="row welcome">
-	<div class="col-sm-12">
+	<div class="col-sm-12 hidden-md hidden-lg">
 		<?php while (have_posts()) : the_post(); ?>
 			<?php the_content(); ?>
 		<?php endwhile; ?>
