@@ -36,10 +36,12 @@
 <div class="row home-events">
 	<?php echo do_shortcode('[wpv-view name="HOME | EVENTS"]'); ?>
 </div>
-<div class="row home-bottom col weekly-challenge" id="weekly-challenge">
+<div class="row col" id="weekly-challenge">
+	<div class="home-bottom weekly-challenge">
 			<div class="col-sm-12">
 				<?php echo do_shortcode('[wpv-view name="HOME | WEEKLY CHALLENGE | CHAIN"]'); ?>
 			</div>
+	</div>
 </div>
 <div class="row mail-list">
 	<div class="col-sm-6 col-sm-offset-3">
