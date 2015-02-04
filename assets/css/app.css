@@ -64,8 +64,13 @@ filter: brightness(115%);
    background: url(../img/top-banner.jpg) no-repeat;
    background-size: cover;
 }
+
+.home-bottom.weekly-challenge {
+  max-width: 800px;
+  margin: 0px auto;
+}
 .center img {
-width: 100%;
+  width: 100%;
 }
 p {
 font-size: 16px;
