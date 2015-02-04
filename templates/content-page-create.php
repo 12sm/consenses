@@ -9,8 +9,13 @@
 			tempor incididunt ut labore et dolore magna aliqua."></i>
 			</span>
 			</p>
-			
-			<?php echo do_shortcode('[wpv-view name="home-weekly-challenge-chain"]'); ?>
+			<div class="row col" id="weekly-challenge">
+				<div class="home-bottom weekly-challenge">
+						<div class="col-sm-12">
+							<?php echo do_shortcode('[wpv-view name="home-weekly-challenge-chain"]'); ?>
+						</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
