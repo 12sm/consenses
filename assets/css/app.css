@@ -2085,12 +2085,12 @@ float: left;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-	.navbar-form .form-control {
+.navbar-form .form-control {
 	display: inline-block;
-	width: 150px;
+	width: 150px!important;
 	vertical-align: middle;
 	float: left;
-	}
+}
 
 .navbar-form .form-group {
 display: inline-block;
