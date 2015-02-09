@@ -2084,6 +2084,21 @@ float: left;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+	.navbar-form .form-control {
+	display: inline-block;
+	width: 150px;
+	vertical-align: middle;
+	float: left;
+	}
+
+.navbar-form .form-group {
+display: inline-block;
+margin-bottom: 0;
+vertical-align: middle;
+width: auto;
+}
+
   .single-chains .img-video-tab img.attachment-large.img-responsive {
 height: 650px;
 }
